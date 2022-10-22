@@ -3,29 +3,11 @@
 ---
 
 <div class="dropdown-container">
-  <a href="/cliente">CLIENTE</a>
-  <a href="/fornecedor">FORNECEDOR</a>
-  <a href="/funcionario">FUNCIONARIO</a>
-  <a href="/usuario">USUARIO</a>
-  <a href="/prd">CADASTRO DE PRODUTO</a>
-  <a href="/prdEstoque">PARAMETRIZAÇÃO ESTOQUE</a>
-  <a href="/prdLocalEstoque">PARAMETRIZAÇÃO LOCAL DE ESTOQUE</a>
-  <a href="/prdBalanca">PARAMETRIZAÇÃO BALANÇA</a>
-  <a href="/prdLote">PARAMETRIZAÇÃO LOTE</a>
-  <a href="/prdGrade">PARAMETRIZAÇÃO GRADE</a>
-  <a href="/gradeCor">CADASTRO GRADE/COR</a>
-  <a href="/prdComposicao">PARAMETRIZAÇÃO COMPOSIÇÃO</a>
-  <a href="/vasilhame">PARAMETRIZAÇÃO CONTROLE DE VASILHAME</a>
-  <a href="/prazoPagamento">PRAZO DE PAGAMENTO</a>
-  <a href="/#">TIPO DE MOVIMENTO ORDEM DE COMPRA</a>
-  <a href="/#">TIPO DE MOVIMENTO NOTA DE ENTRADA</a>
-  <a href="/#">TIPO DE MOVIMENTO PEDIDOS</a>
-  <a href="/#">TIPO DE MOVIMENTO AMOSTRA</a>
-  <a href="/#">TIPO DE MOVIMENTO TRANSFERÊNCIA</a>
-  <a href="/#">TIPO DE MOVIMENTO NF-e</a>
-  <a href="/#">TIPO DE MOVIMENTO CONSIGNADO</a>
-  <a href="/#">TIPO DE MOVIMENTO ENTREGA DE EPI</a>
-  <a href="/#">TIPO DE MOVIMENTO PRE-VENDA</a>
+  <a href="/cliente">Parametrização NFe</a>
+  <a href="/fornecedor">Tipo de movimento</a>
+  <a href="/funcionario">NFe por Pedido</a>
+  <a href="/funcionario">NFe Avulsa</a>
+  <a href="/funcionario">Rejeições NFe</a>
 </div>
 
 <style>
@@ -37,18 +19,26 @@
     height: 95vh;
     margin-top: 30px;
     padding-left: 30px;
+    border-top: 4px rgb(220, 244, 255) solid;
+    margin-left: 15px;
+    padding-top: 20px;
   }
 
   a {
     padding: 4px 8px 6px 10px;
     text-decoration: none;
-    font-size: 12px;
+    font-size: 14px;
     color: #565656;
     border: none;
     background: none;
     display: grid;
     grid-template-columns: auto 1px;
-    font: Arial, sans-serif;
+    margin-right: 20px;
+  }
+
+  a:hover {
+    background-color: rgb(220, 244, 255);
+    /*background-color: rgb(221, 219, 255);*/
   }
 
   div::-webkit-scrollbar {
@@ -56,8 +46,8 @@
   }
 
   div::-webkit-scrollbar-thumb {
-    background-color: rgb(221, 219, 255);
+    background-color: rgb(195, 195, 195);
     border-radius: 20px;
-    border: solid rgb(221, 219, 255);
+    border: solid rgb(195, 195, 195);
   }
 </style>

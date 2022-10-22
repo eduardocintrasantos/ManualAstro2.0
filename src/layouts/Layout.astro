@@ -28,27 +28,27 @@ import Cabecalho from "../components/logo/cabecalho.astro";
       body {
         margin: 0;
         padding: 0;
-        background-color: rgb(245, 245, 255);
+        background-color: rgb(245, 251, 255);
         overflow-x: hidden;
         /*overflow-y: hidden*/
         height: 100vh;
-    scrollbar-width: thin;
-        
-        
+        scrollbar-width: thin;
+        font-family: 'DM Sans', sans-serif;
       }
       main {
         display: flex;
       }
       body::-webkit-scrollbar {
-    width: 8px;
-  }
-
-  body::-webkit-scrollbar-thumb {
-    background-color: rgb(221, 219, 255) /*rgba(0, 43, 108, 255)*/;
-    border-radius: 20px;
-    border: solid rgb(221, 219, 255);
-  }
-      
+        width: 8px;
+      }
+      body::-webkit-scrollbar-thumb {
+        background-color: rgb(195, 195, 195);
+        border-radius: 20px;
+        border: solid rgb(195, 195, 195);
+      }
+      menu {
+        position: fixed;
+      }
     </style>
   </body>
 </html>
