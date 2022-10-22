@@ -6,7 +6,6 @@ export interface Props {
 const { title } = Astro.props;
 import Menu from "../components/Menu/menu.astro";
 import Cabecalho from "../components/logo/cabecalho.astro";
-import img from "../logo/N2Logo_Completo_Blue (1).png";
 ---
 
 <!DOCTYPE html>
@@ -19,7 +18,7 @@ import img from "../logo/N2Logo_Completo_Blue (1).png";
     <title>{title}</title>
   </head>
   <body>
-    <header></header>
+    <Cabecalho />
     <main>
       <Menu />
       <slot />
@@ -30,10 +29,26 @@ import img from "../logo/N2Logo_Completo_Blue (1).png";
         margin: 0;
         padding: 0;
         background-color: rgb(245, 245, 255);
+        overflow-x: hidden;
+        /*overflow-y: hidden*/
+        height: 100vh;
+    scrollbar-width: thin;
+        
+        
       }
       main {
         display: flex;
       }
+      body::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  body::-webkit-scrollbar-thumb {
+    background-color: rgb(221, 219, 255) /*rgba(0, 43, 108, 255)*/;
+    border-radius: 20px;
+    border: solid rgb(221, 219, 255);
+  }
+      
     </style>
   </body>
 </html>
