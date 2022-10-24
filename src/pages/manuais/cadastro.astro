@@ -1,342 +1,403 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 
-import img1 from '../../imagens/cadastrosNFe/img1.png'
-import img2 from '../../imagens/cadastrosNFe/img2.png'
-import img3 from '../../imagens/cadastrosNFe/img3.png'
-import img4 from '../../imagens/cadastrosNFe/img4.png'
-import img5 from '../../imagens/cadastrosNFe/img5.png'
-import img6 from '../../imagens/cadastrosNFe/img6.png'
-import img7 from '../../imagens/cadastrosNFe/img7.png'
-import img8 from '../../imagens/cadastrosNFe/img8.png'
-import img9 from '../../imagens/cadastrosNFe/img9.png'
-import img10 from '../../imagens/cadastrosNFe/img10.png'
-import img11 from '../../imagens/cadastrosNFe/img11.png'
-import img12 from '../../imagens/cadastrosNFe/img12.png'
-import img13 from '../../imagens/cadastrosNFe/img13.png'
+import img1 from "../../imagens/cadastrosNFe/img1.png";
+import img2 from "../../imagens/cadastrosNFe/img2.png";
+import img3 from "../../imagens/cadastrosNFe/img3.png";
+import img4 from "../../imagens/cadastrosNFe/img4.png";
+import img5 from "../../imagens/cadastrosNFe/img5.png";
+import img6 from "../../imagens/cadastrosNFe/img6.png";
+import img7 from "../../imagens/cadastrosNFe/img7.png";
+import img8 from "../../imagens/cadastrosNFe/img8.png";
+import img9 from "../../imagens/cadastrosNFe/img9.png";
+import img10 from "../../imagens/cadastrosNFe/img10.png";
+import img11 from "../../imagens/cadastrosNFe/img11.png";
+import img12 from "../../imagens/cadastrosNFe/img12.png";
+import img13 from "../../imagens/cadastrosNFe/img13.png";
+
+import "./style.css";
 ---
 
 <Layout title="teste">
   <main>
     <h1>Manual para Cadastros Tipo de Movimento e aba Fiscais</h1>
+    <h2></h2>
 
     <p>
       O processo de emissão de NF-e começa com a criação das operações fiscais.
     </p>
+    <p>Acessar o Menu/ Fiscais / Operações Fiscais:</p>
+    <img src={img1} alt="" />
+
     <p>
-      Acessar o Menu/ Fiscais / Operações Fiscais:
-    </p>
-    <img src={img1} alt="">
-
-    <p>Informar a descrição, a descrição da Natureza que será visualizada na cabeça da nota.</p>
-
-    <p>Informar o modelo de NF-e (55 ou 65) e a serie (esta informação é levantada junto ao ciente.</p>
-    <p>
-      Informar a Finalidade da nota e o tipo de operação.
-    </p>
-    <img src={img2} alt="">
-    <br>
-    <img src={img3} alt="">
-    <br>
-    <img src={img4} alt="">
-
-    <p>A seguir será necessário cadastrar os tipos de movimentos para emissões de nota:</p>
-    <img src={img5} alt="">
-    <br>
-    <img src={img6} alt="">
-
-    <p>Informar um código para o movimento e a descrição.
+      Informar a descrição, a descrição da Natureza que será visualizada na
+      cabeça da nota.
     </p>
 
     <p>
-      Informar a operação fiscal e se  o movimento irá gerar Financeiro ou não.
+      Informar o modelo de NF-e (55 ou 65) e a serie (esta informação é
+      levantada junto ao ciente.
     </p>
-    <p>
-      Informar se o rateio será por item ou Movimento.
-    </p>
-    <p>
-      Informar quantas casas decimais serão após a virgula.
-    </p>
-    <p>
-      Nota: NF-e Não movimenta estoque
-    </p>
-    <p>
-      Informar a classificação (NF-e)
-    </p>
-    <p>
-      A forma de numeração das parcelas e sequencial.
-    </p>
-    <p>
-      Informar se o peso será calculado ou Automático.
-    </p>
-    <p>
-      Se será transmitido automaticamente após efetivar.
-    </p>
-    <p>
-      E informar o indicador de presença.
-    </p>
-    <img src={img7} alt="">
+    <p>Informar a Finalidade da nota e o tipo de operação.</p>
+    <img src={img2} alt="" />
+    <br />
+    <img src={img3} alt="" />
+    <br />
+    <img src={img4} alt="" />
 
     <p>
-      Na aba tributação, utiliza-se a amarração de um padrão tributário especifico para este movimento de nota.
+      A seguir será necessário cadastrar os tipos de movimentos para emissões de
+      nota:
     </p>
-    <img src={img8} alt="">
+    <img src={img5} alt="" />
+    <br />
+    <img src={img6} alt="" />
 
-    <p>Na aba Financeiro utiliza-se parametrizações para amarrações de Prazo de pagamento, Espécie de Documento, Plano Financeiro, Moeda, Conta e Layout Bancário.
-    </p>
-    <img src={img9} alt="">
+    <p>Informar um código para o movimento e a descrição.</p>
 
-    <p>Na aba Transportes pode-se parametrizar uma transportadora, e a responsabilidade do frete.
+    <p>
+      Informar a operação fiscal e se o movimento irá gerar Financeiro ou não.
     </p>
-    <img src={img10} alt="">
+    <p>Informar se o rateio será por item ou Movimento.</p>
+    <p>Informar quantas casas decimais serão após a virgula.</p>
+    <p>Nota: NF-e Não movimenta estoque</p>
+    <p>Informar a classificação (NF-e)</p>
+    <p>A forma de numeração das parcelas e sequencial.</p>
+    <p>Informar se o peso será calculado ou Automático.</p>
+    <p>Se será transmitido automaticamente após efetivar.</p>
+    <p>E informar o indicador de presença.</p>
+    <img src={img7} alt="" />
 
-    <p>Na aba Parâmetros, utiliza-se validade o limite de credito, quando o movimento da nota gerar financeiro, o nome fantasia do destinatário nos dados adicionais da nota.
+    <p>
+      Na aba tributação, utiliza-se a amarração de um padrão tributário
+      especifico para este movimento de nota.
     </p>
-    <p>A referencia do produto no corpo da nota, considerar condicional de boleto no cliente (caso o tipo de movimento gere financeiro).
+    <img src={img8} alt="" />
+
+    <p>
+      Na aba Financeiro utiliza-se parametrizações para amarrações de Prazo de
+      pagamento, Espécie de Documento, Plano Financeiro, Moeda, Conta e Layout
+      Bancário.
     </p>
-    <p>O Fator é para o valor do produto ser dividido (por exemplo meia nota).
+    <img src={img9} alt="" />
+
+    <p>
+      Na aba Transportes pode-se parametrizar uma transportadora, e a
+      responsabilidade do frete.
     </p>
-    <p>O Intermediador por Terceiros utiliza-se para vendas em plataformas de e-commerce.
+    <img src={img10} alt="" />
+
+    <p>
+      Na aba Parâmetros, utiliza-se validade o limite de credito, quando o
+      movimento da nota gerar financeiro, o nome fantasia do destinatário nos
+      dados adicionais da nota.
     </p>
-    <p>E finalmente o Mov. p/ Industrialização e saída-Remessa p/ industrialização, utilizam-se em emissão de notas que a empresa irá enviar produtos para industrializar.
+    <p>
+      A referencia do produto no corpo da nota, considerar condicional de boleto
+      no cliente (caso o tipo de movimento gere financeiro).
     </p>
-    <img src={img11} alt="">
+    <p>
+      O Fator é para o valor do produto ser dividido (por exemplo meia nota).
+    </p>
+    <p>
+      O Intermediador por Terceiros utiliza-se para vendas em plataformas de
+      e-commerce.
+    </p>
+    <p>
+      E finalmente o Mov. p/ Industrialização e saída-Remessa p/
+      industrialização, utilizam-se em emissão de notas que a empresa irá enviar
+      produtos para industrializar.
+    </p>
+    <img src={img11} alt="" />
     <!-- Perguntar para o Bruno -->
 
-    <p>A aba Operações fiscais permitidas pode-se criar amarrações da operação fiscal do tipo de movimento as operações criadas, por exemplo Vendas, restringindo assim na emissão da nota a opção apenas dos mesmos tipos de operações.
+    <p>
+      A aba Operações fiscais permitidas pode-se criar amarrações da operação
+      fiscal do tipo de movimento as operações criadas, por exemplo Vendas,
+      restringindo assim na emissão da nota a opção apenas dos mesmos tipos de
+      operações.
     </p>
-    <img src="" alt="">
-    <br>
-    <img src="" alt="">
+    <img src="" alt="" />
+    <br />
+    <img src="" alt="" />
 
     <h2>Mensagem Fiscal</h2>
-    <p>Após as Operações Fiscais outro recurso que pode ser utilizado é o cadastro de mensagens Utilizadas nas observações da nota</p>
-    <img src={img12} alt="">
-    <br>
-    <img src={img13} alt="">
+    <p>
+      Após as Operações Fiscais outro recurso que pode ser utilizado é o
+      cadastro de mensagens Utilizadas nas observações da nota
+    </p>
+    <img src={img12} alt="" />
+    <br />
+    <img src={img13} alt="" />
 
     <h2>Cadastro CFOP</h2>
 
-    <p>A seguir temos o cadastro de CFOPs, os utilizados já vem cadastros no template de N2.
+    <p>
+      A seguir temos o cadastro de CFOPs, os utilizados já vem cadastros no
+      template de N2.
     </p>
-    <img src="" alt="">
+    <img src="" alt="" />
 
-    <p>A CFOP é utilizada para identificar se a operação é Estadual ou Interestadual e o seu tipo (venda, revenda, devolução).
+    <p>
+      A CFOP é utilizada para identificar se a operação é Estadual ou
+      Interestadual e o seu tipo (venda, revenda, devolução).
     </p>
-    <img src="" alt="">
+    <img src="" alt="" />
 
     <h2>Cadastro Padrão Tributario</h2>
+    <p>A seguir é cadastrado os padrões tributários:</p>
+    <img src="" alt="" />
     <p>
-      A seguir é cadastrado os padrões tributários:
+      Após criar a Descrição começaremos a utilizar os demais cadastros criados
+      anteriormente:(Operação Fiscal, CFOP)
     </p>
-    <img src="" alt="">
-    <p>Após criar a Descrição começaremos a utilizar os demais cadastros criados anteriormente:(Operação Fiscal, CFOP)
-    </p>
-    <img src="" alt="">
+    <img src="" alt="" />
 
-    <p>Aqui é classificado o tipo de operação
-    </p>
-    <img src="" alt="">
+    <p>Aqui é classificado o tipo de operação</p>
+    <img src="" alt="" />
 
-    <p>E neste local a classificação comercial.
-    </p>
-    <img src="" alt="">
+    <p>E neste local a classificação comercial.</p>
+    <img src="" alt="" />
 
     <p>
-      Na aba IPI é informado o Código de Situação Tributaria (CST). Esta informação sempre é levantada junto ao contador do cliente.
+      Na aba IPI é informado o Código de Situação Tributaria (CST). Esta
+      informação sempre é levantada junto ao contador do cliente.
     </p>
-    <img src="" alt="">
+    <img src="" alt="" />
+
+    <p>A seguir informar de onde será capturado a alíquota do IPI</p>
+    <img src="" alt="" />
 
     <p>
-      A seguir informar de onde será capturado a alíquota do IPI
+      E neste local, é assinalado quais campos não afetarão a base de cálculo do
+      IPI.
     </p>
-    <img src="" alt="">
+    <img src="" alt="" />
 
-    <p>E neste local, é assinalado quais campos não afetarão a base de cálculo do IPI.
+    <p>A seguir os parâmetros do ICMS precisam ser informados:</p>
+    <p>
+      A empresa sendo do Regime Normal a CST será de 2 dígitos, sendo Simples
+      Nacional o CSOSN será de 3.
     </p>
-    <img src="" alt="">
+    <img src="" alt="" />
 
     <p>
-      A seguir os parâmetros do ICMS precisam ser informados:
+      Dependendo do tipo de operação, a empresa emissora da nota sendo
+      enquadrada no Simples Nacional e o destinatário da nota ser do regime
+      normal necessita ser informado o % de credito de ICMS a ser aproveitado.
     </p>
-    <p>A empresa sendo do Regime Normal a CST será de 2 dígitos, sendo Simples Nacional o CSOSN será de 3.
-    </p>
-    <img src="" alt="">
-
-    <p>Dependendo do tipo de operação, a empresa emissora da nota sendo enquadrada no Simples Nacional e o destinatário da nota ser do regime normal necessita ser informado o % de credito de ICMS a ser aproveitado.
-    </p>
-    <img src="" alt="">
-
-    <p>A seguir deve ser informado a modalidade da Base de calculo da operação.
-    </p>
-    <img src="" alt="">
+    <img src="" alt="" />
 
     <p>
-      O Fundo de Combate a Pobreza é uma arrecadação para ajudar pessoas carentes.
+      A seguir deve ser informado a modalidade da Base de calculo da operação.
     </p>
-    <p>
-      Neste local informa-se de onde será captado a Alíquota.
-    </p>
-    <img src="" alt="">
-
-    <p>E aqui o percentual caso a opção seja buscar do Padrão Tributário.
-    </p>
-    <img src="" alt="">
-
-    <p>Neste local pode ser informado uma redução de imposto caso a CST do ICMS indicar.</p>
-    <p>
-      Aqui o sistema funciona da seguinte maneira: se a redução for de 33,33%, no campo em destaque deve ser informado 66,67%.
-    </p>
-    <p>Também precisa ser indicado onde será aplicada a redução, Na base de calculo ou na Alíquota.
-    </p>
-    <img src="" alt="">
-
-    <p>Logo abaixo pode ser informado se haverá desoneração de ICMS e o código do motivo conforme indicado abaixo.
-    </p>
-    <img src="" alt="">
+    <img src="" alt="" />
 
     <p>
-      Também necessita ser informada a condição da operação fiscal, e quais campos não afetarão a base de calculo do ICMS.
+      O Fundo de Combate a Pobreza é uma arrecadação para ajudar pessoas
+      carentes.
     </p>
-    <img src="" alt="">
+    <p>Neste local informa-se de onde será captado a Alíquota.</p>
+    <img src="" alt="" />
+
+    <p>E aqui o percentual caso a opção seja buscar do Padrão Tributário.</p>
+    <img src="" alt="" />
 
     <p>
-      A próxima aba necessita ser preenchida quando o Padrão tributário criado abrange a condição da Substituição Tributária.
+      Neste local pode ser informado uma redução de imposto caso a CST do ICMS
+      indicar.
     </p>
-    <p>Informar a modalidade da Base de Cálculo, De onde será capturada a Alíquota.
+    <p>
+      Aqui o sistema funciona da seguinte maneira: se a redução for de 33,33%,
+      no campo em destaque deve ser informado 66,67%.
     </p>
-    <img src="" alt="">
+    <p>
+      Também precisa ser indicado onde será aplicada a redução, Na base de
+      calculo ou na Alíquota.
+    </p>
+    <img src="" alt="" />
 
-    <p>Assim como de onde será feito a busca da Alíquota do Indie de Valor Agregado (IVA).
+    <p>
+      Logo abaixo pode ser informado se haverá desoneração de ICMS e o código do
+      motivo conforme indicado abaixo.
     </p>
-    <img src="" alt="">
+    <img src="" alt="" />
 
-    <p>E este parâmetro assim como no ICMS indicará de onde será capturado a Alíquota do Fundo de Combate a Pobreza para a Substituição tributaria.
+    <p>
+      Também necessita ser informada a condição da operação fiscal, e quais
+      campos não afetarão a base de calculo do ICMS.
     </p>
-    <img src="" alt="">
+    <img src="" alt="" />
+
+    <p>
+      A próxima aba necessita ser preenchida quando o Padrão tributário criado
+      abrange a condição da Substituição Tributária.
+    </p>
+    <p>
+      Informar a modalidade da Base de Cálculo, De onde será capturada a
+      Alíquota.
+    </p>
+    <img src="" alt="" />
+
+    <p>
+      Assim como de onde será feito a busca da Alíquota do Indie de Valor
+      Agregado (IVA).
+    </p>
+    <img src="" alt="" />
+
+    <p>
+      E este parâmetro assim como no ICMS indicará de onde será capturado a
+      Alíquota do Fundo de Combate a Pobreza para a Substituição tributaria.
+    </p>
+    <img src="" alt="" />
 
     <p>A próxima aba a ser preenchida será do PIS e COFINS.</p>
-    <p>Informar a CST, de onde será captado a alíquota. </p>
-    <img src="" alt="">
-    <br>
-    <img src="" alt="">
+    <p>Informar a CST, de onde será captado a alíquota.</p>
+    <img src="" alt="" />
+    <br />
+    <img src="" alt="" />
 
-    <p>E no caso de ser do padrão tributário, no campo % Alíquota informar o valor.</p>
-    <img src="" alt="">
+    <p>
+      E no caso de ser do padrão tributário, no campo % Alíquota informar o
+      valor.
+    </p>
+    <img src="" alt="" />
 
-    <p>O parâmetro Abater ICMS da BC é utilizado para uma recuperação de credito retroativo de PIS e COFINS.
+    <p>
+      O parâmetro Abater ICMS da BC é utilizado para uma recuperação de credito
+      retroativo de PIS e COFINS.
     </p>
-    
-    <p>Na aba Mensagens Fiscais utiliza-se as mensagens cadastradas anteriormente, caso seja inerente ao padrão tributário.
-    </p>
-    <p>Nota, esta mensagem informada constará apenas nas observações da impressão da nota, não sendo possível manipula-la nas observações do cadastro da nota.
-    </p>
-    <img src="" alt="">
 
-    <p>No cadastro da empresa na aba Alíquotas Estaduais preencher a alíquota interna e entre estados para uso do calculo do ICMS-ST.
+    <p>
+      Na aba Mensagens Fiscais utiliza-se as mensagens cadastradas
+      anteriormente, caso seja inerente ao padrão tributário.
     </p>
-    <img src="" alt="">
-    <br>
-    <img src="" alt="">
+    <p>
+      Nota, esta mensagem informada constará apenas nas observações da impressão
+      da nota, não sendo possível manipula-la nas observações do cadastro da
+      nota.
+    </p>
+    <img src="" alt="" />
+
+    <p>
+      No cadastro da empresa na aba Alíquotas Estaduais preencher a alíquota
+      interna e entre estados para uso do calculo do ICMS-ST.
+    </p>
+    <img src="" alt="" />
+    <br />
+    <img src="" alt="" />
 
     <h2>Cadastro NCM e CEST</h2>
-    
-    <p>Em cadastros / Fiscais / NCM cadastrar a Nomenclatura Comum do Mercosul, onde identifica o tipo de produto junto ao fisco.
-    </p>
-    <p>Este cadastro é utilizado no cadastro de produto. Sem o NCM no produto a nota fiscal será rejeitada pela SEFAZ.
-    </p>
-    <img src="" alt="">
-    <br>
-    <img src="" alt="">
 
-    <p>Informar o código do NCM e a Descrição, já os campos de % de IPI, COFINS e PIS necessitarão ser preenchidos caso nos padrões tributários estiverem apontados para o NCM. 
+    <p>
+      Em cadastros / Fiscais / NCM cadastrar a Nomenclatura Comum do Mercosul,
+      onde identifica o tipo de produto junto ao fisco.
     </p>
-    <img src="" alt="">
+    <p>
+      Este cadastro é utilizado no cadastro de produto. Sem o NCM no produto a
+      nota fiscal será rejeitada pela SEFAZ.
+    </p>
+    <img src="" alt="" />
+    <br />
+    <img src="" alt="" />
 
-    <p>Escala Relevante ou não relevante esta relacionado ao Fornecedor/Fabricante
+    <p>
+      Informar o código do NCM e a Descrição, já os campos de % de IPI, COFINS e
+      PIS necessitarão ser preenchidos caso nos padrões tributários estiverem
+      apontados para o NCM.
     </p>
-    <img src="" alt="">
-    <br>
-    <img src="" alt="">
+    <img src="" alt="" />
 
-    <p>E ambas Informações vem de encontro a esta aba no cadastro de produto.
+    <p>
+      Escala Relevante ou não relevante esta relacionado ao
+      Fornecedor/Fabricante
     </p>
-    <img src="" alt="">
+    <img src="" alt="" />
+    <br />
+    <img src="" alt="" />
 
-    <p>A regra tributaria abordaremos com maior profundidade a seguir.
+    <p>
+      E ambas Informações vem de encontro a esta aba no cadastro de produto.
     </p>
-    <p>A unidade de medida é utilizada para notas de exportação.
-    </p>
-    <img src="" alt="">
+    <img src="" alt="" />
 
-    <p>Complementada por este cadastro na aba Cadastros/Estoques/Unidades Comerciais. 
-    </p>
-    <img src="" alt="">
+    <p>A regra tributaria abordaremos com maior profundidade a seguir.</p>
+    <p>A unidade de medida é utilizada para notas de exportação.</p>
+    <img src="" alt="" />
 
-    <p>Ainda em Cadastros / Fiscais temos o cadastro do CEST.
+    <p>
+      Complementada por este cadastro na aba Cadastros/Estoques/Unidades
+      Comerciais.
     </p>
-    <img src="" alt="">
+    <img src="" alt="" />
 
-    <p>Assim como no NCM o contador do usuário possui esta informação, onde é necessário informar o código, a descrição e quais os NCMs participantes estão subordinados a este CEST.
-    </p>
-    <img src="" alt="">
+    <p>Ainda em Cadastros / Fiscais temos o cadastro do CEST.</p>
+    <img src="" alt="" />
 
-    <p>Na aba do Índice de Valor Agregado (IVA) carregar os estados, e de acordo com o estado informar o % do IVA, e caso haja alguma redução informar.
+    <p>
+      Assim como no NCM o contador do usuário possui esta informação, onde é
+      necessário informar o código, a descrição e quais os NCMs participantes
+      estão subordinados a este CEST.
     </p>
-    <p>Assim como no padrão tributário, em caso de redução na base de calculo, informar o % do restante e não do abatimento.
-    </p>
-    <img src="" alt="">
+    <img src="" alt="" />
 
-    <p>O NCM e CEST são utilizados na aba Estoque dentro do Cadastro de Produtos.
+    <p>
+      Na aba do Índice de Valor Agregado (IVA) carregar os estados, e de acordo
+      com o estado informar o % do IVA, e caso haja alguma redução informar.
     </p>
-    <img src="" alt="">
+    <p>
+      Assim como no padrão tributário, em caso de redução na base de calculo,
+      informar o % do restante e não do abatimento.
+    </p>
+    <img src="" alt="" />
+
+    <p>
+      O NCM e CEST são utilizados na aba Estoque dentro do Cadastro de Produtos.
+    </p>
+    <img src="" alt="" />
 
     <h2>Uso dos Padões Tributários</h2>
-    <p>O sistema segue uma hierarquia de prioridade de informação. No caso da emissão de nota, a prioridade é o cliente/fornecedor, a seguir o produto, o tipo de movimento, depois o NCM e a seguir a cabeça da nota.
+    <p>
+      O sistema segue uma hierarquia de prioridade de informação. No caso da
+      emissão de nota, a prioridade é o cliente/fornecedor, a seguir o produto,
+      o tipo de movimento, depois o NCM e a seguir a cabeça da nota.
     </p>
-    <p>Em cadastro / Clientes na Aba Padrões Tributários pode ser criada a amarração da empresa, a operação com o cliente, e o tipo de padrão tributário padrão.
+    <p>
+      Em cadastro / Clientes na Aba Padrões Tributários pode ser criada a
+      amarração da empresa, a operação com o cliente, e o tipo de padrão
+      tributário padrão.
     </p>
-    <img src="" alt="">
+    <img src="" alt="" />
 
-    <p>Já no cadastro de produto, a mesma amarração pode ser feita na aba Regras Tributarias / Padrões para Faturamento.
+    <p>
+      Já no cadastro de produto, a mesma amarração pode ser feita na aba Regras
+      Tributarias / Padrões para Faturamento.
     </p>
-    <img src="" alt="">
+    <img src="" alt="" />
 
     <h2>Introdução a Regra Tributaria</h2>
-    <p>Em cadastros / Fiscais / Regras tributarias pode ser criado uma regra ou padrão de tributação de acordo com o tipo de produto e operação para ser utilizada no cliente, produto ou NCM.
+    <p>
+      Em cadastros / Fiscais / Regras tributarias pode ser criado uma regra ou
+      padrão de tributação de acordo com o tipo de produto e operação para ser
+      utilizada no cliente, produto ou NCM.
     </p>
-    <img src="" alt="">
-    <br>
-    <img src="" alt="">
+    <img src="" alt="" />
+    <br />
+    <img src="" alt="" />
 
-    <p>É Informado o código, nome da regra, restrições ao tipo de pessoa, ramo de atividade, tipo de contribuinte e regime de tributação.
+    <p>
+      É Informado o código, nome da regra, restrições ao tipo de pessoa, ramo de
+      atividade, tipo de contribuinte e regime de tributação.
     </p>
-    <img src="" alt="">
+    <img src="" alt="" />
 
-    <p>A seguir Qual a empresa receberá esta regra (caso haja mais de uma empresa que utilizar regras tributarias,  precisam ser adicionadas as informações das regras para todas as empresas). 
+    <p>
+      A seguir Qual a empresa receberá esta regra (caso haja mais de uma empresa
+      que utilizar regras tributarias, precisam ser adicionadas as informações
+      das regras para todas as empresas).
     </p>
-    <img src="" alt="">
+    <img src="" alt="" />
   </main>
 </Layout>
 
-<style>
-  main {
-    padding: 0px 50px 50px 100px;
-  }
-  p {
-    font-size: 14px;
-  }
-
-  h1 {
-    font-weight: 1000;
-    font-size: 45px;
-  }
-
-  h2 {
-    font-size: 30px;
-  }
-
-  img {
-    margin-bottom: 15px;
-  }
-</style>
+<style></style>
