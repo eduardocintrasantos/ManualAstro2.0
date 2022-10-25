@@ -18,27 +18,59 @@ import Cabecalho from "../components/logo/cabecalho.astro";
     <title>{title}</title>
   </head>
   <body>
-    <Cabecalho />
-    <main>
-      <Menu />
-      <slot />
-    </main>
+    <nav class="nav-list">
+      <Cabecalho />
+    </nav>
+    <div class="main-grid">
+      <aside>
+        <Menu />
+      </aside>
+      <main>
+        <slot />
+      </main>
+    </div>
 
     <style>
-      body {
-        margin: 0;
+      * {
         padding: 0;
+        margin: 0;
+      }
+      nav {
+        display: flex;
+        position: fixed;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+        height: 5rem;
+        top: 0;
+        left: 0;
+        z-index: 1;
+      }
+      body {
         background-color: rgb(245, 251, 255);
         overflow-x: hidden;
-        /*overflow-y: hidden*/
+        /*overflow-y: hidden;*/
         height: 100vh;
         scrollbar-width: thin;
         font-family: "DM Sans", sans-serif;
       }
-      main {
-        display: flex;
+      aside {
+        flex-basis: 200px;
+        position: sticky;
+        top: 7rem;
+        height: calc(100vh - 7rem);
       }
-      body::-webkit-scrollbar {
+      main {
+        flex: 1;
+        position: sticky;
+        top: 7rem;
+      }
+      .main-grid {
+        display: flex;
+        justify-content: flex-start;
+        padding: 0 2rem;
+      }
+      /*body::-webkit-scrollbar {
         width: 8px;
       }
       body::-webkit-scrollbar-thumb {
@@ -48,7 +80,7 @@ import Cabecalho from "../components/logo/cabecalho.astro";
       }
       menu {
         position: fixed;
-      }
+      }*/
     </style>
   </body>
 </html>
