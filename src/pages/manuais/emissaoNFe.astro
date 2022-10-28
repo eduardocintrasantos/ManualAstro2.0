@@ -49,48 +49,249 @@ import img43 from "../../imagens/emissaoNFe/img43.png";
 
 <Layout title="Emissão de NFe">
   <main>
+    <h1>Manual para emissão de nota fiscal eletrônica</h1>
+    <p>
+      A emissão de nota fiscal pode ser realizada através do pedido ou do menu
+      NF-e.
+    </p>
+    <p>
+      Acessando m menu Ferramentas dentro do pedido a opção Gerar NF-e concede
+      acesso a seguinte tela:
+    </p>
     <img src={img1} alt="" />
+    <p>
+      Onde é possível escolher qual produto e quantidade será emitida a nota
+      fiscal.
+    </p>
     <img src={img2} alt="" />
+
+    <p>
+      *Nota: somente é permitido gerar a NFE por esta tela se o produto ainda
+      tiver saldo fiscal disponível no pedido. O NCM também deve estar
+      preenchido para avançar a emissão da Nota a partir desta tela.
+    </p>
+    <p>
+      Utilizando o recurso Gerar NFe espelho Pedido, não existe possibilidade de
+      escolha de item ou quantidade de item.
+    </p>
     <img src={img3} alt="" />
+    <p>
+      E a única mensagem que aparecerá na tela é a confirmação de emissão da
+      Nota.
+    </p>
     <img src={img4} alt="" />
+    <p>
+      Caso o Parâmetro de Não Permitir Faturamentos Parciais estiver ativado,
+      apenas o recurso de Gerar NF-e espelho, estará disponível no pedido.
+    </p>
     <img src={img5} alt="" />
+    <p>A Nota fiscal também pode ser emitida pelo menu NF-e:</p>
     <img src={img6} alt="" />
+    <p>Através do botão Ferramentas / Gerar NF-e por Pedido:</p>
     <img src={img7} alt="" />
+    <p>
+      Esta tela se assemelha a do pedido, onde é possível escolher o item e a
+      quantidade, e possui as mesmas validações de saldo e NCM.
+    </p>
+    <p>
+      Sendo possível filtrar os pedidos por período, cliente, tipo de movimento
+      e numero de pedidos.
+    </p>
     <img src={img8} alt="" />
+    <p>
+      Sendo possível filtrar os pedidos por período, cliente, tipo de movimento
+      e numero de pedidos.
+    </p>
+    <p>
+      E nesta tela também caso o Parâmetro de Não Permitir Faturamentos Parciais
+      estiver ativado, será disponibilizado apenas o pedido, não sendo permitido
+      escolher itens ou quantidades dos pedidos.
+    </p>
     <img src={img9} alt="" />
+    <p>Já na emissão de nota fiscal avulsa...</p>
     <img src={img10} alt="" />
+    <p>
+      Ao clicar em novo, os Tipos de Movimentos disponíveis serão mostrados para
+      escolha do “motivo” da emissão da NF-e
+    </p>
     <img src={img11} alt="" />
+    <p>
+      Dependendo da situação de emissão da nota alguns campos se tornarão
+      necessários para que não ocorra rejeição da nota por parte da sefaz.
+    </p>
     <img src={img12} alt="" />
+    <p>
+      Após escolher o Tipo de Movimento, informar o destinatário (cliente ou
+      fornecedor).
+    </p>
+    <p>
+      O campo base de calculo será utilizado caso o movimento de nota gere
+      financeiro.
+    </p>
+    <p>
+      Na aba Transportes informar se necessário a transportadora,
+      responsabilidade do frete, volumes, espécies dos volumes, peso liquido e
+      bruto, locais de redespacho, retirada e embarques para exportação.
+    </p>
     <img src={img13} alt="" />
+    <p>
+      *Caso o tipo de movimento esteja para calcular o peso automático, e o peso
+      bruto e liquido estiverem preenchidos em todos os itens do pedido, o peso
+      será calculado automaticamente.
+    </p>
+    <p>
+      Na aba financeiro informar se necessário o prazo de pagamento e a espécie
+      de documento.
+    </p>
     <img src={img14} alt="" />
+    <p>Na aba itens são realizadas as inclusões dos itens da nota.</p>
     <img src={img15} alt="" />
+    <p>
+      No primeiro bloco da emissão do pedido informa-se o produto, pode ser
+      informado a embalagem ou para o caso de indústria, carrega da engenharia
+      ou ficha.
+    </p>
+    <p>A unidade comercial, o NCM e o CEST carregam do cadastro do produto.</p>
+    <p>Informar a quantidade, o valor de tabela vem do produto ou defaults.</p>
     <img src={img16} alt="" />
+    <p>
+      O segundo bloco refere-se a unidade tributável, quantidade e Vr. unitário
+      (para notas de exportação).
+    </p>
+    <p>
+      A seguir o campo de observações do item, e um parâmetro para não
+      considerar o item no financeiro.
+    </p>
+    <p>
+      E a direita os cálculos de peso liquido e bruto do item (caso informados
+      no pedido e o tipo de movimento estiver habilitado calculo automático do
+      peso). E os cálculos dos rateios de descontos e acréscimos.
+    </p>
     <img src={img17} alt="" />
+    <p>
+      E a direita os cálculos de peso liquido e bruto do item (caso informados
+      no pedido e o tipo de movimento estiver habilitado calculo automático do
+      peso). E os cálculos dos rateios de descontos e acréscimos.
+    </p>
     <img src={img18} alt="" />
+    <p>
+      O campo Replicado ficará marcado quando na aba dados é forçado o uso do
+      padrão tributário para todos os itens.
+    </p>
     <img src={img19} alt="" />
+    <p>
+      Caso o padrão tributário for alterado na aba tributação necessita ser
+      marcado o comando para forçar os padrões do CFOP.
+    </p>
+    <img src={img20} alt="" />
+    <p>E a Origem registra o local de origem do padrão tributário.</p>
     <img src={img21} alt="" />
+    <p>
+      Na aba ICMS são preenchidos os cálculos de acordo com o parametrizado no
+      padrão tributário.
+    </p>
+    <p>
+      Para informar os tributos manualmente o flag ‘Grupo Editado’ deve estar
+      preenchido.
+    </p>
     <img src={img22} alt="" />
+    <p>
+      Aba contendo os tributos da Substituição tributaria, recolhimentos de ST
+      para o destino, e ICMS retidos anteriormente.
+    </p>
     <img src={img23} alt="" />
-    <img src={img2} alt="" />
+    <p>
+      Em operações interestaduais que as alíquotas são diferentes, nesta aba
+      pode ser informado o % da alíquota interna, o valor do Diferencial de
+      Alíquota (DIFAL), o % e valor final do repasse.
+    </p>
     <img src={img24} alt="" />
+    <p>
+      Aba destinada a informações dos tributos referente ao Fundo de Combate a
+      Pobreza (FCP).
+    </p>
     <img src={img25} alt="" />
+    <p>
+      E a ultima aba do ICMS contempla informações do ICMS Efetivo. Informar o
+      ICMS efetivo de uma operação serve para apurar a necessidade de
+      complemento ou ressarcimento de valores para os contribuintes no momento
+      da venda ao consumidor final.
+    </p>
     <img src={img26} alt="" />
+    <p>
+      Abas do IPI/PIS/COFINS destinada a descontração dos tributos de Imposto de
+      Produto Industrializado (IPI), Contribuição para o Financiamento da
+      Seguridade Social (COFINS) e Programa de Integração Social (PIS).
+    </p>
     <img src={img27} alt="" />
+    <p>
+      Aba Importação destinada ao preenchimento de valores de Imposto de
+      Importação, adições e descontos na Declaração de Importação ou número de
+      concessão de Drawback (restituição ao exportador dos impostos
+      alfandegários cobrados pela importação da matéria-prima utilizada na
+      fabricação do produto exportado).
+    </p>
     <img src={img28} alt="" />
+    <p>Aba destinada a informações para exportação.</p>
     <img src={img29} alt="" />
+    <p>
+      Seguindo as abas da NF-e as parcelas serão demonstradas apenas após a
+      primeira vez que o lançamento é salvo.
+    </p>
     <img src={img30} alt="" />
+    <p>
+      Na aba ferramentas/Alterar títulos gerados, é possível alterar as datas de
+      vencimentos e os valores das parcelas.
+    </p>
     <img src={img31} alt="" />
+    <p>
+      Alterando o valor a primeira parcela, o sistema ira automaticamente
+      recalcular as parcelas seguintes.
+    </p>
     <img src={img32} alt="" />
+    <p>
+      Para notas fiscais de Devolução de Compras e de Vendas, existe a
+      obrigatoriedade de ser informada (referenciada) a chave da nota fiscal de
+      origem.
+    </p>
     <img src={img33} alt="" />
+    <p>
+      A aba Importação é destinada as informações da documentação da Proforma,
+      local e data de chegada do produto (porto, aeroporto), tipo de transporte,
+      dados cadastrais do adquirente, e numero do Drawback.
+    </p>
     <img src={img34} alt="" />
+    <p>
+      As informações adicionais podem ser descritas manualmente, abaixo
+      informações do rotulo.
+    </p>
     <img src={img35} alt="" />
+    <p>
+      Ou ser escolhida através das mensagens fiscais cadastradas anteriormente.
+    </p>
     <img src={img36} alt="" />
+    <p>E demonstrativo se a nota foi gerada através de um pedido.</p>
     <img src={img37} alt="" />
+    <p>E demonstrativo se a nota foi gerada através de um pedido.</p>
     <img src={img38} alt="" />
+    <p>
+      Na aba Log de Rejeições é onde pode ser verificado o motivo da nota não
+      ter sido autorizada pela SEFAZ.
+    </p>
     <img src={img39} alt="" />
+    <p>
+      Ao finalizar a nota acesse o menu ferramentas/Efetivar Nota Fiscal para
+      finalizar o lançamento e o sistema Gerar o sequencial do número.
+    </p>
     <img src={img40} alt="" />
     <img src={img41} alt="" />
+    <p>A seguir acesse o menu novamente e clique em Transmitir.</p>
     <img src={img42} alt="" />
+    <p>
+      Se o tipo de movimento estiver parametrizado apenas para apenas consultar,
+      será necessário acessar o Menu ferramentas mais uma vez e clicar em
+      Consultar NF-e.
+    </p>
     <img src={img43} alt="" />
   </main>
 </Layout>
