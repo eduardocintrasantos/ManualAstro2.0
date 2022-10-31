@@ -1,0 +1,59 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import "./style.css";
+
+import img1 from "../../imagens/cliente/clientes.png";
+import img2 from "../../imagens/cliente/criar.png";
+import img3 from "../../imagens/cliente/dados.png";
+import img4 from "../../imagens/cliente/dadosContato.png";
+import img5 from "../../imagens/cliente/dadosFiscais.png";
+import img6 from "../../imagens/cliente/dadosJuridica.png";
+import img7 from "../../imagens/cliente/endereco.png";
+import img8 from "../../imagens/cliente/salvar.png";
+---
+
+<Layout title="Cadastro de Cliente.">
+  <main>
+    <h1>Cadastro de Cliente</h1>
+
+    <p>Acesse o menu Clientes</p>
+    <img src={img1} alt="" />
+
+    <p>Clique no + para adicionar um novo cliente</p>
+    <img src={img2} alt="" />
+
+    <p>Informe se o cliente é pessoa fisica ou juridicas.</p>
+    <img src={img3} alt="" />
+
+    <p>
+      Sendo Pessoa Física informar Nome, Nome Fantasia, CPF, e na Aba Dados
+      Fiscais o Ramo de Atividade como consumidor final e Tipo de Contribuinte
+      como NÃO Contribuinte.
+    </p>
+    <img src={img4} alt="" />
+
+    <p>
+      Clientes que são empresas (Pessoa Jurídica) informar CNPJ, Inscrição
+      Estadual, o Ramo de Atividade e Tipo de Contribuinte como Contribuinte de
+      ICMS (caso a empresa tenha inscrição estadual)
+    </p>
+    <img src={img5} alt="" />
+
+    <p>
+      Na sub aba dados de contato informar Telefone, celular e caso deseje que
+      seu cliente receba uma via da NFe e XML por e-mail preencher o campo
+      E-mail Fiscal com o e-mail do seu cliente.
+    </p>
+    <img src={img6} alt="" />
+
+    <p>
+      Em Endereço Principal, informar o CEP e clique em Correios para buscar o
+      endereço, complementar com o numero do local e se há algum complemento
+      (sala, quadra, apto).
+    </p>
+    <img src={img7} alt="" />
+
+    <p>Após finalizar as informações, clique em salvar</p>
+    <img src={img8} alt="" />
+  </main>
+</Layout>

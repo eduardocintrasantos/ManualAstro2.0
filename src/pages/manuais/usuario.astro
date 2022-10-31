@@ -1,0 +1,99 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import "./style.css";
+
+import img9 from "../../imagens/funcionarioUsuario/img9.png";
+import img10 from "../../imagens/funcionarioUsuario/img10.png";
+import img11 from "../../imagens/funcionarioUsuario/img11.png";
+import img12 from "../../imagens/funcionarioUsuario/img12.png";
+import img13 from "../../imagens/funcionarioUsuario/img13.png";
+import img14 from "../../imagens/funcionarioUsuario/img14.png";
+import img15 from "../../imagens/funcionarioUsuario/img15.png";
+import img16 from "../../imagens/funcionarioUsuario/img16.png";
+import img17 from "../../imagens/funcionarioUsuario/img17.png";
+---
+
+<Layout title="Cadastro de Funcionario e Usuario">
+  <main>
+    <h1>Cadastro de Usuario</h1>
+
+    <p>
+      Para o cadastro de Usuario, antes é necessário já ter o cadastro de
+      Funcionário referente a esse usuario.
+    </p>
+    <p>
+      Link para o cadastro de funcionario <a
+        href="/manuais/funcionario"
+        target="_blank">Clique aqui.</a
+      >
+    </p>
+
+    <p>Acesse o menu Usuario.</p>
+    <img src={img9} alt="" />
+
+    <p>
+      Na aba de dados do usuario é importante preencher alguns dados, os campos
+      preenchidos são obrigatórios.
+    </p>
+    <img src={img10} alt="" />
+
+    <p>
+      No campo funcionário é necessário informar o funcionário cadastrado
+      anteriormente para esse usuario, clicando nos três pontos '...'.
+    </p>
+    <p>Usuarios com funcionario vinculado, tem acesso ao caixa.</p>
+    <img src={img11} alt="" />
+
+    <p>
+      Em seguida é necessário informar o Login que será usado para entrar no
+      sistema, e depois clicar na chave, que solicitará a senha do usuario duas
+      vezes.
+    </p>
+    <p>
+      A opção "Força Alterar Senha Próximo Login" é utilizado para quando o
+      usuario fazer o primeiro login no sistema, ele solicitar uma nova senha.
+    </p>
+    <img src={img12} alt="" />
+
+    <p>
+      Na aba Empresa de Acesso, é necessário clicar na empresa que o usuario vai
+      ter acesso, e clicar na seta azul.
+    </p>
+    <p>
+      Assim que fizer esses passos, a empresa irá passar para o campo de baixo.
+    </p>
+    <img src={img13} alt="" />
+
+    <p>
+      Na aba Permissões de Acesso, primeiramente é necessário clicar em Carregar
+      os Menus.
+    </p>
+    <p>
+      Todas as opções do sistema serão mostradas, e basta selecionar as opções
+      que esse usuario terá acesso.
+    </p>
+    <p>
+      Assim como se terá permissão para apenas Acessar ou Incluir, Alterar,
+      Excluir.. Ou todas as opções.
+    </p>
+    <img src={img14} alt="" />
+
+    <p>
+      Existe também a possibilidade de copiar as permissões de um outro cadastro
+      que já exista.
+    </p>
+    <p>Basta clicar em Copiar Permissões.</p>
+    <img src={img15} alt="" />
+
+    <p>Confime que deseja Copiar Permissões de Outro Usuario.</p>
+    <img src={img16} alt="" />
+
+    <p>
+      Em seguida clique no usuario que deseja copiar as permissões, e clique em
+      Transportar.
+    </p>
+    <img src={img17} alt="" />
+
+    <p>Após esses passos, basta clicar em Salvar.</p>
+  </main>
+</Layout>

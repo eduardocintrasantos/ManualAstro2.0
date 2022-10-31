@@ -1,0 +1,70 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import "./style.css";
+
+import img1 from "../../imagens/funcionarioUsuario/img1.png";
+import img2 from "../../imagens/funcionarioUsuario/img2.png";
+import img3 from "../../imagens/funcionarioUsuario/img3.png";
+import img4 from "../../imagens/funcionarioUsuario/img4.png";
+import img5 from "../../imagens/funcionarioUsuario/img5.png";
+import img6 from "../../imagens/funcionarioUsuario/img6.png";
+import img7 from "../../imagens/funcionarioUsuario/img7.png";
+import img8 from "../../imagens/funcionarioUsuario/img8.png";
+---
+
+<Layout title="Cadastro de Funcionario e Usuario">
+  <main>
+    <h1>Cadastro de Funcionario</h1>
+
+    <p>Acesse o menu Funcionario.</p>
+    <img src={img1} alt="" class="tamanho100" />
+
+    <p>
+      Em seguida na tela de Funcionarios, clique no + para abrir o cadastro
+      cadastro.
+    </p>
+    <img src={img2} alt="" class="tamanho600" />
+
+    <p>Nessa primeira aba são os dados iniciar so funcionário.</p>
+    <p>
+      Apenas o nome é obrigatório, mas é interessantes preencher todos os
+      campos, para ter a informação se for necessário.
+    </p>
+    <img src={img3} alt="" />
+
+    <p>Na aba Dados Pessoais, nenhum campo é obrigatório.</p>
+    <p>Mas é importate ter essas informações sobre o funcionário.</p>
+    <img src={img4} alt="" />
+
+    <p>
+      Os campos na taba Dados Trabalho também não são obrigatórios, são apenas
+      para controle.
+    </p>
+    <img src={img5} alt="" />
+
+    <p>
+      A aba Parâmetro de Comissões é importante para quem trabalham com comissão
+      por venda.
+    </p>
+    <p>
+      Importante marcar a opção "Comissionado" a data de inicio da comissão, e
+      se o calculo será fixo ou por produto.
+    </p>
+    <p>Comissão fixa, basta colocar o percentual no campo "% Comissão Fixo"</p>
+    <img src={img6} alt="" />
+
+    <p>
+      Para comissão por produto, é importante colocar o percentual no mesmo
+      campo referente ao que for indicado no cadastro do produto.
+    </p>
+
+    <p>
+      Exemplo: se o produto tiver o perfil de comissão A, no caso desse
+      funcionário ele terá 2% de comissão.
+    </p>
+    <p>
+      Caso o produto tenha o perfil de comissão B, o funcionário receberá 4% de
+      comissão.. De acordo com o cadastro do produto e do Funcionário.
+    </p>
+  </main>
+</Layout>
