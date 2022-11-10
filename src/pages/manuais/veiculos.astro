@@ -1,0 +1,61 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import "./style.css";
+
+import img1 from "../../imagens/veiculos/img1.png";
+import img2 from "../../imagens/veiculos/img2.png";
+import img3 from "../../imagens/veiculos/img3.png";
+import img4 from "../../imagens/veiculos/img4.png";
+import img5 from "../../imagens/veiculos/img5.png";
+import img6 from "../../imagens/veiculos/img6.png";
+import img7 from "../../imagens/veiculos/img7.png";
+---
+
+<Layout title="Cadastro de Veiculos">
+  <main>
+    <h1>CADASTRO DE VEICULOS</h1>
+
+    <p>Acessar Cadastros/Auxiliares /Montadora de Veículos:</p>
+    <img src={img1} alt="" />
+    <p>
+      Este registro está disponível no versionamento de comércio, e é utilizado
+      para vincular um veiculo a um cliente associando a Marca, Modelo, Placa e
+      Cliente para ser utilizado no Pedido mod. II ou Ordem de Serviço.
+    </p>
+    <p>
+      Tal recurso visa rastreabilidade nas vendas ou atendimentos do(s)
+      veiculo(s) de um cliente.
+    </p>
+
+    <img src={img2} alt="" />
+    <img src={img3} alt="" />
+    <p>Bloqueia o uso do Registro no Pedido ou Ordem de Serviço..</p>
+
+    <img src={img4} alt="" />
+    <p>
+      Informar o nome do cliente, a placa do veiculo, o RENAVAM e Frota se
+      necessário a identificação.
+    </p>
+
+    <img src={img5} alt="" />
+    <p>
+      Informar o cliente responsável pelo veiculo, que previamente necessita
+      estar cadastrado.
+    </p>
+    <b>Para acessar o manual de cadastro de cliente, clique aqui:</b>
+
+    <img src={img6} alt="" />
+    <p>
+      Informar marca, modelo e cor do veículo, que previamente necessitam estar
+      cadastrados.
+    </p>
+    <b>Para acessar o manual de cadastro de Montadora e Modelo, clique aqui:</b>
+    <b>Para acessar o manual de cadastro de Cores, clique aqui:</b>
+
+    <img src={img7} alt="" />
+    <p>
+      Dados Adicionais contem os campos Inclusão e Última alteração, onde audita
+      o usuário que criou e/ou alterou o registro.
+    </p>
+  </main>
+</Layout>

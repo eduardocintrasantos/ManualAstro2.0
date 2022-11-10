@@ -1,0 +1,44 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import "./style.css";
+
+import img1 from "../../imagens/montadoraVeiculos/img1.png";
+import img2 from "../../imagens/montadoraVeiculos/img2.png";
+import img3 from "../../imagens/montadoraVeiculos/img3.png";
+import img4 from "../../imagens/montadoraVeiculos/img4.png";
+import img5 from "../../imagens/montadoraVeiculos/img5.png";
+import img6 from "../../imagens/montadoraVeiculos/img6.png";
+---
+
+<Layout title="Cadastro Montadora de Veiculos">
+  <main>
+    <h1>CADASTRO DE MONTADORAS DE VEICULOS</h1>
+
+    <p>Acessar Cadastros/Auxiliares /Montadora de Veículos:</p>
+    <img src={img1} alt="" />
+    <p>
+      Este registro é utilizado no Cadastro de Veículos onde é associado a
+      Marca, Modelo, Placa e Cliente para ser utilizado no Pedido ou Ordem de
+      Serviço.
+    </p>
+
+    <img src={img2} alt="" />
+    <img src={img3} alt="" />
+    <p>Bloqueia o uso do Registro na tela do cadastro de Veículo.</p>
+
+    <img src={img4} alt="" />
+    <p>Informar o nome da montadora, por exemplo, Honda, FIAT.</p>
+
+    <img src={img5} alt="" />
+    <p>
+      Na aba modelos clicar em novo e informar os modelos fabricados pela
+      montadora, por exemplo, Fan150, Titan125, Pálio, Gol.
+    </p>
+
+    <img src={img6} alt="" />
+    <p>
+      Na aba Dados Adicionais contem os campos Inclusão e Última alteração, onde
+      audita o usuário que criou e/ou alterou o registro.
+    </p>
+  </main>
+</Layout>

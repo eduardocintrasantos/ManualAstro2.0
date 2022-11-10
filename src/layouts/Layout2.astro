@@ -1,0 +1,103 @@
+---
+export interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+import Menu from "../components/Menu/menu.astro";
+import Cabecalho from "../components/logo/cabecalho.astro";
+---
+
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body>
+    <nav class="nav-list">
+      <Cabecalho />
+    </nav>
+    <div class="main-grid">
+      <aside>
+        <Menu />
+      </aside>
+      <main>
+        <slot />
+      </main>
+    </div>
+
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: sticky;
+        padding: 1rem 2rem;
+        height: 5rem;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        /*  display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 1rem 5rem;
+          height: 5rem;
+          border-bottom: 1px solid lightgray;
+          position: sticky;
+          top: 0;
+          left: 0;
+          background-color: #fff;
+          z-index: 1;*/
+      }
+
+      .nav-list {
+        padding: 0px;
+      }
+      body {
+        background-color: rgb(245, 251, 255);
+        overflow-x: hidden;
+        /*overflow-y: hidden;*/
+        height: 100vh;
+        scrollbar-width: thin;
+        font-family: "DM Sans", sans-serif;
+      }
+      aside {
+        flex-basis: 200px;
+        position: sticky;
+        top: 7rem;
+        height: calc(100vh - 7rem);
+      }
+      main {
+        flex: 1;
+        position: sticky;
+        top: 7rem;
+        max-width: 80%;
+        margin-top: 100px;
+      }
+      .main-grid {
+        display: flex;
+        justify-content: flex-start;
+        padding: 0 2rem;
+      }
+      /*body::-webkit-scrollbar {
+        width: 8px;
+      }
+      body::-webkit-scrollbar-thumb {
+        background-color: rgb(195, 195, 195);
+        border-radius: 20px;
+        border: solid rgb(195, 195, 195);
+      }
+      menu {
+        position: fixed;
+      }*/
+    </style>
+  </body>
+</html>
