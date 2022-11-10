@@ -36,124 +36,49 @@ import Cabecalho from "../components/logo/cabecalho.astro";
         margin: 0;
         box-sizing: border-box;
       }
-
-      html {
-        font-size: 100%;
-      } /*16px*/
-
-      body {
-        background: #f2f4f6;
-        font-family: "Montserrat", sans-serif;
-        font-weight: 400;
-        line-height: 1.75;
-        color: #181819;
-      }
-
-      p {
-        margin-bottom: 1rem;
-      }
-
-      h1,
-      h2,
-      h3,
-      h4,
-      h5 {
-        margin: 3rem 0 1.38rem;
-        font-family: "Montserrat", sans-serif;
-        font-weight: 400;
-        line-height: 1.3;
-      }
-
-      h1 {
-        margin-top: 0;
-        font-size: 3.052rem;
-      }
-
-      h2 {
-        font-size: 2.441rem;
-      }
-
-      h3 {
-        font-size: 1.953rem;
-      }
-
-      h4 {
-        font-size: 1.563rem;
-      }
-
-      h5 {
-        font-size: 1.25rem;
-      }
-
-      small,
-      .text_small {
-        font-size: 0.8rem;
-      }
-
-      ul {
-        list-style: none;
-      }
-
-      /* ================================================== */
-      /* navbar */
-      /* ================================================== */
       nav {
         display: flex;
         justify-content: space-between;
-        /*align-items: center;*/
-        padding: 1rem 5rem;
+        align-items: center;
+        position:fixed;
+        padding: 1rem 2rem;
         height: 5rem;
-        border-bottom: 1px solid lightgray;
-        position: sticky;
         top: 0;
         left: 0;
-        background-color: #fff;
         z-index: 1;
       }
 
       .nav-list {
-        list-style: none;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        gap: 2rem;
+        padding: 0px;
       }
-
-      /* ================================================== */
-      /* main-grid */
-      /* ================================================== */
-      .main-grid {
-        display: flex;
-        justify-content: flex-start;
-        gap: 1rem;
-        padding: 0 5rem;
+      body {
+        background-color: rgb(245, 251, 255);
+        overflow-x: hidden;
+        /*overflow-y: hidden;*/
+        height: 100vh;
+        scrollbar-width: thin;
+        font-family: "DM Sans", sans-serif;
       }
-
       aside {
         flex-basis: 200px;
-        border-right: 1px solid lightgray;
         position: sticky;
         top: 7rem;
         height: calc(100vh - 7rem);
+        overflow-y: scroll;
       }
-
       main {
         flex: 1;
         position: sticky;
         top: 7rem;
+        max-width: 80%;
+        margin-top: 100px;
       }
-
-      .right-content {
-        flex-basis: 400px;
-        border-left: 1px solid lightgray;
-        position: sticky;
-        top: 7rem;
-        height: calc(100vh - 7rem);
-        padding-left: 1rem;
-        overflow-y: scroll;
+      .main-grid {
+        display: flex;
+        justify-content: flex-start;
+        padding: 0 2rem;
       }
-
-      .right-content::-webkit-scrollbar {
+      aside::-webkit-scrollbar { 
         display: none;
       }
     </style>
