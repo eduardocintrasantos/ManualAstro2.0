@@ -1,0 +1,139 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import "./style.css";
+
+import img1 from "../../imagens/prdComercioGeral/img1.png";
+import img2 from "../../imagens/prdComercioGeral/img2.png";
+import img3 from "../../imagens/prdComercioGeral/img3.png";
+import img4 from "../../imagens/prdComercioGeral/img4.png";
+import img5 from "../../imagens/prdComercioGeral/img5.png";
+import img6 from "../../imagens/prdComercioGeral/img6.png";
+import img7 from "../../imagens/prdComercioGeral/img7.png";
+import img8 from "../../imagens/prdComercioGeral/img8.png";
+import img9 from "../../imagens/prdComercioGeral/img9.png";
+import img10 from "../../imagens/prdComercioGeral/img10.png";
+import img11 from "../../imagens/prdComercioGeral/img11.png";
+import img12 from "../../imagens/prdComercioGeral/img12.png";
+import img13 from "../../imagens/prdComercioGeral/img13.png";
+import img14 from "../../imagens/prdComercioGeral/img14.png";
+import img15 from "../../imagens/prdComercioGeral/img15.png";
+import img16 from "../../imagens/prdComercioGeral/img16.png";
+import img17 from "../../imagens/prdComercioGeral/img17.png";
+import img18 from "../../imagens/prdComercioGeral/img18.png";
+---
+
+<Layout title="Cadastro Produtos Comercio Geral">
+  <main>
+    <h1>CADASTRO DE PRODUTO SEGUIMENTO COMÉRCIO EM GERAL</h1>
+
+    <p>Acesse o Menu Cadastros / Produtos</p>
+    <img src={img1} alt="" />
+    <br />
+    <p>Clique no + para iniciar um novo cadastro.</p>
+    <img src={img2} alt="" />
+
+    <h2>Aba Dados</h2>
+    <p>
+      Informar a Descrição do produto (Tipo, Marca, variação e pesagem),
+      Descrição Reduzida caso necessário.
+    </p>
+    <p>Informar o código de Barras do produto.</p>
+    <p>
+      Informar o Grupo do produto. Sub Grupo e Sub Subgrupo são opcionais, assim
+      como A Localização.
+    </p>
+    <p>Informar a moeda de comercialização “Reais”.</p>
+    <p>Tipo de Produto será “Mercadoria para Revenda”.</p>
+    <p>Origem do produto será “Nacional”.</p>
+    <img src={img3} alt="" />
+
+    <h2>Aba Preços</h2>
+    <p>
+      Informar o preço de custo/compra do produto. Após entrada da Nota esta
+      informação será automática.
+    </p>
+    <p>
+      Existem as 4 formas de calculo de Preço de Venda “Não Aplica”,
+      “Multiplica”, “Multiplica+Soma”, e “Divide”.
+    </p>
+    <img src={img4} alt="" />
+
+    <h4>Não Aplica</h4>
+    <p>
+      Não é realizado calculo, usuário escolhe o valor desejado para Preço de
+      Venda do produto e o sistema mostra a margem.
+    </p>
+    <img src={img5} alt="" />
+
+    <h4>Multiplica</h4>
+    <p>
+      Deve ser informado conforme campo destacado abaixo, a quantidade de vezes
+      que o Preço de Custo será multiplicada. Ex. R$2,00 x 2 = <b>R$4,00</b>
+    </p>
+    <img src={img6} alt="" />
+    <img src={img7} alt="" />
+
+    <h4>Multiplica + Soma</h4>
+    <p>
+      Deve ser informado conforme campo destacado abaixo, o percentual que será
+      feito o calculo, e o resultado será somado ao Preço de Custo e calculando
+      assim o Preço de venda. Ex. R$2,00 x 20% = 0,40 + R$2,00 = <b>R$2,40</b>
+    </p>
+    <img src={img8} alt="" />
+    <img src={img9} alt="" />
+
+    <h4>Divide</h4>
+    <p>
+      Deve ser informado conforme campo destacado abaixo, o percentual de margem
+      de lucro que será aplicado sobre o Preço de Custo e calculando assim o
+      Preço de venda. Ex. R$2,00 / 40% = <b>R$3,33</b>.
+    </p>
+    <img src={img10} alt="" />
+    <img src={img11} alt="" />
+
+    <h4>Campanha Promocional</h4>
+    <p><b>Exclusivo para venda no Checkout.</b></p>
+    <p>
+      Deve ser informado um segundo Preço de Venda do produto, depois escolhido
+      a forma de campanha, qual preço utilizar e o período de validade da
+      campanha.
+    </p>
+    <img src={img12} alt="" />
+
+    <h4>Venda em unidade</h4>
+    <p>A unidade do produto será vendida no preço 2 no período estipulado.</p>
+    <img src={img13} alt="" />
+
+    <h4>Venda em Múltiplos</h4>
+    <p>
+      Deve ser informado a quantidade, por exemplo a cada 4 o produto será
+      vendido no preço 2, comprando 3 ou as quantidades 5,6 e 7 não serão
+      comercializadas com desconto.
+    </p>
+    <img src={img14} alt="" />
+
+    <h4>Venda Acima de</h4>
+    <p>
+      Deve ser informado a quantidade, por exemplo acima de 3 unidades, ou seja
+      comprando 4 o produto será vendido no preço 2, comprando 3 unidades ou
+      menos, não será aplicado desconto.
+    </p>
+    <img src={img15} alt="" />
+
+    <h2>Aba Estoque</h2>
+    <p>Deve ser informada a unidade de venda e unidade de compra do produto.</p>
+    <p>Informar também o NCM que será utilizado nas notas fiscais de saídas.</p>
+    <img src={img16} alt="" />
+
+    <h2>Aba Class. Fornecedor</h2>
+    <p>Utilizado para entrada de nota fiscal por xml.</p>
+    <p>Informar Fornecedor do produto (deve estar cadasatrado)</p>
+    <img src={img17} alt="" />
+
+    <h4>Fator de Conversao</h4>
+    <p>
+      Informar quantas unidades do produto contém em uma caixa, pacote ou fardo.
+    </p>
+    <img src={img18} alt="" />
+  </main>
+</Layout>
