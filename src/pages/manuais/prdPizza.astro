@@ -1,0 +1,28 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import "./style.css";
+
+import img1 from "../../imagens/prdPizza/img1.png";
+---
+
+<Layout title="Cadastro Pizzas">
+    <main>
+        <h1>CADASTRO DE PRODUTO SEGUIMENTO PIZZARIA</h1>
+
+        <p>Para acessar manual completo de cadastro de produtos, 
+            <b><a href="/manuais/prdComercioGeral" 
+            target="_blank">
+            clique aqui!</a></b>
+        </p>
+
+        <p>O <a href="/manuais/subSubGrupo"
+            target="_blank">
+            Sub-subgrupo</a> 
+        no caso de Pizzas torna-se obrigatório a utilização. (*Para informações importantes sobre o sub-subgrupo vide Cadastro de Sub-Subgrupo*).</p>
+        <h4>Sub Aba Parâmetros</h4>
+        <p>Informar Se a pizza é de 1, 2 ou 4 sabores. É recomendado cadastrar primeiro as pizzas de 1 sabor.</p>
+        <img src={img1} alt="">
+    
+    
+    </main>
+</Layout>

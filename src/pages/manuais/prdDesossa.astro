@@ -1,0 +1,40 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import "./style.css";
+
+import img1 from "../../imagens/prdDesossa/img1 copy.png";
+import img2 from "../../imagens/prdDesossa/img2.png";
+import img3 from "../../imagens/prdDesossa/img2 copy.png";
+---
+
+<Layout title="Cadastro Prd Desossa">
+    <main>
+        <h1>CADASTRO DE PRODUTO DESOSSA</h1>
+
+        <p>Para acessar manual completo de cadastro de produtos, 
+            <b><a href="/manuais/prdComercioGeral" 
+            target="_blank">
+            clique aqui!</a></b>
+        </p>
+
+        <h4>Parâmetros do Produto</h4>
+        <p>Sendo produto de Desossa marcar o parametro “Controlado Por Desossa”.
+        </p>
+        <img src={img1} alt="">
+
+        <h4>Aba Estoque</h4>
+        <p>Deve ser informada a unidade de venda e de compra do produto (neste caso KG).
+        </p>
+        <img src={img2} alt="">
+
+        <h4>Sub Aba Composição
+        </h4>
+        <p>Nesta aba complemento do Estoque, informar quais peças de carnes fazem parte da Novilha traseira, Dianteira, do Jacaré ou Banda.
+        </p>
+        <p>Neste exemplo temos uma Novilha Dianteria que é composta por Acém, Paleta, Peito e Cupim.
+        </p>
+        <p>Não necessita ser informada a quantidade.
+        </p>
+        <img src={img3} alt="">
+    </main>
+</Layout>

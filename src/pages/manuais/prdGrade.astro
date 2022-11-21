@@ -1,0 +1,52 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import "./style.css";
+
+import img1 from "../../imagens/prdGrade/img1.png";
+import img2 from "../../imagens/prdGrade/img2.png";
+import img3 from "../../imagens/prdGrade/img3.png";
+import img4 from "../../imagens/prdGrade/img4.png";
+import img5 from "../../imagens/prdGrade/img5.png";
+import img6 from "../../imagens/prdGrade/img6.png";
+import img7 from "../../imagens/prdGrade/img7.png";
+---
+
+<Layout title="Cadastro Prd Grade">
+    <main>
+        <h1>CADASTRO DE PRODUTO COM GRADE</h1>
+
+        <p>Para acessar manual completo de cadastro de produtos, 
+            <b><a href="/manuais/prdComercioGeral" 
+            target="_blank">
+            clique aqui!</a></b>
+        </p>
+
+        <h4>Parâmetros do Produto</h4>
+        <p>Sendo produto de Grade, deve ser marcado a opção destacada “Controlada por Grade”.
+        </p>
+        <img src={img1} alt="">
+        <p>Após marcado observe que a Aba Grade Ficará disponível conforme destacado abaixo.
+        </p>
+        <img src={img2} alt="">
+
+        <p>Clique em novo e em seguida Selecionar <b><a href="/manuais/cores" target="_blank">Cores</a></b>.
+        </p>
+        <img src={img3} alt="">
+
+        <p>A seguir escolha as cores.</p>
+        <img src={img4} alt="">
+
+        <p>Em seguida clique em selecionar <b><a href="/manuais/grades" target="_blank">Grades</a></b>.</p>
+        <img src={img5} alt="">
+
+        <p>Nesta tela primeiramente informe se a grade será Infantil, Feminino ou Masculino, e depois os tamanhos da grade.
+        </p>
+        <p>Feche a tela, clique em OK.
+        </p>
+        <img src={img6} alt="">
+
+        <p>As grades serão criadas de acordo com os tamanhos e cores escolhidos, os códigos de barras podem ser gerados pelo sistema, ou alterados para numeração desejada.
+        </p>
+        <img src={img7} alt="">
+    </main>
+</Layout>
