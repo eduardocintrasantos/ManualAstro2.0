@@ -1,0 +1,40 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import "./style.css";
+
+import img1 from "../../imagens/servicos/img1.png";
+import img2 from "../../imagens/servicos/img2.png";
+import img3 from "../../imagens/frete/img1.png";
+import img4 from "../../imagens/frete/img2.png";
+import img5 from "../../imagens/frete/img3.png";
+import img6 from "../../imagens/frete/img4.png";
+import img7 from "../../imagens/frete/img5.png";
+---
+
+<Layout title="Cadastro de Grades">
+    <main>
+        <h1>CADASTRO CLASSIFICAÇÃO DE FRETE</h1>
+
+        <p>Acessar Cadastros/Auxiliares /Classificações / Classificação de Frete</p>
+        <img src={img1} alt="">
+        <img src={img2} alt="">
+        <img src={img3} alt="">
+
+        <p>Este registro é utilizado dentro do pedido Mod. III, tem a finalidade de 
+            informar qual o tipo de frete referente a negociação da venda;</p>
+        <p><b>Para acessar o manual do pedido mod. III <a href="#">clique aqui</a>:</b></p>
+
+        <img src={img4} alt="">
+        <br>
+        <img src={img5} alt="">
+        <p>Bloqueia o uso do Registro na Ordem de Serviço.</p>
+
+        <img src={img6} alt="">
+        <p>Informar o nome da Classificação de Frete. Por exemplo: a pagar, a receber, Frete por conta 
+            própria, despachado por terceiros, frete cortesia.</p>
+
+        <img src={img7} alt="">
+        <p>Dados Adicionais contem os campos Inclusão e Última alteração, onde audita o usuário que criou 
+            e/ou alterou o registro.</p>
+    </main>
+</Layout>
