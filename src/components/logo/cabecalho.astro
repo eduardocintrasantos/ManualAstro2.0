@@ -4,6 +4,8 @@ import img from "../logo/N2Logo_Completo_Blue (1).png";
 
 <div>
   <img src={img} alt="" height="70" width="180" />
+  <input type="checkbox" id="checkbox" class="checkbox"/>
+  <label for="checkbox" class="label-menu">Menu<span class="hamburguer"></span></label>
 </div>
 
 <style>
@@ -24,5 +26,49 @@ import img from "../logo/N2Logo_Completo_Blue (1).png";
       #0085ff,
       rgb(245, 251, 255)
     );
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .label-menu,
+  .checkbox {
+    display: none;
+    margin-right: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    gap: 0.5rem;
+  }
+
+  .hamburguer {
+    border-top: 0.125rem solid;
+    width: 1.25rem;
+  }
+
+  .hamburguer::before,
+  .hamburguer::after {
+    content: " ";
+    display: block;
+    width: 1.25rem;
+    height: 0.125rem;
+    background: currentColor;
+    margin-top: 0.3125rem;
+    
+  }
+
+  @media (max-width: 800px) {
+
+    .label-menu {
+      display:flex;
+    }
+  }
+
+  @media (max-width: 350px) {
+    img {
+      display: none;
+    }
+    div {
+      justify-content: flex-end;
+    }
   }
 </style>
