@@ -1,5 +1,5 @@
 main {
-    padding: 0px 50px 50px 50px;
+    padding-bottom: 30px;
   }
   p {
     font-size: 14px;
@@ -18,4 +18,10 @@ main {
     margin-bottom: 15px;
     max-width:100%;
 	  height:auto;
+  }
+
+  @media (max-width: 500px) {
+    h1 {
+      font-size: 25px;
+    }
   }
