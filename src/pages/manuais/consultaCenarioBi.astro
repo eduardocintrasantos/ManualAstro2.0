@@ -1,0 +1,76 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import "./style.css";
+
+import img1 from "../../imagens/consultaCenarioBi/img1.png";
+import img2 from "../../imagens/consultaCenarioBi/img2.png";
+import img3 from "../../imagens/consultaCenarioBi/img3.png";
+import img4 from "../../imagens/consultaCenarioBi/img4.png";
+import img5 from "../../imagens/consultaCenarioBi/img5.png";
+import img6 from "../../imagens/consultaCenarioBi/img6.png";
+import img7 from "../../imagens/consultaCenarioBi/img7.png";
+import img8 from "../../imagens/consultaCenarioBi/img8.png";
+import img9 from "../../imagens/consultaCenarioBi/img9.png";
+import img10 from "../../imagens/consultaCenarioBi/img10.png";
+---
+
+<Layout title="Consulta Cenario e BI">
+  <main>
+    <h1>Cadastro de Conculsta Cenario e BI</h1>
+
+    <p>Acessar Cadastros/Auxiliares /Cenários/Consulta SQL:</p>
+    <img src={img1} alt="" />
+    <img src={img2} alt="" />
+    <img src={img3} alt="" />
+    <p>
+      Este registro é utilizado para montagem de um cenário (que notifica uma
+      informação de momento), ou um B.I (que é um histórico/relatório de
+      registros).
+    </p>
+
+    <img src={img4} alt="" />
+    <br />
+    <img src={img5} alt="" />
+    <p>Bloqueia o uso do Registro no Cenário.</p>
+
+    <p>
+      Informar o nome do tipo da consulta, por exemplo: Ordens de Serviço em
+      aberto, CRM em Andamento.
+    </p>
+    <img src={img6} alt="" />
+
+    <p>
+      Informar o tipo do Grupo de consulta, equivalente ao departamento ou
+      setor.
+    </p>
+    <p>
+      <b
+        >Para cadastro de Grupos de Consulta <a
+          href="/manuais/grupoCenarioBi"
+          target="_blank">clique aqui</a
+        >.</b
+      >
+    </p>
+    <img src={img7} alt="" />
+
+    <p>
+      Se necessário Informar o Departamento para que seja restringido apenas a
+      usuários do Dpto especificado.
+    </p>
+    <p>
+      <b>
+        Para cadastro de Departamento <a href="" target="_blank">clique aqui</a
+        >.
+      </b>
+    </p>
+    <img src={img8} alt="" />
+
+    <p>Colar a consulta SQL disponibilizada.</p>
+    <img src={img9} alt="" />
+    <img src={img10} alt="" />
+    <p>
+      Dados Adicionais contem os campos Inclusão e Última alteração, onde audita
+      o usuário que criou e/ou alterou o registro.
+    </p>
+  </main>
+</Layout>

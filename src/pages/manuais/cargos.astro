@@ -1,0 +1,50 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import "./style.css";
+
+import img1 from "../../imagens/cargos/img1.png";
+import img2 from "../../imagens/cargos/img2.png";
+import img3 from "../../imagens/cargos/img3.png";
+import img4 from "../../imagens/cargos/img4.png";
+import img5 from "../../imagens/cargos/img5.png";
+import img6 from "../../imagens/cargos/img6.png";
+import img7 from "../../imagens/cargos/img7.png";
+---
+
+<Layout title="Cadastro Controle de Ponto/Jornadas">
+  <main>
+    <h1>Cadastro Controle de Ponto/Jornadas</h1>
+
+    <p>Acessar Cadastros/Auxiliares /Controle de Ponto/Cargos:</p>
+    <img src={img1} alt="" />
+    <img src={img2} alt="" />
+    <img src={img3} alt="" />
+
+    <p>
+      Este registro é a criação de Cargos dos colaboradores da empresa
+      (vendedores, consultores, gerente) que serão utilizados nos cadastros de
+      Funcionários.
+    </p>
+    <p>
+      <b
+        >Para cadastro de Funcionário <a
+          href="/manuais/funcionario"
+          target="_blank">clique aqui</a
+        >.</b
+      >
+    </p>
+    <img src={img4} alt="" />
+    <br />
+    <img src={img5} alt="" />
+    <p>Bloqueia o uso do Registro no Cadastro do Funcionário.</p>
+
+    <p>Informar a descrição do cargo do colaborador/funcoinário.</p>
+    <img src={img6} alt="" />
+
+    <p>
+      Dados Adicionais contem os campos Inclusão e Última alteração, onde audita
+      o usuário que criou e/ou alterou o registro.
+    </p>
+    <img src={img7} alt="" />
+  </main>
+</Layout>

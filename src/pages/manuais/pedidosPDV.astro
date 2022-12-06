@@ -1,0 +1,36 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import "./style.css";
+
+import img1 from "../../imagens/pedidosPDV/img1.png";
+import img2 from "../../imagens/pedidosPDV/img2.png";
+import img3 from "../../imagens/pedidosPDV/img3.png";
+---
+
+<Layout title="Pedidos PDV">
+  <main>
+    <h1>Pedidos PDV</h1>
+
+    <p>Acessar Vendas/Pedido PDV:</p>
+    <img src={img1} alt="" />
+    <p>
+      No Pedido PDV é possivel verificar todas as vendas feitas no CheckOut e
+      algumas alterações.
+    </p>
+
+    <img src={img2} alt="" />
+    <p>
+      Selecionando o pedido, e indor em Ferramentas/Gerar Devolução a partir de
+      Pedidos, é possivel fazer um pedido para casos em que há devolução de um
+      ou mais itens dessa venda.
+    </p>
+
+    <img src={img3} alt="" />
+    <p>
+      Dentro do pedido é possiver ter acesso a informações como: Pedido
+      Efetivado, Valor total do pedido, Acréscimos, Descontos, Cliente,
+      Vendedor, Produtos, Quantidade de cada produto, e todos os valores
+      referentes a esse produto.
+    </p>
+  </main>
+</Layout>
