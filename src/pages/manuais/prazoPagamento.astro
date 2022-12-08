@@ -1,0 +1,41 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import "./style.css";
+
+import img1 from "../../imagens/prazoPagamento/img1.png";
+import img2 from "../../imagens/prazoPagamento/img2.png";
+import img3 from "../../imagens/prazoPagamento/img3.png";
+import img4 from "../../imagens/prazoPagamento/img4.png";
+import img5 from "../../imagens/prazoPagamento/img5.png";
+---
+
+<Layout title="Cadastro Prazo de Pagamento">
+  <main>
+    <h1>Cadastro Prazo de Pagamento</h1>
+
+    <p>Acessar Cadastros /Financeiro /Prazo de Pagamento:</p>
+    <img src={img1} alt="" />
+    <img src={img2} alt="" />
+
+    <p>Clique em novo para iniciar o cadastro de um prazo de pagamento.</p>
+    <img src={img3} alt="" />
+
+    <p>Digite o nome do prazo a ser criado</p>
+    <img src={img4} alt="" />
+
+    <p>
+      À direita informe a quantidade de parcelas (no nosso exemplo serão 4).
+    </p>
+    <p>
+      Logo abaixo informe o intervalo entre uma parcela e outra (neste exemplo
+      será uma parcela a cada 30 dias), mas pode ser de 3 em 3, 7 em 7, ou 15 em
+      15.
+    </p>
+    <p>
+      E por último informe a quantidade de dias inicial da primeira parcela,
+      neste exemplo o primeiro vencimento ocorrerá em 30 dias.
+    </p>
+    <img src={img5} alt="" />
+    <p>Ao Final clique em Salvar.</p>
+  </main>
+</Layout>

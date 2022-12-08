@@ -1,0 +1,54 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import "./style.css";
+
+import img1 from "../../imagens/prazoPagamento/img1.png";
+import img2 from "../../imagens/especieDocumento/img1.png";
+import img3 from "../../imagens/especieDocumento/img2.png";
+import img4 from "../../imagens/especieDocumento/img3.png";
+---
+
+<Layout title="Cadastro Especie Documento">
+  <main>
+    <h1>Cadastro Especie Documento</h1>
+
+    <p>Acessar Cadastros /Financeiro /Especie Documento:</p>
+    <img src={img1} alt="" />
+    <img src={img2} alt="" />
+
+    <p>
+      Clique em novo para iniciar o cadastro de uma nova Espécie de Documento.
+    </p>
+    <img src={img3} alt="" />
+
+    <p>
+      Em seguida no campo <b>Descrição</b> infromar o nome da forma de pagamento.
+    </p>
+    <p>
+      No campo <b>Espécie (Meio Pagto)</b> selectionar a especie referente a descrição
+      da Especie.
+    </p>
+    <img src={img4} alt="" />
+
+    <p>
+      A opção <b>Utiliza Mobile</b> é utilizado quando o cliente tem o modulo mobile
+      e utilizara essa especie de documento no pedido feito pelo celular.
+    </p>
+    <p>
+      A opção <b>Imprime Nota Promissória</b> dá permissão de imprimir a promissória
+      no <a href=""><b>Pedido</b></a>.
+    </p>
+    <p>
+      A opção <b>Adiantamento financeiro</b> é utilizado quando a especie de documento
+      será utilizada para titulos de <a href=""
+        ><b>Adiantamento Financeiro</b>
+      </a>.
+    </p>
+    <p>
+      E a opção <b>Não Permite Impressão Boleto</b> bloqueia a geração de boleto
+      do titulo que utiliza essa especie de documento.
+    </p>
+    <br />
+    <p>Ao Final clique em Salvar.</p>
+  </main>
+</Layout>
