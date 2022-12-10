@@ -1,0 +1,62 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import "./style.css";
+
+import img1 from "../../imagens/operacaoFiscal/img1.png";
+import img2 from "../../imagens/operacaoFiscal/img2.png";
+import img3 from "../../imagens/operacaoFiscal/img3.png";
+import img4 from "../../imagens/operacaoFiscal/img4.png";
+import img5 from "../../imagens/operacaoFiscal/img5.png";
+import img6 from "../../imagens/operacaoFiscal/img6.png";
+import img7 from "../../imagens/operacaoFiscal/img7.png";
+---
+
+<Layout title="Cadastro Operação Fiscal">
+  <main>
+    <h1>Cadastro Operação Fiscal</h1>
+
+    <p>Acessar Cadastros /Fiscais /Operação Fiscal:</p>
+    <img src={img1} alt="" />
+    <img src={img2} alt="" />
+
+    <p>
+      Informar a descrição, a descrição da Natureza que será visualizada na
+      cabeça da nota.
+    </p>
+    <p>
+      Informar o modelo de NF-e (55 ou 65) e a serie (esta informação é
+      levantada junto ao ciente).
+    </p>
+    <p>
+      Para maiores informações sobre a diferença entre NFe mod. 55 e 65 acesse o
+      site:
+    </p>
+    <p>
+      <a
+        href="https://blog.bsoft.com.br/tipos-de-documentos-fiscais-eletronicos"
+        target="_blank"
+        >https://blog.bsoft.com.br/tipos-de-documentos-fiscais-eletronicos</a>
+    </p>
+    <img src={img3} alt="" />
+
+    <p>
+      Marcando o parâmetro Bloqueado, Inativa o uso da Operação Fiscal no Tipo
+      de Movimento.
+    </p>
+    <img src={img4} alt="" />
+
+    <p>
+      Informar a Finalidade da nota (Normal, Complementar, Ajuste ou Devolução).
+    </p>
+    <img src={img5} alt="" />
+
+    <p>Informar o Tipo de operação (se a nota será de entrada ou saída)</p>
+    <img src={img6} alt="" />
+
+    <p>
+      Dados Adicionais contem os campos Inclusão e Última alteração, onde audita
+      o usuário que criou e/ou alterou o registro.
+    </p>
+    <img src={img7} alt="" />
+  </main>
+</Layout>

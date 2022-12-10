@@ -1,0 +1,52 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import "./style.css";
+
+import img1 from "../../imagens/operacaoFiscal/img1.png";
+import img2 from "../../imagens/mensagemFiscal/img1.png";
+import img3 from "../../imagens/mensagemFiscal/img2.png";
+import img4 from "../../imagens/mensagemFiscal/img3.png";
+import img5 from "../../imagens/mensagemFiscal/img4.png";
+import img6 from "../../imagens/mensagemFiscal/img5.png";
+---
+
+<Layout title="Cadastro Mensagem Fiscal">
+  <main>
+    <h1>Cadastro Mensagen Fiscal</h1>
+
+    <p>Acessar Cadastros /Fiscais /Mensagens Fiscais:</p>
+    <img src={img1} alt="" />
+    <img src={img2} alt="" />
+
+    <p>
+      As mensagens Fiscais são utilizadas como informações fixas no Padrão
+      Tributário, ou observações nos dados complementares da Nota Fiscal
+      Eletrônica.
+    </p>
+    <img src={img3} alt="" />
+
+    <p>
+      Marcando o parâmetro Bloqueado, Inativa o uso da Operação Fiscal no Tipo
+      de Movimento.
+    </p>
+    <img src={img4} alt="" />
+
+    <p>
+      Informar a descrição do que será utilizado no Padrão tributário ou nas
+      observações da Nota Fiscal.
+    </p>
+    <img src={img5} alt="" />
+
+    <p>
+      Para cadastro de Padrão Tributário <a href="" target="_blank"
+        >clique aqui</a
+      >.
+    </p>
+
+    <p>
+      Dados Adicionais contem os campos Inclusão e Última alteração, onde audita
+      o usuário que criou e/ou alterou o registro.
+    </p>
+    <img src={img6} alt="" />
+  </main>
+</Layout>
