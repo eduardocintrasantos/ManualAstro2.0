@@ -1,0 +1,48 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import "./style.css";
+
+import img1 from "../../imagens/operacaoFiscal/img1.png";
+import img2 from "../../imagens/cfop/img1.png";
+import img3 from "../../imagens/cfop/img2.png";
+import img4 from "../../imagens/cfop/img3.png";
+import img5 from "../../imagens/cfop/img4.png";
+import img6 from "../../imagens/cfop/img5.png";
+---
+
+<Layout title="Cadastro Padrão Tributario">
+  <main>
+    <h1>Cadastro Padrão Tributario</h1>
+
+    <p>
+      Acessar Cadastros /Fiscais /CFOP - Código Fiscal de Operações e
+      Prestações:
+    </p>
+    <img src={img1} alt="" />
+    <img src={img2} alt="" />
+
+    <p>
+      A CFOP (Código Fiscal de Operações e Prestações) é utilizada para
+      identificar se a operação é Estadual ou Interestadual e o seu tipo (venda,
+      revenda, devolução).
+    </p>
+    <p>
+      Informar o código (informado sempre pelo contador do cliente), no exemplo
+      abaixo a codificação diz ser uma operação estadual de revenda de de
+      produto adiquirido de terceiro.
+    </p>
+    <img src={img3} alt="" />
+
+    <p>Informar a descrição da operação.</p>
+    <img src={img4} alt="" />
+
+    <p>Informar a característica da operação.</p>
+    <img src={img5} alt="" />
+
+    <p>
+      Aba Dados Adicionais contem os campos Inclusão e Última alteração, onde
+      audita o usuário que criou e/ou alterou o registro.
+    </p>
+    <img src={img6} alt="" />
+  </main>
+</Layout>

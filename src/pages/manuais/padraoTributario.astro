@@ -18,6 +18,48 @@ import img13 from "../../imagens/padraoTributario/img12.png";
 import img14 from "../../imagens/padraoTributario/img13.png";
 import img15 from "../../imagens/padraoTributario/img14.png";
 import img16 from "../../imagens/padraoTributario/img15.png";
+
+import img17 from "../../imagens/padraoTributario/img16.png";
+import img18 from "../../imagens/padraoTributario/img17.png";
+import img19 from "../../imagens/padraoTributario/img18.png";
+import img20 from "../../imagens/padraoTributario/img19.png";
+import img21 from "../../imagens/padraoTributario/img20.png";
+import img22 from "../../imagens/padraoTributario/img21.png";
+import img23 from "../../imagens/padraoTributario/img22.png";
+import img24 from "../../imagens/padraoTributario/img23.png";
+import img25 from "../../imagens/padraoTributario/img24.png";
+import img26 from "../../imagens/padraoTributario/img25.png";
+import img27 from "../../imagens/padraoTributario/img26.png";
+import img28 from "../../imagens/padraoTributario/img27.png";
+import img29 from "../../imagens/padraoTributario/img28.png";
+import img30 from "../../imagens/padraoTributario/img29.png";
+import img31 from "../../imagens/padraoTributario/img30.png";
+import img32 from "../../imagens/padraoTributario/img31.png";
+import img33 from "../../imagens/padraoTributario/img32.png";
+import img34 from "../../imagens/padraoTributario/img33.png";
+
+import img35 from "../../imagens/padraoTributario/img34.png";
+import img36 from "../../imagens/padraoTributario/img35.png";
+import img37 from "../../imagens/padraoTributario/img36.png";
+import img38 from "../../imagens/padraoTributario/img37.png";
+import img39 from "../../imagens/padraoTributario/img38.png";
+import img40 from "../../imagens/padraoTributario/img39.png";
+import img41 from "../../imagens/padraoTributario/img40.png";
+import img42 from "../../imagens/padraoTributario/img41.png";
+import img43 from "../../imagens/padraoTributario/img42.png";
+import img44 from "../../imagens/padraoTributario/img43.png";
+
+import img45 from "../../imagens/padraoTributario/img44.png";
+import img46 from "../../imagens/padraoTributario/img45.png";
+import img47 from "../../imagens/padraoTributario/img46.png";
+import img48 from "../../imagens/padraoTributario/img47.png";
+import img49 from "../../imagens/padraoTributario/img48.png";
+import img50 from "../../imagens/padraoTributario/img49.png";
+import img51 from "../../imagens/padraoTributario/img50.png";
+
+import img52 from "../../imagens/padraoTributario/img51.png";
+import img53 from "../../imagens/padraoTributario/img52.png";
+import img54 from "../../imagens/padraoTributario/img53.png";
 ---
 
 <Layout title="Cadastro Padrão Tributario">
@@ -27,5 +69,529 @@ import img16 from "../../imagens/padraoTributario/img15.png";
     <p>Acessar Cadastros /Fiscais /Padrão Tributario:</p>
     <img src={img1} alt="" />
     <img src={img2} alt="" />
+
+    <p>
+      O Padrão Tributário é utilizado especificamente na emissao de Nota Fiscal.
+      Neste é determinado se haverão calculos de impostos, qual tipo de operação
+      e informações adicionais (mensagens Fiscais).
+    </p>
+    <p>
+      Pode ser utilizado no Cadastro do Cliente, Produto, Tipo de Movimento,
+      Regra Tributaria e NFe.
+    </p>
+    <img src={img3} alt="" />
+
+    <p>
+      Marcando o parâmetro Bloqueado, Inativa o uso do Padrão Tributário em
+      todas as telas.
+    </p>
+    <img src={img4} alt="" />
+
+    <p>
+      Informar a descrição do Padrão. Para facilitar o entendimento do uso,
+      recomendamos informar a descrição na seguinte sequencia:
+    </p>
+    <p>
+      CFOP (5101, 6102), tipo de operação (Venda, Devolução), Local de destino
+      da operação (dentro ou fora do estado), se existe aproveitamento de
+      credito ou não, e se a operação possui Substituição Tributaria ou não.
+    </p>
+    <img src={img5} alt="" />
+
+    <p>
+      Operação Fiscal é utilizado para identificar se a nota fiscal é de saida
+      ou entrada, se é de venda, complementar ou devolução, é utilizado como
+      filtro nos tipos de movimentos e esta informação aparece na cabeça da
+      nota.
+    </p>
+    <img src={img6} alt="" />
+    <p>Para cadastro de Operação Fiscal <a href="#">clique aqui</a>.</p>
+    <br />
+
+    <p>
+      Informar a CFOP (Código Fiscal de operações e Prestações) da operação.
+    </p>
+    <img src={img7} alt="" />
+    <p>Para cadastro de CFOP <a href="#">clique aqui</a>.</p>
+    <br />
+
+    <p>
+      O Tipo de Operação determina se a movimentação será para dentro do estado,
+      fora, para o exterior.
+    </p>
+    <img src={img8} alt="" />
+
+    <p>
+      A classificação comercial é utilizada para determinar se trata-se de
+      venda, devolução, compras ou outros.
+    </p>
+    <img src={img9} alt="" />
+
+    <p>
+      Parâmetro utilizado para caso o produto estiver como este padrão
+      tributário, não considerar o valor do item na base de calculo do
+      Financeiro, por exemplo um produto que é Bonificação, Brinde ou amostra.
+    </p>
+    <img src={img10} alt="" />
+
+    <p>
+      Na aba IPI é informado o CST (Código de Situação Tributaria). Esta
+      informação sempre é levantada junto ao contador do cliente.
+    </p>
+    <img src={img11} alt="" />
+
+    <p>
+      A seguir informar se o IPI será tributado, isento ou não tributada. Esta
+      informação dependerá da CST.
+    </p>
+    <img src={img12} alt="" />
+
+    <p>
+      Neste local é informado de onde o sistema irá realizar a captura da
+      Alíquota do IPI no momento da emissão da Nota Fiscal eletrônica, sendo do
+      NCM, do Cadastro do Produto ou do Padrão Tributário.
+    </p>
+    <img src={img13} alt="" />
+
+    <p>
+      Ao optar pela alíquota do IPI pelo padrão tributário, deve-se informar
+      neste local o % da Alíquota.
+    </p>
+    <img src={img14} alt="" />
+
+    <p>Informar o Código de Enquadramento</p>
+    <img src={img15} alt="" />
+
+    <a
+      href="https://documentacao.senior.com.br/goup/5.10.1/geral/enquadramento-de-ipi.htm#:~:text=Se%20o%20CST%20de%20IPI%20for%20de%20Imunidade%20(%2204%22,%22608%22%20(redu%C3%A7%C3%A3o)"
+      target="_blank"
+      ><p>
+        https://documentacao.senior.com.br/goup/5.10.1/geral/enquadramento-de-ipi
+      </p>
+    </a>
+    <p>
+      Informar se a operação fiscal será tributada, isenta, ou não tributada.
+    </p>
+    <img src={img16} alt="" />
+
+    <p>
+      Após informar a descrição, Operação Fiscal, CFOP, Tipo de Operação e
+      Classificação comercial e os parametros da aba IPI,<b>
+        acessar a aba ICMS</b
+      >.
+    </p>
+    <img src={img17} alt="" />
+
+    <p>
+      Na aba ICMS informar o código fiscal, sendo a empresa emitente do Regime
+      Normal (Lucro real ou presumido) a CST será de 2 dígitos, sendo Simples
+      Nacional o CSOSN será de 3.
+    </p>
+    <p>Para mais informações obre os tipos de empresa acesse o site:</p>
+    <a
+      href="https://www.contabilizei.com.br/contabilidade-online/simples-nacional-lucro-presumido-e-lucro-real/?utm_device=c&utm_term=&utm_source=google&utm_medium=cpc&utm_campaign=%5BMAX%5D_Performance_RMKT_SP&hsa_cam=14465064182&hsa_grp=&hsa_mt=&hsa_src=x&hsa_ad=&hsa_acc=1466761651&hsa_net=adwords&hsa_kw=&hsa_tgt=&hsa_ver=3&gclid=Cj0KCQiA7bucBhCeARIsAIOwr-8feDWjrpDLk3LyUkRROKFMYiSx4zlHqXLEsJwZBGQe-DXgIhL9xB8aAjMDEALw_wcB"
+      target="_blank"
+      ><p>
+        https://www.contabilizei.com.br/contabilidade-online/simples-nacional-lucro-presumido-e-lucro-real
+      </p>
+    </a>
+    <img src={img18} alt="" />
+
+    <p>
+      Dependendo do tipo de operação (vendas por exemplo), a empresa emissora da
+      nota sendo enquadrada no Simples Nacional e o destinatário da nota ser do
+      regime normal necessita ser informado o % de credito de ICMS a ser
+      aproveitado conforme campo abaixo.
+    </p>
+    <img src={img19} alt="" />
+
+    <p>
+      A seguir deve ser informada a modalidade da Base de calculo da operação.
+    </p>
+    <img src={img20} alt="" />
+
+    <p>
+      Para mais informações sobre as diferenças entre as modalidades de base de
+      calculo acesse os sites:
+    </p>
+
+    <p>Margem valor Agregado:</p>
+    <a
+      href="https://www.remessaonline.com.br/blog/margem-de-valor-agregado-mva-o-que-e-e-como-funciona/"
+      target="_blank"
+      ><p>
+        https://www.remessaonline.com.br/blog/margem-de-valor-agregado-mva-o-que-e-e-como-funciona/
+      </p>
+    </a>
+
+    <p>Pauta:</p>
+    <a
+      href="https://www.substituicaotributaria.com/SST/substituicao-tributaria/regra-geral/17/pauta-fiscal"
+      target="_blank"
+      ><p>
+        https://www.substituicaotributaria.com/SST/substituicao-tributaria/regra-geral/17/pauta-fiscal
+      </p>
+    </a>
+
+    <p>Preço Maximo:</p>
+    <a
+      href="https://www.inovafarma.com.br/blog/como-consultar-a-lista-cmed/#:~:text=O%20Pre%C3%A7o%20M%C3%A1ximo%20ao%20Consumidor%20%C3%A9%20o%20valor%20m%C3%A1ximo%20que,ICMS%20incidente%20de%20cada%20estado"
+      target="_blank"
+      ><p>https://www.inovafarma.com.br/blog/como-consultar-a-lista-cmed</p>
+    </a>
+
+    <p>Caso haja % de Diferimento de ICMS informar do campo designado.</p>
+    <img src={img21} alt="" />
+
+    <p>
+      Informar de onde o sistema irá buscar a Alíquota do ICMS. Do Cadastro da
+      Empresa, do Cadastro do Produto ou do Padrão Tributário.
+    </p>
+    <img src={img22} alt="" />
+
+    <p>
+      Optando para buscar a alíquota do padrão tributário, deve ser informado no
+      campo % Alíquota ICMS.
+    </p>
+    <img src={img23} alt="" />
+
+    <p>Caso haja redução na alíquota do ICMS, informar o %.</p>
+    <img src={img24} alt="" />
+
+    <p>
+      E informar onde será aplicado o % da redução, Na base de calculo do
+      produto, ou na Alíquota.
+    </p>
+    <p>
+      Aqui o sistema funciona da seguinte maneira: se a redução for de 33,33%,
+      no campo em destaque deve ser informado 66,67%.
+    </p>
+    <img src={img25} alt="" />
+
+    <p>O campo de ICMS desonerado pode ser sinalizado se haverá desoneração.</p>
+    <img src={img26} alt="" />
+
+    <p>
+      Também deve ser informado o código do motivo conforme indicado abaixo.
+    </p>
+    <img src={img27} alt="" />
+
+    <p>
+      Clicando neste local é possível acessar a lista de códigos de motivos de
+      Desoneração do ICMS.
+    </p>
+    <img src={img28} alt="" />
+    <br />
+    <img src={img29} alt="" />
+
+    <p>
+      O Fundo de Combate a Pobreza é uma arrecadação destinada a ser distribuída
+      para famílias com renda per capta inferior alinha da pobreza.
+    </p>
+    <p>
+      É uma alíquota calculada juntamente com o ICMS nas operações internas ou
+      operações interestaduais com Substituição Tributária.
+    </p>
+    <b
+      ><p>
+        Para mais informações sobre o Fundo de Combate a Pobreza acesse o link:
+      </p>
+    </b>
+    <a
+      href="https://documentacao.senior.com.br/goup/5.10.1/manuais_processos/mercado/nf-e/fcp.htm#:~:text=O%20FCP%20%C3%A9%20um%20Fundo,opera%C3%A7%C3%B5es%20interestaduais%20com%20Substitui%C3%A7%C3%A3o%20Tribut%C3%A1ria."
+      target="_blank"
+    >
+      <p>
+        https://documentacao.senior.com.br/goup/5.10.1/manuais_processos/mercado/nf-e/fcp.htm
+      </p>
+    </a>
+    <p>
+      <b>E também no:</b><a
+        href="https://enotas.com.br/blog/fundo-de-combate-a-pobreza/"
+        >https://enotas.com.br/blog/fundo-de-combate-a-pobreza/</a
+      >
+    </p>
+    <br />
+
+    <p>
+      Neste local informa-se de onde será captada a Alíquota do Fundo de Combate
+      a Pobreza..
+    </p>
+    <img src={img30} alt="" />
+
+    <p>
+      E neste campo deve ser informado o % caso a opção seja buscar a alíquota
+      do FCP do Padrão Tributário.
+    </p>
+    <img src={img31} alt="" />
+
+    <p>
+      Informar também o tipo de operação fiscal, sendo Tributada, isenta, não
+      tributada ou outras;
+    </p>
+    <img src={img32} alt="" />
+
+    <p>
+      Também pode ser informados quais campos não afetarão a base de calculo do
+      ICMS.
+    </p>
+    <img src={img33} alt="" />
+
+    <p>Informar também em operações de importação</p>
+    <img src={img34} alt="" />
+
+    <p>
+      Após informar a descrição, Operação Fiscal, CFOP, Tipo de Operação e
+      Classificação comercial e os parametros da aba IPI, e ICMS, em caso de
+      Substituição tributária acessar a aba ICMS-ST.
+    </p>
+    <p>
+      A Substituição Tributária (ST) do ICMS é o regime pelo qual a
+      responsabilidade pelo imposto devido em relação às operações ou prestações
+      de serviços é atribuída a outro contribuinte.
+    </p>
+    <img src={img35} alt="" />
+
+    <p>Para mais informações sobre a substituição tributária, acesse o link:</p>
+    <a
+      href="https://www.portaltributario.com.br/guia/substituicao_tributaria.html#:~:text=SUBSTITUI%C3%87%C3%83O%20TRIBUT%C3%81RIA%20DO%20ICMS%20(ICMS%2DST)&text=A%20Substitui%C3%A7%C3%A3o%20Tribut%C3%A1ria%20(ST)%20do,%C3%A9%20atribu%C3%ADda%20a%20outro%20contribuinte"
+      target="_blank"
+      ><p>
+        https://www.portaltributario.com.br/guia/substituicao_tributaria.html
+      </p>
+    </a>
+    <p>Informar a modalidade da Base de Cálculo.</p>
+    <img src={img36} alt="" />
+
+    <p>
+      <b>Preço tabelado ou Maximo sugerido</b> (Preço Maximo tabelado definido pela
+      legislação).
+    </p>
+    <p>
+      <b
+        >Lista Negativa, Lista positiva, Lista Neutra, Margem Valor Agregado
+      </b>(A lista positiva, negativa e neutra é a classificação de medicamentos
+      utilizada nos impostos federais).
+    </p>
+    <p>
+      <b>Pauta/valor</b> (A Pauta Fiscal, preço médio ponderado ao consumidor final
+      (PMPF), trata das tabelas de preços fixadas pelos estados para os produtos,
+      para que sejam utilizadas como base para calcular o ICMS ST).
+    </p>
+    <p>
+      <b>Valor da operação</b> (Busca o valor da base de calculo do produto na emissão
+      da Nota Fiscal).
+    </p>
+    <br />
+
+    <p><b>Para mais informações sobre Lista Positiva, Negativa e Neutra.</b></p>
+    <p>
+      <a href="https://simtax.com.br/lista-positiva-negativa-e-neutra/"
+        >https://simtax.com.br/lista-positiva-negativa-e-neutra/</a
+      >
+    </p>
+
+    <p><b>Para mais informações sobre Pauta acesse clique no link abaixo</b></p>
+    <p>
+      <a href="https://docsnew.erpflex.com.br/calculo-do-icms-st-por-pauta/"
+      ></a>https://docsnew.erpflex.com.br/calculo-do-icms-st-por-pauta/
+    </p>
+    <br />
+
+    <p>
+      Informar de onde o sistema irá capturar as alíquotas de ICMS internas
+      Estaduais, sendo as opções do Cadastro Empresa/Alíquotas, do Padrão
+      Tributário ou do Cadastro do Produto/Dados por UF.
+    </p>
+    <img src={img37} alt="" />
+
+    <p>
+      Para acessar o manual de Cadastro de Empresas <b
+        ><a href="#"></a>clique aqui</b
+      >.
+    </p>
+    <p>
+      Para acessar o manual de Cadastro de Produtos <b
+        ><a href="#"></a>clique aqui</b
+      >.
+    </p>
+
+    <p>
+      Escolhendo a opção Padrão Tributário, informar no campo o % da Alíquota
+      interna. Vale ressaltar que escolhendo esta opção, a operação é
+      restringida a apenas a informação do Padrão.
+    </p>
+    <img src={img38} alt="" />
+
+    <p>
+      Informar de qual local o sistema irá capturar as alíquotas do IVA para o
+      calculo da Substituição Tributária.
+    </p>
+    <img src={img39} alt="" />
+
+    <p>
+      <b>IVA (Índice de Valor Agregado)</b>é um índice calculado através de
+      pesquisas de mercado para estimar o valor de venda final de uma
+      mercadoria.
+    </p>
+    <p>
+      Essas pesquisas são realizadas pelo governo e consideram a tendência da
+      margem que as empresas varejistas devem adicionar ao produto na venda ao
+      consumidor final.
+    </p>
+
+    <p><b>Para mais informações sobre o IVA acesse o link:</b></p>
+    <a
+      href="https://manual.sistemagestaoonline.com.br/vendas/mva.html#:~:text=O%20QUE%20%C3%89%20IVA%20ST,venda%20final%20de%20uma%20mercadoria.&text=ao%20produto%20na%20venda%20ao,circula%C3%A7%C3%A3o%20de%20produtos%20ou%20servi%C3%A7os."
+      target="_blank"
+      ><p>https://manual.sistemagestaoonline.com.br/vendas/mva.html</p>
+    </a>
+
+    <p>
+      Escolhendo a opção Padrão Tributário, informar no campo o % da Alíquota.
+      Vale ressaltar que escolhendo esta opção, a operação é restringida a
+      apenas a informação do Padrão.
+    </p>
+    <img src={img40} alt="" />
+
+    <p>
+      Escolher a forma de aplicação de IVA, se aplica e deduz o ICMS da
+      operação, se aplica IVA e não deduz o CIMS, ou se utiliza o Diferencial de
+      Alíquota.
+    </p>
+    <img src={img41} alt="" />
+
+    <p>
+      Informar se haverá % de redução de base de calculo no ICMS-ST quando a
+      opção de calculo for pelo padrão tributário.
+    </p>
+    <p>
+      Aqui o sistema funciona da seguinte maneira: se a redução for de 33,33%,
+      no campo em destaque deve ser informado 66,67%.
+    </p>
+    <img src={img42} alt="" />
+
+    <p>
+      Em caso de calculo de Fundo de combate a pobreza sobre a Substituição
+      Tributária, informar de onde será buscada a Alíquota.
+    </p>
+    <img src={img43} alt="" />
+
+    <p>
+      O Fundo de Combate a Pobreza é uma arrecadação destinada a ser distribuída
+      para famílias com renda per capta inferior alinha da pobreza.
+    </p>
+    <p>
+      <b
+        >Para mais informações sobre o Fundo de Combate a Pobreza acesse o link:</b
+      >
+    </p>
+    <a
+      href="https://documentacao.senior.com.br/goup/5.10.1/manuais_processos/mercado/nf-e/fcp.htm#:~:text=O%20FCP%20%C3%A9%20um%20Fundo,opera%C3%A7%C3%B5es%20interestaduais%20com%20Substitui%C3%A7%C3%A3o%20Tribut%C3%A1ria"
+      target="_blank"
+      ><p>https://documentacao.senior.com.br/goup/5.10.1/manuais</p>
+    </a>
+    <p>
+      <b>E também no:</b><a
+        href="https://enotas.com.br/blog/fundo-de-combate-a-pobreza/"
+        target="_blank"
+        >https://enotas.com.br/blog/fundo-de-combate-a-pobreza/</a
+      >
+    </p>
+    <p>
+      E neste campo deve ser informado o % caso a opção seja buscar a alíquota
+      do FCP do Padrão Tributário.
+    </p>
+    <img src={img44} alt="" />
+
+    <p>
+      Após informar a descrição, Operação Fiscal, CFOP, Tipo de Operação e
+      Classificação comercial e os parametros da aba IPI, e ICMS e ICMS-ST.
+    </p>
+    <p>A próxima aba a ser preenchida são os parâmetros do O PIS/COFINS.</p>
+    <img src={img45} alt="" />
+
+    <p>
+      PIS/COFINS são dois tributos previstos pela Constituição Federal
+      brasileira.
+    </p>
+    <p>
+      Na prática, o Cofins está destinado ao recolhimento de fundos
+      principalmente para a área da saúde pública e seguridade social do país,
+      incluindo dispositivos como Previdência Social e Assistência Social, por
+      exemplo.
+    </p>
+    <p>
+      Já o PIS, é designado à promoção da integração social dos trabalhadores.
+      Seus recursos são para pagamento do seguro-desemprego, abono salarial e
+      participação na receita dos órgãos e entidades para os trabalhadores
+      públicos e de empresas privadas.
+    </p>
+    <p><b>Para mais informações sobre o PIS/COFINS acesse o site:</b></p>
+    <a
+      href="https://www.oitchau.com.br/blog/cofins-e-pis-como-devem-ser-calculados/#:~:text=De%20modo%20geral%2C%20em%20suas,pela%20Lei%20Complementar%2007%2F1970.
+    "
+      target="_blank"
+      ><p>
+        https://www.oitchau.com.br/blog/cofins-e-pis-como-devem-ser-calculados
+      </p>
+    </a>
+    <p>Informar a CST do Pis e Cofins (conforme informado pelo Contador).</p>
+    <img src={img46} alt="" />
+
+    <p>
+      Informar de onde será captada a Alíquota do Pis e do Cofins, do Padrão
+      Tributário, do NCM do Produto ou do Cadastro do Produto.
+    </p>
+    <img src={img47} alt="" />
+
+    <p>
+      Escolhendo a opção para buscar a alíquota do Padrão Tributário, deve ser
+      informado o % no campo destinado.
+    </p>
+    <img src={img48} alt="" />
+
+    <p>
+      Campo destinado para assinalar se do calculo do Pis e Confins terão
+      abatimento do ICMS na base de calculo.
+    </p>
+    <img src={img49} alt="" />
+
+    <p>
+      Assinalar quais campos no momento da emissão da nota não afetarão na base
+      de calculo do Pis e Cofins.
+    </p>
+    <img src={img50} alt="" />
+    <img src={img51} alt="" />
+
+    <p>
+      Após informar a descrição, Operação Fiscal, CFOP, Tipo de Operação e
+      Classificação comercial e os parametros da aba IPI, e ICMS, ICMS-ST, PIS e
+      COFINS.
+    </p>
+    <p>
+      Também pode ser utilizado o recurso de Observações ou Dados complementares
+      da nota fiscal amarrados ao Padrão Tributário. Devem ser cadastradas
+      inicialmente para serem utilizadas.
+    </p>
+    <p>
+      Esta mensagem informada constará apenas nas observações da impressão da
+      nota, não sendo possível manipula-la nas observações do cadastro da nota.
+    </p>
+    <img src={img52} alt="" />
+
+    <p>Escolher as mensagens fiscais que serão fixas no Padrão tributário.</p>
+    <img src={img53} alt="" />
+
+    <p>
+      Para visualizar o Manual de Cadastro de Mensagens Fiscais <a href="#"
+        >clique aqui</a
+      >:
+    </p>
+    <p>
+      Aba Dados Adicionais contem os campos Inclusão e Última alteração, onde
+      audita o usuário que criou e/ou alterou o registro.
+    </p>
+    <img src={img54} alt="" />
   </main>
 </Layout>

@@ -1,0 +1,48 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import "./style.css";
+
+import img1 from "../../imagens/operacaoFiscal/img1.png";
+import img2 from "../../imagens/paises/img1.png";
+import img3 from "../../imagens/paises/img2.png";
+import img4 from "../../imagens/paises/img3.png";
+import img5 from "../../imagens/paises/img4.png";
+---
+
+<Layout title="Cadastro Padrão Tributario">
+  <main>
+    <h1>Cadastro Padrão Tributario</h1>
+
+    <p>Acessar Cadastros /Fiscais /Países:</p>
+    <img src={img1} alt="" />
+    <img src={img2} alt="" />
+
+    <p>
+      O Pais é utilizado no cadastro do Cliente e Fornecedor, destinado a
+      identificar a localidade em uma operação nacional ou internacional.
+    </p>
+    <img src={img3} alt="" />
+
+    <p>
+      Para acessar o Manual de Cadastro de Cliente <a href="#">clique aqui</a>:
+    </p>
+    <p>
+      Para acessar o Manual de cadastro deFornecedores <a href="#"></a>
+      clique aqui:
+    </p>
+    <p>Informar o Código do IBGE, contendo 4 digitos.</p>
+    <img src={img4} alt="" />
+
+    <p>Informar a descrição do país.</p>
+    <img src={img5} alt="" />
+
+    <p>
+      <b
+        >Para conhecer os códigos dos países fornecidos pelo IBGE acesse o site:</b
+      >
+    </p>
+    <a href="https://cosmos.bluesoft.com.br/tabelas/tabela-paises-ibge"
+      ><p>https://cosmos.bluesoft.com.br/tabelas/tabela-paises-ibge</p>
+    </a>
+  </main>
+</Layout>
