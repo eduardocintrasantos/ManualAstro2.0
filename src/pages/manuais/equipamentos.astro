@@ -4,6 +4,14 @@ import "./style.css";
 
 import img1 from "../../imagens/equipamentos/img1.png";
 import img2 from "../../imagens/equipamentos/img2.png";
+import img3 from "../../imagens/equipamentos/img3.png";
+import img4 from "../../imagens/equipamentos/img4.png";
+import img5 from "../../imagens/equipamentos/img5.png";
+import img6 from "../../imagens/equipamentos/img6.png";
+import img7 from "../../imagens/equipamentos/img7.png";
+import img8 from "../../imagens/equipamentos/img8.png";
+import img9 from "../../imagens/equipamentos/img9.png";
+import img10 from "../../imagens/equipamentos/img10.png";
 ---
 
 <Layout title="Cadastro Equipamentos">
@@ -13,5 +21,212 @@ import img2 from "../../imagens/equipamentos/img2.png";
     <p>Acessar Cadastros /Auxiliares /Equipamentos:</p>
     <img src={img1} alt="" />
     <img src={img2} alt="" />
+
+    <p>
+      Em seguida você entrará na tela de cadastro do equipamento, onde você deve
+      aperta em "Novo" para cadastrar um novo equipamento e preencher as
+      seguintes informações:
+    </p>
+    <img src={img3} alt="" />
+    <p>
+      <b>SIGLA:</b> A sigla é o código do equipamento, usado para identificar a impressora
+      pela sigla.
+    </p>
+    <p><b>DESCRIÇÃO:</b> Nome e informação do equipamento.</p>
+    <p>
+      <b>NR. PATRIMÔNIO:</b> Pode ser usado como um controlador do número dos seus
+      equipamentos ou o número de série do equipamento.
+    </p>
+    <p><b>CLASSIFICAÇÃO:</b> Qual o tipo de impressão que o equipamento usa.</p>
+    <br />
+
+    <p>
+      Apos o cadastro dos dados do equipamento, é necessário preenchermos a aba
+      "Localização / Parâmetros de Custo", onde serão informadas as seguintes
+      informações:
+    </p>
+    <img src={img4} alt="" />
+    <p>
+      <b>EMPRESA:</b> Local onde o equipamento está localizado. <b
+        >Para acessar o manual de cadastro de Empresas, <a href="#"
+          >clique aqui</a
+        >
+      </b>
+    </p>
+    <p>
+      <b>VALOR AQUISIÇÃO:</b> Custo do equipamento que foi pago para aquisição do
+      mesmo.
+    </p>
+    <p><b>DT. AQUISIÇÃO:</b> Data de aquisição do equipamento.</p>
+    <p><b>VALOR MERCADO:</b> Valor do equipamento atual no mercado.</p>
+    <p>
+      <b>TEMPO DEPRECIAÇÃO (MESES):</b> Tempo que o equipamento está em uso e em
+      depreciação.
+    </p>
+    <p>
+      <b>VALOR DEPRECIAÇÃO MÊS:</b> Calculado sozinho, é o valor total de depreciação
+      mensal faz o seguinte calculo: (Valor de Mercado / Tempo de Depreciação)
+    </p>
+    <p>
+      <b>VALOR TOTAL PREV. GASTOS:</b> Calculado sozinho, de acordo com o preenchimento
+      da próxima aba (Previsão de Gastos).
+    </p>
+    <br />
+
+    <p>
+      A próxima aba é a aba "Previsão de Gastos", onde nela é colocado todos os
+      gastos que o equipamento terá ou teve.
+    </p>
+    <p>
+      Onde para colocar um novo cadastro deve apertar na folha em branco, para
+      editar um cadastro deve apertar no lápis e para excluir no botão laranja.
+      E deve ser preenchido os seguintes dados:
+    </p>
+    <img src={img5} alt="" />
+    <p>
+      <b>PEÇA/SERVIÇO:</b>É a peça ou o serviço que seu equipamento teve ou terá
+      que ser trocado, ou usado, esse cadastro é puxado do cadastro de produtos. <b
+        >(Para acessar o manual de cadastro de Empresas, <a href="#"
+          >clique aqui</a
+        >).</b
+      >
+    </p>
+    <p>
+      <b>QUANTIDADE PREVISTA:</b> Quantidade que está prevista que o equipamento
+      ira utilizar dessas peças ou serviços.
+    </p>
+    <p>
+      <b>VR. CUSTO ESTIMADO ITEM:</b> Valor estimado do produto utilizado (preço
+      unitário).
+    </p>
+    <p>
+      <b>TEMPO TROCA:</b> Tempo de troca dessa peça ou serviço no equipamento.
+    </p>
+    <p>
+      <b>VR. CUSTO ESTIMADO MENSAL:</b> Calculado sozinho, é o valor de custo estimado
+      mensal pela troca da peça, faz o seguinte cálculo: ( (VR. CUSTO ESTIMADO ITEM
+      / TEMPO DE TROCA) / QUANTIDADE PREVISTA).
+    </p>
+    <br />
+
+    <p>
+      A próxima aba é a aba de "Parâmetros Gráficos", onde é preenchido as
+      informações de configurações do equipamento, a mesma possui três abas para
+      preenchimento, "Configurações", "Consumíveis", "Quebras".
+    </p>
+    <p>
+      A primeira aba que iremos preencher e é indispensável deixar sem o
+      preenchimento é a aba "Configurações", onde iremos preencher as
+      informações que configuram o equipamento, que são os seguintes dados:
+    </p>
+    <img src={img6} alt="" />
+    <p>
+      <b>CAPACIDADE:</b> Quantidade de folhas total que o equipamento é capaz de
+      imprimir ou fazer por hora.
+    </p>
+    <p>
+      <b>MANCHA TOTAL:</b> Espaço nas bordas da folha que o equipamento não utiliza
+      para impressão.
+    </p>
+    <p>
+      <b>LADO MAIOR:</b> Dimensão em centímetros do lado maior da folha que o equipamento
+      consegue imprimir.
+    </p>
+    <p><b>HORA/MÁQ. R$:</b> Custo total da hora do equipamento.</p>
+    <p>
+      <b>CORTE (RESMA):</b> Minutos totais que o equipamento demora para cortar uma
+      resma (500 folhas).
+    </p>
+    <p>
+      <b>CLICK A3 R$:</b> Preço de custo por click (desgaste que causa na impressora
+      a cada puxada de folha no equipamento).
+    </p>
+    <p><b>QTDE CORES:</b> Quantidade de cores que o equipamento imprime.</p>
+    <p>
+      <b>CORTE DUPLO:</b> Tamanho do corte duplo que o equipamento tem. (onde o mesmo
+      é usado para verificar o tamanho da folha que será utilizavel).
+    </p>
+    <p>
+      <b>LADO MENOR:</b>Dimensão em centímetros do lado menor da folha que o
+      equipamento consegue imprimir.
+    </p>
+    <p>
+      <b>MÍN. MÁQ.:</b> Tempo mínimo em minutos que o equipamento deve rodar para
+      ser cobrado por tempo.
+    </p>
+    <p>
+      <b>PACOTE:</b> Tempo mínimo em minutos que o equipamento imprime um pacote
+      de folha.
+    </p>
+    <p>
+      <b>TEXTO:</b> Despesa variável, despesa em porcentagem ao imprimir textos.
+    </p>
+    <p>
+      <b>IMAGEM:</b> Despesa variável, despesa em porcentagem ao imprimir imagens.
+    </p>
+    <p>
+      <b>TEXTO + IMAGEM:</b> Despesa variável, despesa em porcentagem ao imprimir
+      textos e imagens.
+    </p>
+    <br />
+
+    <p>
+      Após o preenchimento das configurações o próximo campo que deve ser
+      preenchido é o campo "consumíveis", onde colocamos as informações de
+      preço, pela duração de rotação do modelo em que o equipamento imprime:
+    </p>
+    <img src={img7} alt="" />
+
+    <p>
+      Por ultimo na aba "Parâmetros Gráficos" temos a aba "Quebras", onde é
+      colocado o percentual de perda e quebras (desgastes) que o equipamento
+      sofre durante a impressão de certa quantidade de papéis. Importante essa
+      informação, pois ela faz parte do total de perda do seu material e entra
+      no custo do produto final.
+    </p>
+    <img src={img8} alt="" />
+
+    <p>
+      Após o preenchimento das "Quebras", a próxima aba que pode ser preenchida,
+      porém não é obrigatória é a aba "Produtos", onde é a aba que você pode
+      colocar o produto que foi adquirido para usar no equipamento, não como uma
+      forma de conserto, mas sim um produto que foi comprado para um upgrade no
+      equipamento.
+    </p>
+    <p>
+      Onde para colocar um novo cadastro deve apertar na folha em branco, para
+      editar um cadastro deve apertar no lápis e para excluir no botão laranja.
+      E deve ser preenchido os seguintes dados:
+    </p>
+    <img src={img9} alt="" />
+    <p>
+      <b>PRODUTO:</b> Nome do produto que foi adquirido para o equipamento. <b
+        >(Para acessar o manual de cadastro de Empresas, <a href="#"
+          >clique aqui</a
+        >).</b
+      >
+    </p>
+    <p><b>NÚMERO NF.:</b> Número da NF que foi adquirido o produto.</p>
+    <p><b>DATA EMISSÃO NF:</b> Data da NF que foi adquirido o produto.</p>
+    <p>
+      <b>FORNECEDOR:</b> Nome do fornecedor da NF que foi adquirido o produto. <b
+        >(Para acessar o manual de fornecedores, <a href="#">clique aqui</a
+        >).</b
+      >
+    </p>
+    <p>
+      <b>VR. DE AQUISIÇÃO:</b> Valor do produto adquirido na NF que foi adquirido
+      o produto.
+    </p>
+    <br />
+
+    <p>
+      E por fim, a última aba é a aba "Dados Adicionais", onde é colocado
+      informações adicionais sobre o equipamento, algum lembrete, ou observação
+      e também mostra as informações de qual foi o usuário que cadastrou o
+      equipamento junto com a data e hora de cadastro, e também a data de
+      alteração e usuário de alteração.
+    </p>
+    <img src={img10} alt="" />
   </main>
 </Layout>

@@ -1,0 +1,54 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import "./style.css";
+
+import img1 from "../../imagens/folhas/img1.png";
+import img2 from "../../imagens/folhas/img2.png";
+import img3 from "../../imagens/folhas/img3.png";
+import img4 from "../../imagens/folhas/img4.png";
+import img5 from "../../imagens/folhas/img5.png";
+import img6 from "../../imagens/folhas/img6.png";
+---
+
+<Layout title="Cadastro Folhas Grafica">
+  <main>
+    <h1>Cadastro Folhas Grafica</h1>
+
+    <p>Acessar Gráfica /Folhas:</p>
+    <p>
+      O cadastro de folhas serve para informarmos as dimensões das folhas que
+      são usadas para fazer os produtos finais.
+    </p>
+    <img src={img1} alt="" />
+
+    <p>
+      Para cadastrar uma folha nova deve-se clicar em "Novo(F2)", após isso deve
+      ser informado o Lado Menor (em centímetros) e o Lado Maior (em
+      centímetros) da folha no campo "Configuração Folha".
+    </p>
+    <img src={img2} alt="" />
+
+    <p>
+      Caso seja necessário fazer alguma alteração basta clicar em "Alterar (F3)"
+      e para excluir (Caso nunca tenha sido usado) basta clicar em "Excluir
+      (F4)".
+    </p>
+    <img src={img3} alt="" />
+
+    <p>
+      Para encontrar todas as folhas já cadastradas, basta clicar na lupa no
+      canto superior esquerdo da tela.
+    </p>
+    <img src={img4} alt="" />
+
+    <p>Após clicar na lupa irá abrir a tela de todas as folhas existentes.</p>
+    <img src={img5} alt="" />
+
+    <p>
+      E por último existe um campo de dados adicionas, onde mostra as
+      informações de qual foi o usuário que cadastrou a folha junto com a data e
+      hora de cadastro, e também a data de alteração e usuário de alteração.
+    </p>
+    <img src={img6} alt="" />
+  </main>
+</Layout>
