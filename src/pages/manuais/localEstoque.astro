@@ -1,0 +1,56 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import "./style.css";
+
+import img1 from "../../imagens/unidades/img1.png";
+import img2 from "../../imagens/localEstoque/img1.png";
+import img3 from "../../imagens/localEstoque/img2.png";
+import img4 from "../../imagens/localEstoque/img3.png";
+import img5 from "../../imagens/localEstoque/img4.png";
+import img6 from "../../imagens/localEstoque/img5.png";
+import img7 from "../../imagens/localEstoque/img6.png";
+---
+
+<Layout title="Local de Estoque">
+  <main>
+    <h1>Cadastro Local de Estoque</h1>
+
+    <p>Acessar o Menu / Cadastros / Estoque / Local de Estoque:</p>
+    <img src={img1} alt="" />
+    <img src={img2} alt="" />
+
+    <p>
+      Cadastro utilizado para identificar o local do estoque em que um produto
+      está. Na entrada ou na saída.
+    </p>
+    <img src={img3} alt="" />
+
+    <p>
+      Marcando o parâmetro Bloqueado, Inativa o uso da Operação Fiscal no Tipo
+      de Movimento.
+    </p>
+    <img src={img4} alt="" />
+
+    <p>
+      Criar um código de identificação para o local de estoque. Recomendamos ser
+      uma abreviação do local que será criado, por exemplo, ALM para
+      ALMOXARIFADO, EXP para EXPEDIÇÃO.
+    </p>
+    <img src={img5} alt="" />
+
+    <p>Informar a descrição/nome completo do local de estoque.</p>
+    <img src={img6} alt="" />
+
+    <p>
+      Dados Adicionais contem os campos Inclusão e Última alteração, onde audita
+      o usuário que criou e/ou alterou o registro.
+    </p>
+    <img src={img7} alt="" />
+
+    <div class="rodape">
+      <p><b>Criado por:</b> Bruno Pires da Silva.</p>
+      <p><b>Revisado por:</b> Bruno Pires da Silva.</p>
+      <p><b>Data Revisão:</b>23/12/2022</p>
+    </div>
+  </main>
+</Layout>

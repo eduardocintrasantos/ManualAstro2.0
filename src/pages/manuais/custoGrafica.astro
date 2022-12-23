@@ -1,0 +1,186 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import "./style.css";
+
+import img1 from "../../imagens/custoGrafica/img1.png";
+import img2 from "../../imagens/custoGrafica/img2.png";
+import img3 from "../../imagens/custoGrafica/img3.png";
+import img4 from "../../imagens/custoGrafica/img4.png";
+import img5 from "../../imagens/custoGrafica/img5.png";
+import img6 from "../../imagens/custoGrafica/img6.png";
+import img7 from "../../imagens/custoGrafica/img7.png";
+import img8 from "../../imagens/custoGrafica/img8.png";
+import img9 from "../../imagens/custoGrafica/img9.png";
+import img10 from "../../imagens/custoGrafica/img10.png";
+import img11 from "../../imagens/custoGrafica/img11.png";
+import img12 from "../../imagens/custoGrafica/img12.png";
+import img13 from "../../imagens/custoGrafica/img13.png";
+import img14 from "../../imagens/custoGrafica/img14.png";
+---
+
+<Layout title="Custo Grafica">
+  <main>
+    <h1>Cadastro de Custo Grafica</h1>
+
+    <p><b>Cadastro de Custos (Gráficas)</b></p>
+    <p>
+      Os custos são usados para calcular suas despesas e após isso é usado para
+      calcular seus preços de venda de produtos com base nessa despesa mais os
+      custos dos materiais. A aba "Custos" possui três tipos de custos, o "Custo
+      Direto (Mão de obra)", "Custos Indiretos (Despesas Fixas)", "Markup"
+      (Divisor).
+    </p>
+    <img src={img1} alt="" />
+
+    <p>
+      O primeiro cadastro é o <b>"Custo Direto (Mão de obra)"</b>, onde nele é
+      informado as informações dos seus custos com mão de obra (funcionários)
+      para produzir seus produtos.
+    </p>
+    <img src={img2} alt="" />
+
+    <p>
+      Ao clicarmos ira abrir a tela de cadastro onde para criar um cadastro novo
+      basta apertarmos em "Novo (F2)".
+    </p>
+    <img src={img3} alt="" />
+
+    <p>E devem ser preenchidas as seguintes informações:</p>
+    <img src={img4} alt="" />
+    <p><b>DESCRIÇÃO:</b> É a descrição do nome do custo.</p>
+    <p>
+      <b>VR. CUSTO TOTAL MO:</b> Calculado sozinho, é o valor total dos custos com
+      seus funcionários somados.
+    </p>
+    <p>
+      <b>LOTE ECONÔMICO:</b> É a capacidade de produção dessa equipe. <b
+        >(Recomendado colocar "1" para o seguimento gráfica. )
+      </b>
+    </p>
+    <p>
+      <b>VR. CUSTO DIRETO:</b> Calculado sozinho, é o valor total dos custos com
+      seus funcionários dividido pelo lote econômico.
+    </p>
+    <p>
+      Após esse primeiro preenchimento de dados é necessário preenchermos os
+      dados por funcionário. Onde para colocar um novo cadastro deve apertar na
+      folha em branco, para editar um cadastro deve apertar no lápis e para
+      excluir no botão laranja. deve ser preenchido o nome do funcionário <b
+        >(Para acessar o manual de cadastro de funcionários, clique aqui)</b
+      > e também preencher os dados que estão indicados com a seta, caso tenham esse
+      gasto. Os outros demais campos são calculados sozinhos.
+    </p>
+    <br />
+
+    <p>
+      O próximo custo que deve ser preenchido é o "Custos Indiretos (Despesas
+      Fixas)"
+    </p>
+    <img src={img5} alt="" />
+
+    <p>
+      Ao clicarmos ira abrir a tela de cadastro onde para criar um cadastro novo
+      basta apertarmos em "Novo (F2)".
+    </p>
+    <img src={img6} alt="" />
+
+    <p>
+      E devem ser preenchidas as duas abas "Dados" e "Despesas". Na aba "Dados"
+      são preenchidas as seguintes informações:
+    </p>
+    <img src={img7} alt="" />
+    <p><b>DESCRIÇÃO:</b> Nome e informação do custo.</p>
+    <p>
+      <b>VR. TOTAL DESPESAS:</b> Calculado sozinho, é o valor total das "Despesas"
+      somados, puxados da aba "Despesas".
+    </p>
+    <p>
+      <b>LOTE ECONÔMICO:</b> É a capacidade de produção que esses custos tem. <b
+        >(Recomendado colocar "1" para o seguimento gráfica.)
+      </b>
+    </p>
+    <p>
+      <b>VR. CUSTO INDIRETO:</b> Calculado sozinho, é o valor total dos custos com
+      suas despesas dividido pelo lote econômico.
+    </p>
+    <br />
+
+    <p>
+      A outra aba "Despesas" deve ser preenchida colocando a descrição da
+      despesa e o valor dessa sua despesa.
+    </p>
+    <p>
+      Onde para colocar um novo cadastro deve apertar na folha em branco, para
+      editar um cadastro deve apertar no lápis e para excluir no botão laranja.
+      E deve ser preenchida as seguintes informações:
+    </p>
+    <img src={img8} alt="" />
+    <p><b>DESCRIÇÃO:</b> Nome e informação da despesa.</p>
+    <p><b>VALOR:</b> Valor total dessa despesa.</p>
+    <br />
+
+    <p>
+      Na aba "Dados" também mostra as informações de qual foi o usuário que
+      cadastrou o custo junto com a data e hora de cadastro, e também a data de
+      alteração e usuário de alteração.
+    </p>
+    <img src={img9} alt="" />
+    <br />
+
+    <p>
+      O último custo que deve ser cadastrado é o "Markup (Divisor)", que é o
+      custo que vê a sua margem de venda.
+    </p>
+    <img src={img10} alt="" />
+
+    <p>
+      Ao clicarmos ira abrir a tela de cadastro onde para criar um cadastro novo
+      basta apertarmos em "Novo (F2)".
+    </p>
+    <img src={img11} alt="" />
+
+    <p>
+      E devem ser preenchidas as duas abas "Dados" e "Índices". Na aba "Dados"
+      são preenchidas as seguintes informações:
+    </p>
+    <img src={img12} alt="" />
+    <p><b>DESCRIÇÃO:</b> Nome e informação do Markup.</p>
+    <p>
+      <b>% TOTAL ÍNDICES:</b> Calculado sozinho, é o valor total dos índices colocados
+      na outra aba.
+    </p>
+    <p>
+      <b>DIVISOR:</b> Calculado sozinho, calculado da seguinte forma: ((100 - valor
+      total índices) / 100)
+    </p>
+    <br />
+
+    <p>
+      A outra aba "Índices" deve ser preenchida colocando a descrição do markup
+      e o percentual desse custo Markup.
+    </p>
+    <p>
+      Onde para colocar um novo cadastro deve apertar na folha em branco, para
+      editar um cadastro deve apertar no lápis e para excluir no botão laranja.
+      E deve ser preenchida as seguintes informações:
+    </p>
+
+    <img src={img13} alt="" />
+    <p><b>DESCRIÇÃO:</b> Nome informacional do índice do markup.</p>
+    <p><b>PERCENTUAL(%):</b> Percentual que esse markup tem no custo.</p>
+    <br />
+
+    <p>
+      Por fim, na aba "Dados" também mostra as informações de qual foi o usuário
+      que cadastrou o custo junto com a data e hora de cadastro, e também a data
+      de alteração e usuário de alteração.
+    </p>
+    <img src={img14} alt="" />
+
+    <div class="rodape">
+      <p><b>Criado por:</b> Pedro Eduardo Garcia Silva.</p>
+      <p><b>Revisado por:</b> Pedro Eduardo Garcia Silva.</p>
+      <p><b>Data Revisão:</b>23/12/2022</p>
+    </div>
+  </main>
+</Layout>

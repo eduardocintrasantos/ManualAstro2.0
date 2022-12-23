@@ -1,0 +1,105 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import "./style.css";
+
+import img1 from "../../imagens/unidades/img1.png";
+import img2 from "../../imagens/tipoLancamento/img1.png";
+import img3 from "../../imagens/tipoLancamento/img2.png";
+import img4 from "../../imagens/tipoLancamento/img3.png";
+import img5 from "../../imagens/tipoLancamento/img4.png";
+import img6 from "../../imagens/tipoLancamento/img5.png";
+import img7 from "../../imagens/tipoLancamento/img6.png";
+import img8 from "../../imagens/tipoLancamento/img7.png";
+import img9 from "../../imagens/tipoLancamento/img8.png";
+import img10 from "../../imagens/tipoLancamento/img9.png";
+import img11 from "../../imagens/tipoLancamento/img10.png";
+import img12 from "../../imagens/tipoLancamento/img11.png";
+import img13 from "../../imagens/tipoLancamento/img12.png";
+---
+
+<Layout title="Tipos de Lançamento">
+  <main>
+    <h1>Cadastro de Tipos de Lançamento</h1>
+
+    <p>Acessar o Menu / Cadastros / Estoque / Tipos de Lançamento:</p>
+    <img src={img1} alt="" />
+    <img src={img2} alt="" />
+
+    <p>
+      Utilizado para registrar as movimentações de entrada e saídas de produtos,
+      nos pedidos, inventários, produção, controle de desossa, trocas,
+      consignados e estornos.
+    </p>
+    <img src={img3} alt="" />
+
+    <p>Marcando o parâmetro Bloqueado, Inativa o uso do Tipo de Lançamento.</p>
+    <img src={img4} alt="" />
+
+    <p>
+      Informar a Descrição do Tipo de Lançamento. É recomendado para auxiliar no
+      uso um padrão de descrição sendo a movimentação de Entrada ou Saída, e em
+      qual contexto será utilizado (vendas, inventário).
+    </p>
+    <img src={img5} alt="" />
+
+    <p>
+      Informar o numero sequencial do lançamento, geralmente começa no zero e
+      inicia-se no um.
+    </p>
+    <img src={img6} alt="" />
+
+    <p>
+      Informar se o tipo de movimentação irá gerar sequencial (será considerado
+      a sequência informada acima).
+    </p>
+    <img src={img7} alt="" />
+
+    <p>Informar se o tipo de lançamento irá ser considerado no consumo.</p>
+    <img src={img8} alt="" />
+
+    <p>
+      O consumo esta relacionado com a tela do mapa de compras. Quando o
+      parâmetro esta ativado, dentro do consumo atual ocorrerá movimentação.
+    </p>
+    <img src={img9} alt="" />
+
+    <p>Quando não estiver marcado, não considerará movimentação.</p>
+    <img src={img10} alt="" />
+
+    <p>
+      <b
+        >Para acessar o manual da tela do Mapa de compras, <a href=""
+          >clique aqui</a
+        >:</b
+      >
+    </p>
+
+    <p>
+      Informar se o tipo de lançamento será utilizado em entradas ou saídas.
+      Escolhendo entradas, por exemplo, nas telas que utilizam tipos de
+      lançamento como nos parâmetros gerais do inventário somente serão
+      mostrados os tipos de lançamento com parâmetro de saída.
+    </p>
+    <img src={img11} alt="" />
+
+    <p>
+      Informar o tipo de lançamento de estorno da movimentação. Sempre que há
+      uma entrada, ou saída de estoque em caso de estorno da operação é
+      obrigatório estar amarrado uma operação de estorno para constar nos
+      relatórios de movimentações e nas telas de entradas ou saídas.
+    </p>
+    <img src={img12} alt="" />
+
+    <p>
+      Dados Adicionais contem os campos Inclusão e Última alteração, onde audita
+      o usuário que criou e/ou alterou o registro.
+    </p>
+    <img src={img13} alt="" />
+
+    <div class="rodape">
+      <p><b>Criado por:</b> Bruno Pires da Silva.</p>
+      <p><b>Revisado por:</b> Bruno Pires da Silva.</p>
+      <p><b>Data Revisão:</b>23/12/2022</p>
+    </div>
+  </main>
+</Layout>
