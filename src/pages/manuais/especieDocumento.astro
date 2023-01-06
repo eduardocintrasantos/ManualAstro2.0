@@ -6,6 +6,14 @@ import img1 from "../../imagens/prazoPagamento/img1.png";
 import img2 from "../../imagens/especieDocumento/img1.png";
 import img3 from "../../imagens/especieDocumento/img2.png";
 import img4 from "../../imagens/especieDocumento/img3.png";
+import img5 from "../../imagens/especieDocumento/img4.png";
+import img6 from "../../imagens/especieDocumento/img5.png";
+import img7 from "../../imagens/especieDocumento/img6.png";
+import img8 from "../../imagens/especieDocumento/img7.png";
+import img9 from "../../imagens/especieDocumento/img8.png";
+import img10 from "../../imagens/especieDocumento/img9.png";
+import img11 from "../../imagens/especieDocumento/img10.png";
+import img12 from "../../imagens/especieDocumento/img11.png";
 ---
 
 <Layout title="Cadastro Especie Documento">
@@ -17,40 +25,76 @@ import img4 from "../../imagens/especieDocumento/img3.png";
     <img src={img2} alt="" />
 
     <p>
+      Utilizado nas Entradas de Notas, Documentos, Pedidos de Vendas, NFe, e
+      lançamento de contas a pagar e a receber para identificar a forma que será
+      pago ou recebido um título.
+    </p>
+
+    <p>
       Clique em novo para iniciar o cadastro de uma nova Espécie de Documento.
     </p>
     <img src={img3} alt="" />
+    <br />
 
-    <p>
-      Em seguida no campo <b>Descrição</b> infromar o nome da forma de pagamento.
-    </p>
-    <p>
-      No campo <b>Espécie (Meio Pagto)</b> selectionar a especie referente a descrição
-      da Especie.
-    </p>
     <img src={img4} alt="" />
 
-    <p>
-      A opção <b>Utiliza Mobile</b> é utilizado quando o cliente tem o modulo mobile
-      e utilizara essa especie de documento no pedido feito pelo celular.
-    </p>
-    <p>
-      A opção <b>Imprime Nota Promissória</b> dá permissão de imprimir a promissória
-      no <a href=""><b>Pedido</b></a>.
-    </p>
-    <p>
-      A opção <b>Adiantamento financeiro</b> é utilizado quando a especie de documento
-      será utilizada para titulos de <a href=""
-        ><b>Adiantamento Financeiro</b>
-      </a>.
-    </p>
-    <p>
-      E a opção <b>Não Permite Impressão Boleto</b> bloqueia a geração de boleto
-      do titulo que utiliza essa especie de documento.
-    </p>
-    <br />
-    <p>Ao Final clique em Salvar.</p>
+    <p>Informar o Nome da Forma de Pagamento.</p>
+    <img src={img5} alt="" />
 
+    <p>
+      Informar o Meio de pagamento, este filtro é utilizado nos mapas de vendas
+      e também no xml da Nota Fiscal Eletronica quando a nota movimentar o
+      Financeiro.
+    </p>
+    <img src={img6} alt="" />
+    <br />
+    <img src={img7} alt="" />
+
+    <p>
+      Assinalar se esta espécie de documento pode ser utilizado no aplicativo de
+      vendas.
+    </p>
+    <img src={img8} alt="" />
+
+    <p>
+      Informar também se esta Espécie tem permissão de impressão de Nota
+      Promissória no Pedido.
+    </p>
+    <img src={img9} alt="" />
+
+    <p>
+      E se esta Espécie <b>NÃO</b> permitirá a impressão de Boleto no Pedido ou Nota
+      fical Eletrônica em caso de ambos os casos movimentarem o Financeiro.
+    </p>
+    <img src={img10} alt="" />
+
+    <p>
+      Informar se esta Espécie de Documento é um Adiantamento Financeiro, ou
+      seja, será realizado pagamento ou recebimento antes da comercialização do
+      produto/serviço.
+    </p>
+    <p>
+      O Financeiro baixado com a espécie de documento com este parâmetro ativado
+      permite realizar o processo de baixa por adiantamento.
+    </p>
+    <img src={img11} alt="" />
+
+    <p>
+      Para emissão de Notas Fiscais Eletrônicas em que o processo de venda
+      ocorreu através de plataformas de e-commerce, pode ser parametrizado junto
+      a Especie de documento quem é o intermediador do pagamento referente a
+      venda, pois em caso de venda pela em sites na internet normalmente não é o
+      consumidor que realizou a compra que faz o pagamento, e sim uma
+      intermediadora após a confirmação do recebimento do produto.
+    </p>
+    <img src={img12} alt="" />
+    <p>
+      <b
+        >Para acessar o Manual de Cadastro de Intermediador Comercial <a href=""
+          >clique aqui</a
+        >.
+      </b>
+    </p>
     <div class="rodape">
       <p><b>Criado por:</b> Bruno Pires da Silva.</p>
       <p><b>Revisado por:</b> Bruno Pires da Silva.</p>
