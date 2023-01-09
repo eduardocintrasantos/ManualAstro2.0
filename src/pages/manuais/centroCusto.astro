@@ -1,0 +1,49 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import "./style.css";
+
+import img1 from "../../imagens/centroCusto/img1.png";
+---
+
+<Layout title="Centro de Custo">
+  <main>
+    <h1>Cadastro Centro de Custo</h1>
+
+    <p>Acessar o Menu/ Cadastros / Financeiro/ Centro de Custo:</p>
+    <img src={img1} alt="" />
+
+    <p>
+      O Centro de Custo pode ser um local, Veiculo, bem ou Equipamento,
+      utilizado para identificar onde esta sendo aplicado um determinado recurso
+      ou despesa.
+    </p>
+    <p>
+      Por exemplo, pode ser criado um Veiculo moto, carro como centro de custo,
+      e ao registrar um abastecimento, pode ser direcionado para este centro de
+      custo.
+    </p>
+    <p>
+      Nos relatórios de despesas pode ser filtrado as Despesas que no financeiro
+      foi direcionado para o centro de custo.
+    </p>
+
+    <p>
+      <b
+        >Para acessar o manual de lançamento de despesas <a href="#"
+          >clique aqui</a
+        >:</b
+      >
+    </p>
+    <p>
+      Informar um código para o centro de custo. Pode ser o nome do local, a
+      placa de um veículo.
+    </p>
+
+    <p>Informar o nome do centro de custo, local ou veículo.</p>
+
+    <p>
+      Ao salvar o registro, pode ser utilizado nas entradas de notas fiscais, e
+      lançamento de despesas.
+    </p>
+  </main>
+</Layout>
