@@ -1,0 +1,68 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import "./style.css";
+
+import img1 from "../../imagens/centroCusto/img1.png";
+import img2 from "../../imagens/moeda/img1.png";
+import img3 from "../../imagens/moeda/img2.png";
+import img4 from "../../imagens/moeda/img3.png";
+import img5 from "../../imagens/moeda/img4.png";
+import img6 from "../../imagens/moeda/img5.png";
+import img7 from "../../imagens/moeda/img6.png";
+import img8 from "../../imagens/moeda/img7.png";
+import img9 from "../../imagens/moeda/img8.png";
+import img10 from "../../imagens/moeda/img9.png";
+---
+
+<Layout title="Moedas">
+  <main>
+    <h1>Cadastro Moedas</h1>
+
+    <p>Acessar o Menu/ Cadastros / Financeiro/ Moedas:</p>
+    <img src={img1} alt="" />
+    <img src={img2} alt="" />
+
+    <p>
+      O Cadastro de Moeda é utilizado no Pedido mod III, Ordem de Compra para
+      verificação de conversão de ptax em caso de moeda estrangeira, e também
+      utilizado na Nota fiscal.
+    </p>
+    <img src={img3} alt="" />
+
+    <p>Informar o símbolo da Unidade da moeda, por exemplo, R$.</p>
+    <img src={img4} alt="" />
+
+    <p>Informar o nome da moeda, Real, Dólar.</p>
+    <img src={img5} alt="" />
+
+    <p>Informar o Tipo de Moeda, se é Nacional ou Estrangeira.</p>
+    <img src={img6} alt="" />
+
+    <p>
+      Sendo moeda estrangeira, pode ser informado se a cotação do PTAX (taxa de
+      conversão entre a moeda nacional e estrangeira) será mensal ou diária.
+    </p>
+    <img src={img7} alt="" />
+
+    <p>
+      Independente da forma de cotação, sendo moeda estrangeira a aba Cotações
+      ficará disponível para poder ser informado a cotação da moeda.
+    </p>
+    <img src={img8} alt="" />
+
+    <p>A data e valor da cotação da moeda deverá ser informada.</p>
+    <img src={img9} alt="" />
+
+    <p>
+      Ao final do processo clique em salvar para registrar a moeda, ou a cotação
+      sempre que alterar o PTAX.
+    </p>
+    <img src={img10} alt="" />
+
+    <div class="rodape">
+      <p><b>Criado por:</b> Bruno Pires da Silva.</p>
+      <p><b>Revisado por:</b> Bruno Pires da Silva.</p>
+      <p><b>Data Revisão:</b>19/12/2022</p>
+    </div>
+  </main>
+</Layout>

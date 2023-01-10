@@ -1,0 +1,79 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import "./style.css";
+
+import img1 from "../../imagens/centroCusto/img1.png";
+import img2 from "../../imagens/operacaoBancaria/img1.png";
+import img3 from "../../imagens/operacaoBancaria/img2.png";
+import img4 from "../../imagens/operacaoBancaria/img3.png";
+import img5 from "../../imagens/operacaoBancaria/img4.png";
+import img6 from "../../imagens/operacaoBancaria/img5.png";
+import img7 from "../../imagens/operacaoBancaria/img6.png";
+import img8 from "../../imagens/operacaoBancaria/img7.png";
+---
+
+<Layout title="Operações Bancarias">
+  <main>
+    <h1>Cadastro Operação Bancaria</h1>
+
+    <p>Acessar o Menu/ Cadastros / Financeiro/ Operações Bancarias:</p>
+    <img src={img1} alt="" />
+    <img src={img2} alt="" />
+
+    <p>
+      As operações bancárias são os registros de Débitos e Créditos nas contas
+      bancárias, utilizados nos extratos bancários, recebimentos de Cheques,
+      cartões e Transferências Bancárias.
+    </p>
+    <img src={img3} alt="" />
+
+    <p>
+      Informar o Nome do Lançamento Bancário como Pagamentos, Recebimentos,
+      Recebimentos em Cheques, Saques, Depósitos.
+    </p>
+    <img src={img4} alt="" />
+
+    <p>
+      O Lançamento Bancário pode ser vinculado a um Plano Financeiro, para que
+      no momento do lançamento bancário seja sugerido o tipo de despesa ou
+      receita, e ser filtrado nos relatórios.
+    </p>
+    <img src={img5} alt="" />
+    <p>
+      <b
+        >Para acessar o manual de Cadastro de Plano Financeiro <a
+          href="/manuais/planoFinanceiro">clique aqui</a
+        >:
+      </b>
+    </p>
+
+    <p>
+      Informar se o Tipo de Lançamento irá gerar sequência e no caso de não
+      começar do número 1, pode ser informado a partir de qual numeração irá
+      começar.
+    </p>
+    <img src={img6} alt="" />
+
+    <p>
+      Informar se o Tipo de Lançamento será Débito (pagamento), ou Crédito
+      (recebimento).
+    </p>
+    <img src={img7} alt="" />
+
+    <p>
+      Informar se o Tipo de Lançamento ficará disponível na tela de posição
+      financeira diária na aba Lançamentos Bancários.
+    </p>
+    <p>
+      Pode ser utilizado para notificação de compensação de cheques fornecidos,
+      transferências, TED ou DOC.
+    </p>
+    <img src={img8} alt="" />
+
+    <div class="rodape">
+      <p><b>Criado por:</b> Bruno Pires da Silva.</p>
+      <p><b>Revisado por:</b> Bruno Pires da Silva.</p>
+      <p><b>Data Revisão:</b>19/12/2022</p>
+    </div>
+  </main>
+</Layout>

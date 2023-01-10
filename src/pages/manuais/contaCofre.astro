@@ -1,0 +1,259 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import "./style.css";
+
+import img1 from "../../imagens/centroCusto/img1.png";
+import img2 from "../../imagens/contaCofre/img1.png";
+import img3 from "../../imagens/contaCofre/img2.png";
+import img4 from "../../imagens/contaCofre/img3.png";
+import img5 from "../../imagens/contaCofre/img4.png";
+import img6 from "../../imagens/contaCofre/img5.png";
+import img7 from "../../imagens/contaCofre/img6.png";
+import img8 from "../../imagens/contaCofre/img7.png";
+import img9 from "../../imagens/contaCofre/img8.png";
+import img10 from "../../imagens/contaCofre/img9.png";
+import img11 from "../../imagens/contaCofre/img10.png";
+import img12 from "../../imagens/contaCofre/img11.png";
+import img13 from "../../imagens/contaCofre/img12.png";
+import img14 from "../../imagens/contaCofre/img13.png";
+import img15 from "../../imagens/contaCofre/img14.png";
+import img16 from "../../imagens/contaCofre/img15.png";
+import img17 from "../../imagens/contaCofre/img16.png";
+import img18 from "../../imagens/contaCofre/img17.png";
+import img19 from "../../imagens/contaCofre/img18.png";
+import img20 from "../../imagens/contaCofre/img19.png";
+import img21 from "../../imagens/contaCofre/img20.png";
+import img22 from "../../imagens/contaCofre/img21.png";
+import img23 from "../../imagens/contaCofre/img22.png";
+---
+
+<Layout title="Contas Cofre">
+  <main>
+    <h1>Cadastro Conta Cofre</h1>
+
+    <p>Acessar o Menu/ Cadastros / Financeiro/ Contas Cofre:</p>
+    <img src={img1} alt="" />
+    <img src={img2} alt="" />
+
+    <h2>Dados Conta</h2>
+    <p>
+      O Contas/cofre é utilizado para direcionar o local de débito ou crédito de
+      divisas para dinheiro em espécie ou Banco. Utilizado para acompanhamento
+      do Fluxo de Caixa ou Conciliação Bancária.
+    </p>
+    <img src={img3} alt="" />
+
+    <p>Informar o Nome da Conta Bancária.</p>
+    <img src={img4} alt="" />
+
+    <p>Informar o código da Instituição.</p>
+    <img src={img5} alt="" />
+    <p>
+      <b
+        >Para acessar o manual de cadastro de Bancos, <a href="/manuais/banco"
+          >clique aqui</a
+        >:
+      </b>
+    </p>
+
+    <p>Informar a conta e agência.</p>
+    <img src={img6} alt="" />
+
+    <p>
+      Informar o Tipo de Conta, Corrente, Poupança, ou se será caixa/cofre
+      (Dinheiro em espécie).
+    </p>
+    <img src={img7} alt="" />
+
+    <p>Informar o Tipo de Operação.</p>
+    <p>
+      Uma operação bancária é qualquer atividade desenvolvida pelo banco para
+      prestar serviços aos clientes.
+    </p>
+    <p>
+      Dentre os tipos de operações bancárias existentes, podemos classificá-los
+      em:
+    </p>
+    <p>
+      Operações ativas: Aqueles em que é a entidade que entrega o crédito ao
+      cliente. Atividades como empréstimos, linhas de desconto, crédito, etc.
+      são consideradas ativas para o banco.
+    </p>
+    <p>
+      Operações passivas: Aquelas em que os clientes entregam seu dinheiro ao
+      banco. Vários exemplos desse tipo de operação são contas de poupança,
+      depósitos, investimentos, etc.
+    </p>
+    <p>
+      Operações neutras: Aquelas em que o banco não recebe ou concede qualquer
+      tipo de capital. São operações realizadas pelo banco por meio da mediação
+      entre um indivíduo e uma organização. Exemplo disso são as operações de
+      cobrança do Estado, que são pagas pelo banco, mas o beneficiário é o
+      Estado.
+    </p>
+    <img src={img8} alt="" />
+
+    <p>Para saber mais sobre operações bancárias acesse o link:</p>
+    <p>
+      <a
+        href="https://pt.economy-pedia.com/11040259-bank-transaction#:~:text=Transa%C3%A7%C3%A3o%20banc%C3%A1ria,-%C3%8Dndice&text=Uma%20opera%C3%A7%C3%A3o%20banc%C3%A1ria%20%C3%A9%20qualquer,preste%20servi%C3%A7o%20aos%20seus%20clientes."
+        >https://pt.economy-pedia.com/11040259-bank-transaction</a
+      >
+    </p>
+
+    <p>
+      Os dados a seguir são opcionais, dados de abertura, valor de limite de
+      crédito, nome do Gerente e contatos.
+    </p>
+    <img src={img9} alt="" />
+
+    <h2>Layout de Cobrança</h2>
+
+    <p>
+      O Layout de cobrança é utilizado para emissão de Boletos dentro do
+      sistema, sendo pelo Pedido, pela Nota Fiscal Eletrônica, ou pelo Títulos a
+      receber.
+    </p>
+    <p>
+      O Layout encaminha através de arquivo de remessa o Beneficiário, pagador,
+      valor, vencimento e as instruções de cobrança como desconto, protesto ou
+      prazo que será mantido o boleto no banco.
+    </p>
+    <img src={img10} alt="" />
+
+    <p>
+      Todas as informações do Layout devem ser fornecidas pelo Banco, gerente ou
+      T.I do usuário do sistema.
+    </p>
+    <p>
+      Informar um nome que possa ser identificado o tipo de Layout, sugerimos
+      informar o tipo de cobrança, o CNAB, se há protesto e o responsável pela
+      impressão do boleto.
+    </p>
+    <p>
+      Informar o código da rede bancária, e preencher o Convênio, Cedente e
+      Código de Transmissão caso o banco exija esta informação.
+    </p>
+    <p>
+      Informar a carteira e a modalidade, o tipo de carteira e a característica
+      do título. Informar a espécie de documento e a sigla da moeda.
+    </p>
+    <img src={img11} alt="" />
+
+    <p>
+      Na aba Protesto/Multa informar se haverá protesto ou não e quantos dias a
+      rede bancária deve aguardar, informar se haverá multa e juros, quantos
+      dias de carência para a multa e juros e também qual o período que a
+      cobrança poderá ficar no banco para depois ser retirada, pois a cada 30
+      dias há uma taxa a ser paga pelo correntista por manter o título em aberto
+      no banco.
+    </p>
+    <img src={img12} alt="" />
+
+    <p>
+      Informar o Tamanho do Nosso Número, o Layout da Remessa (CNAB 240 ou 400),
+      se haverá aceite ou não, quem é o responsável pela emissão do boleto, o
+      modelo de impressão do boleto, como será composto o nosso número do título
+      (sequência como número de Nota Fiscal Eletrônica), informar a sequência
+      caso o usuário já emite boleto na rede bancária, e informar os dizeres do
+      local de pagamento.
+    </p>
+    <img src={img13} alt="" />
+
+    <h2>Remessa / Retorno Cobrança</h2>
+
+    <p>
+      Dentro do Cadastro de Contas/Cofre complementando o Layout de cobrança é
+      utilizado um cadastro para o sistema interpretar as informações do arquivo
+      de retorno.
+    </p>
+
+    <p>
+      O arquivo de retorno é baixado através da conta bancária do usuário, e
+      neste arquivo contém dados como cobranças enviadas que foram aceitas,
+      rejeitadas, baixadas (retirada cobrança), liquidações (pagamentos),
+      instruções de alterações na cobrança como data de vencimento e desconto.
+      Além da confirmação de instruções e custos de despesas de emissão de
+      boletos ou baixas.
+    </p>
+    <img src={img14} alt="" />
+
+    <p>
+      Para isso é preciso ser preenchida a codificação que vem no arquivo de
+      retorno para que o sistema possa traduzir as informações e interagir com
+      os títulos a receber que foram geradas cobranças bancárias.
+    </p>
+    <p>
+      Informar o caminho padrão para ser salvo o arquivo de remessa quando
+      gerado no sistema.
+    </p>
+    <p>
+      Também informar o caminho que o sistema irá ler as informações do arquivo
+      de retorno para registrar o aceite do título pelo banco, ou a liquidação
+      (recebimento).
+    </p>
+    <img src={img15} alt="" />
+
+    <p>
+      Informar nos campos destinados, os códigos das ocorrências que normalmente
+      são padrões em todos os bancos.
+    </p>
+    <img src={img16} alt="" />
+
+    <p>
+      Para mais informações sobre os códigos de ocorrência acesse o link abaixo
+      na página 23.
+    </p>
+    <p>
+      <a
+        href="https://download.itau.com.br/bankline/layout_cobranca_400bytes_cnab_itau.pdf"
+        >https://download.itau.com.br/bankline/layout_cobranca_400bytes_cnab_itau.pdf</a
+      >
+    </p>
+
+    <p>
+      Assinalar se as informações de liquidações e despesas irão integrar os
+      lançamentos bancários, ou seja, se serão feitos débitos e créditos da
+      conta bancária.
+    </p>
+    <img src={img17} alt="" />
+
+    <p>
+      Assinalar se este parâmetro irá colocar as tarifas que constam no arquivo
+      de retorno com data de lançamento no último dia do mês.
+    </p>
+    <img src={img18} alt="" />
+
+    <p>
+      Assinalar se nos Lançamentos Bancários serão agrupados (somados) todos os
+      tipos iguais em um único lançamento.
+    </p>
+    <img src={img19} alt="" />
+
+    <h2>Parâmetros PIX</h2>
+
+    <p>
+      Para a Chave Pix poder ser utilizada como forma de recebimento no Checkout
+      e opção no título a pagar, ou a receber deve ser cadastrada na
+      Conta/Cofre.
+    </p>
+    <p>Dentro de Contas/Cofre, acessar os Parâmetros PIX.</p>
+    <img src={img20} alt="" />
+
+    <p>
+      Clique em Novo, a seguir informe a chave desejada, e para finalizar clique
+      em Ok e Salvar.
+    </p>
+    <img src={img21} alt="" />
+    <br />
+    <img src={img22} alt="" />
+    <br />
+    <img src={img23} alt="" />
+
+    <div class="rodape">
+      <p><b>Criado por:</b> Bruno Pires da Silva.</p>
+      <p><b>Revisado por:</b> Bruno Pires da Silva.</p>
+      <p><b>Data Revisão:</b>19/12/2022</p>
+    </div>
+  </main>
+</Layout>
