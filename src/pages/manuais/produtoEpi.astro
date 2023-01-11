@@ -1,0 +1,29 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import "./style.css";
+
+import img1 from "../../imagens/produtoEpi/img1.png";
+import img2 from "../../imagens/produtoEpi/img2.png";
+---
+
+<Layout title="Produto EPI">
+    <main>
+        <h1>Cadastro de Produto EPI</h1>
+
+        <p><b>As informações padrões do Cadastro de Produto seguem as mesmas o Manual de Cadastro de Produto que pode ser acessado <a href="/manuais/prdComercioGeral" target="_blank">clicando aqui</a>:</b></p>
+
+        <p>As particularidades seriam o Tipo de Produto “Material de Uso e Consumo”, e o parâmetro EPI deve estar ativado. </p>
+        <img src={img1} alt="">
+
+        <p>Na Aba estoque, Sub-aba Definições 2/2 informar o Certificado de Aprovação do EPI cadastrado anteriormente.</p>
+        <img src={img2} alt="">
+
+        <p><b>Para acessar o manual de Cadastro de CA <a href="/manuais/epiAprovacao" target="_blank">clique aqui</a>:</b></p>
+    
+        <div class="rodape">
+            <p><b>Criado por:</b> Bruno Pires da Silva.</p>
+            <p><b>Revisado por:</b> Bruno Pires da Silva.</p>
+            <p><b>Data Revisão:</b>19/12/2022</p>
+        </div>
+    </main>
+</Layout>
