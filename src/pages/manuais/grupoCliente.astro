@@ -1,0 +1,38 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import "./style.css";
+
+import img1 from "../../imagens/grupoCliente/img1.png";
+import img2 from "../../imagens/grupoCliente/img2.png";
+import img3 from "../../imagens/grupoCliente/img3.png";
+import img4 from "../../imagens/grupoCliente/img4.png";
+---
+
+<Layout title="Grupo de Clientes">
+  <main>
+    <h1>Cadastro Grupo de Clientes</h1>
+
+    <p>Acessar o Menu/ Cadastros / Comercial / Grupo de Clientes:</p>
+    <img src={img1} alt="" />
+    <img src={img2} alt="" />
+
+    <p>
+      Grupo de Clientes utilizado no cadastro de cliente para uso no Pricat
+      (Tabela de Preço) e no Cadastro de Fazendas.
+    </p>
+    <img src={img3} alt="" />
+
+    <p>
+      Cadastro utilizado para identificar o local do estoque em que um produto
+      está. Na entrada ou na saída.
+    </p>
+    <p>Informar o nome do Grupo de Clientes, como a Ambev, JBS.</p>
+    <img src={img4} alt="" />
+
+    <div class="rodape">
+      <p><b>Criado por:</b> Bruno Pires da Silva.</p>
+      <p><b>Revisado por:</b> Bruno Pires da Silva.</p>
+      <p><b>Data Revisão:</b>19/12/2022</p>
+    </div>
+  </main>
+</Layout>

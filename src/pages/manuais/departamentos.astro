@@ -1,0 +1,46 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import "./style.css";
+
+import img1 from "../../imagens/grupoCliente/img1.png";
+import img2 from "../../imagens/departamentos/img1.png";
+import img3 from "../../imagens/departamentos/img2.png";
+import img4 from "../../imagens/departamentos/img3.png";
+import img5 from "../../imagens/departamentos/img4.png";
+---
+
+<Layout title="Departamentos">
+  <main>
+    <h1>Cadastro Departamentos</h1>
+
+    <p>Acessar o Menu/ Cadastros / Comercial / Departamentos:</p>
+    <img src={img1} alt="" />
+    <img src={img2} alt="" />
+
+    <p>
+      Utilizado no Pedido mod III para identificar o departamento responsável
+      pelo pedido, e posteriormente na criação do Plano para Planejamento.
+    </p>
+    <p>
+      Informando o Departamento, ficará visível apenas os pedidos do mesmo
+      departamento responsável do pedido e plano.
+    </p>
+    <img src={img3} alt="" />
+
+    <p>
+      Neste cadastro o sistema nao cria um código automático, sendo necessario
+      informar um código para melhor localizar o registro no nomento do uso,
+      pode ser letras, números ou a combinação de ambos.
+    </p>
+    <img src={img4} alt="" />
+
+    <p>Informar a descrição do Departamento.</p>
+    <img src={img5} alt="" />
+
+    <div class="rodape">
+      <p><b>Criado por:</b> Bruno Pires da Silva.</p>
+      <p><b>Revisado por:</b> Bruno Pires da Silva.</p>
+      <p><b>Data Revisão:</b>19/12/2022</p>
+    </div>
+  </main>
+</Layout>

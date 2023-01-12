@@ -1,0 +1,47 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import "./style.css";
+
+import img1 from "../../imagens/grupoCliente/img1.png";
+import img2 from "../../imagens/grupoEtapas/img1.png";
+import img3 from "../../imagens/grupoEtapas/img2.png";
+import img4 from "../../imagens/grupoEtapas/img3.png";
+import img5 from "../../imagens/grupoEtapas/img4.png";
+import img6 from "../../imagens/grupoEtapas/img5.png";
+---
+
+<Layout title="Grupo de Etapas">
+  <main>
+    <h1>Grupo de Etapas</h1>
+
+    <p>Acessar o Menu/ Químicas / Grupo de Etapas:</p>
+    <img src={img1} alt="" />
+    <img src={img2} alt="" />
+
+    <p>
+      Este cadastro é utilizado na montagem das etapas da engenharia, onde as
+      etapas podem ser PESAGEM, AGITAÇÃO, MOAGEM, EXPEDIÇÃO.
+    </p>
+    <img src={img3} alt="" />
+
+    <p>
+      O parâmetro Bloqueado inativa o uso do cadastro nas Etapas de Produção.
+    </p>
+    <img src={img4} alt="" />
+
+    <p>Informar a descrição do grupo da etapa.</p>
+    <img src={img5} alt="" />
+
+    <p>
+      Dados Adicionais contém os campos Inclusão e Última alteração, onde audita
+      o usuário que criou e/ou alterou o registro.
+    </p>
+    <img src={img6} alt="" />
+
+    <div class="rodape">
+      <p><b>Criado por:</b> Bruno Pires da Silva.</p>
+      <p><b>Revisado por:</b> Bruno Pires da Silva.</p>
+      <p><b>Data Revisão:</b>19/12/2022</p>
+    </div>
+  </main>
+</Layout>
