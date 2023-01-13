@@ -1,0 +1,104 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import "./style.css";
+
+import img1 from "../../imagens/cest/img1.png";
+import img2 from "../../imagens/cest/img2.png";
+import img3 from "../../imagens/cest/img3.png";
+import img4 from "../../imagens/cest/img4.png";
+import img5 from "../../imagens/cest/img5.png";
+import img6 from "../../imagens/cest/img6.png";
+import img7 from "../../imagens/cest/img7.png";
+import img8 from "../../imagens/cest/img8.png";
+import img9 from "../../imagens/cest/img9.png";
+---
+
+<Layout title="Cadastro CEST">
+  <main>
+    <h1>Cadastro CEST</h1>
+
+    <p>Acessar o Menu / Cadastros / Fiscais / CEST:</p>
+    <img src={img1} alt="" />
+    <img src={img2} alt="" />
+
+    <p>
+      CEST significa Código Especificador da Substituição Tributária: um código
+      usado para identificar categorias de produtos passíveis à substituição
+      tributária.
+    </p>
+    <p>
+      Utilizado para o regime de antecipação do recolhimento do ICMS (Imposto
+      sobre Circulação de Mercadorias e Prestação de Serviços) devido por toda a
+      cadeia de circulação da mercadoria, permitindo que um único contribuinte
+      pague o imposto.
+    </p>
+    <p>
+      O CEST é composto por sete dígitos. Os dois primeiros dígitos correspondem
+      ao segmento da mercadoria. O terceiro ao quinto refere-se ao item de um
+      segmento de mercadoria ou bem. Por fim, os dois últimos dígitos
+      correspondem às especificações.
+    </p>
+    <img src={img3} alt="" />
+    <p>
+      <b
+        >Para mais informações sobre o CEST acesse o link: <a
+          href="https://blog.contaazul.com/o-que-e-codigo-cest"
+          >https://blog.contaazul.com/o-que-e-codigo-cest</a
+        >
+      </b>
+    </p>
+
+    <p>Informar o código do CEST fornecido pelo contador.</p>
+    <img src={img4} alt="" />
+
+    <p>
+      Informar a Descrição do CEST, assim como no NCM pode ser uma nomenclatura
+      que abrange uma categoria de produtos (equivalente ao Grupo no Cadastro de
+      Produto)
+    </p>
+    <img src={img5} alt="" />
+
+    <p>Escolher os NCMs que estao subordinados a este CEST.</p>
+    <img src={img6} alt="" />
+    <img src={img7} alt="" />
+
+    <p>
+      Na aba IVA-Substituição Tributária informar a Alíquota por estado, caso no
+      padrão triburário a parametrização indique captar os % do CEST/NCM.
+    </p>
+
+    <p>
+      <b>IVA (Índice de Valor Agregado)</b> é um índice calculado através de pesquisas
+      de mercado para estimar o valor de venda final de uma mercadoria.
+    </p>
+    <p>
+      Essas pesquisas são realizadas pelo governo e consideram a tendência da
+      margem que as empresas varejistas devem adicionar ao produto na venda ao
+      consumidor final.
+    </p>
+
+    <p><b>Para mais informações sobre o IVA acesse o link:</b></p>
+    <p>
+      <a
+        href="https://manual.sistemagestaoonline.com.br/vendas/mva.html#:~:text=O%20QUE%20%C3%89%20IVA%20ST,venda%20final%20de%20uma%20mercadoria.&text=ao%20produto%20na%20venda%20ao,circula%C3%A7%C3%A3o%20de%20produtos%20ou%20servi%C3%A7os"
+        >https://manual.sistemagestaoonline.com.br/vendas/mva.html</a
+      >
+    </p>
+
+    <img src={img8} alt="" />
+    <p>
+      Em caso de % de redução da Alíquota do IVA, informar no campo destinado,
+      assim como o % do Fundo de Combate a Pobreza e o % do ST do Fundo.
+    </p>
+    <img src={img9} alt="" />
+
+    <p>Cadastro de NCM e CEST é utilizado no Cadastro de Produto.</p>
+    <p>Para acessar o Manual do Cadastro de Produto clique aqui:</p>
+
+    <div class="rodape">
+      <p><b>Criado por:</b> Bruno Pires da Silva.</p>
+      <p><b>Revisado por:</b> Bruno Pires da Silva.</p>
+      <p><b>Data Revisão:</b>19/12/2022</p>
+    </div>
+  </main>
+</Layout>
