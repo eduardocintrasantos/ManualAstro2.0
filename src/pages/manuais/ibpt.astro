@@ -1,0 +1,27 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import "./style.css";
+
+import img1 from "../../imagens/ibpt/img1.png";
+import img2 from "../../imagens/ibpt/img2.png";
+---
+
+<Layout title="IBPT">
+  <main>
+    <h1>Carregar IBPT</h1>
+
+    <p>Menu / Estoque / Importar Tabela IBPT</p>
+    <img src={img1} alt="" />
+
+    <p>
+      Na tela de importação, escolha o local do arquivo, clique em "Processar".
+    </p>
+    <img src={img2} alt="" />
+
+    <div class="rodape">
+      <p><b>Criado por:</b> Bruno Pires da Silva.</p>
+      <p><b>Revisado por:</b> Bruno Pires da Silva.</p>
+      <p><b>Data Revisão:</b>19/12/2022</p>
+    </div>
+  </main>
+</Layout>
