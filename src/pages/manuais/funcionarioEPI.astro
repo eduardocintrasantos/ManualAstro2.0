@@ -1,0 +1,91 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import "./style.css";
+
+import img1 from "../../imagens/funcionarioEPI/img1.png";
+import img2 from "../../imagens/funcionarioEPI/img2.png";
+import img3 from "../../imagens/funcionarioEPI/img3.png";
+import img4 from "../../imagens/funcionarioEPI/img4.png";
+import img5 from "../../imagens/funcionarioEPI/img5.png";
+import img6 from "../../imagens/funcionarioEPI/img6.png";
+import img7 from "../../imagens/funcionarioEPI/img7.png";
+import img8 from "../../imagens/funcionarioEPI/img8.png";
+---
+
+<Layout title="Funcionario EPI">
+  <main>
+    <h1>Cadastro de Funcionario com EPI</h1>
+
+    <p>
+      <b
+        >As informações padrões do Cadastro de Funcionário são as mesmas do
+        Manual de Funcionários que pode ser acessado <a
+          href="/manuais/funcionario"
+          target="_blank">clicando aqui</a
+        >:</b
+      >
+    </p>
+
+    <p>
+      O Cadastro de Funcionário é utilizado na vinculação do Usuário do Sistema,
+      e na entrega do EPI.
+    </p>
+    <img src={img1} alt="" />
+
+    <p>
+      Na aba Vínculos escolha o mesmo colaborador que está cadastrado como
+      Fornecedor.
+    </p>
+    <img src={img2} alt="" />
+
+    <p>
+      Nota: No cadastro do Fornecedor o parâmetro Colaborador deve estar marcado
+      para conseguir ser utilizado no cadastro do Funcionário.
+    </p>
+    <img src={img3} alt="" />
+    <p>
+      <b
+        >Para acessar o Manual de Cadastro de Fornecedores <a
+          href="/manuais/fornecedor"
+          target="_blank">clique aqui</a
+        >:
+      </b>
+    </p>
+
+    <p>
+      Dentro do cargo é possível informar quais EPIs são de uso obrigatório.
+      Para acessá-lo utilize o menu / cadastros / auxiliares / Cargos.
+    </p>
+    <img src={img4} alt="" />
+
+    <p>
+      Para acessar o manual de Cadastro de Cargo <a
+        href="/manuais/cargos"
+        target="_blank">clique aqui</a
+      >:
+    </p>
+
+    <p>No cadastro de Cargos Clique em Complementares / EPIs Obrigatórios.</p>
+    <img src={img5} alt="" />
+
+    <p>Clique no Local indicado para escolher os EPIs.</p>
+    <img src={img6} alt="" />
+
+    <p>Pode ser selecionado múltiplos EPIs.</p>
+    <img src={img7} alt="" />
+
+    <p>Depois de escolhidos, clique em Salvar.</p>
+    <img src={img8} alt="" />
+
+    <p>
+      Após informar um cargo no cadastro do Funcionário que tem os EPIs
+      obrigatórios, o registro pode ser salvo.
+    </p>
+
+    <div class="rodape">
+      <p><b>Criado por:</b> Bruno Pires da Silva.</p>
+      <p><b>Revisado por:</b> Bruno Pires da Silva.</p>
+      <p><b>Data Revisão:</b>10/01/2023</p>
+    </div>
+  </main>
+</Layout>

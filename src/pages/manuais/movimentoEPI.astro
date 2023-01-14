@@ -1,0 +1,70 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import "./style.css";
+
+import img1 from "../../imagens/movimentoEPI/img1.png";
+import img2 from "../../imagens/movimentoEPI/img2.png";
+import img3 from "../../imagens/movimentoEPI/img3.png";
+import img4 from "../../imagens/movimentoEPI/img4.png";
+import img5 from "../../imagens/movimentoEPI/img5.png";
+import img6 from "../../imagens/movimentoEPI/img6.png";
+import img7 from "../../imagens/movimentoEPI/img7.png";
+---
+
+<Layout title="Movimento EPI">
+  <main>
+    <h1>Tipo de Movimento EPI</h1>
+
+    <p>
+      <b
+        >As informações padrões do Cadastro de Tipo de Movimento seguem as
+        mesmas o Manual de Tipo de Movimento pode ser acessado <a href=""
+          >clicando aqui</a
+        >:
+      </b>
+    </p>
+
+    <img src={img1} alt="" />
+
+    <p>Informar a Descrição Controle de EPI.</p>
+    <img src={img2} alt="" />
+
+    <p>Informar o Menu do Movimento específico Entrega de EPIs.</p>
+    <img src={img3} alt="" />
+
+    <p>Informar a Classificação específica Entrega de EPIs.</p>
+    <img src={img4} alt="" />
+
+    <p>
+      Informar o Tipo de Interação com o Estoque, neste caso sempre será saída,
+      pois uma vez entregue um EPI para o colaborador a quantidade deve ser
+      deduzida do estoque.
+    </p>
+    <img src={img5} alt="" />
+
+    <p>
+      Informar o tipo de Lançamento padrão que será realizado no estoque, que
+      sempre deve acompanhar o parâmetro acima.
+    </p>
+    <img src={img6} alt="" />
+    <p>
+      <b
+        >Para acessar o manual de Cadastro de Tipos de Lançamentos <a
+          href="/manuais/tipoLancamento"
+          target="_blank">clique aqui</a
+        >:
+      </b>
+    </p>
+
+    <p>
+      O número de casas decimais para o tipo de movimento do EPI é irrelevante.
+    </p>
+    <img src={img7} alt="" />
+
+    <div class="rodape">
+      <p><b>Criado por:</b> Bruno Pires da Silva.</p>
+      <p><b>Revisado por:</b> Bruno Pires da Silva.</p>
+      <p><b>Data Revisão:</b>10/01/2023</p>
+    </div>
+  </main>
+</Layout>
