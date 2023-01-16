@@ -1,0 +1,37 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import "./style.css";
+
+import img1 from "../../imagens/grupoEtapas/img1.png";
+import img2 from "../../imagens/instrumentos/img1.png";
+import img3 from "../../imagens/instrumentos/img2.png";
+import img4 from "../../imagens/instrumentos/img3.png";
+---
+
+<Layout title="Instrumentos">
+  <main>
+    <h1>Instrumentos</h1>
+
+    <p>Acessar o Menu/ Químicas / Instrumentos:</p>
+    <img src={img1} alt="" />
+    <img src={img2} alt="" />
+
+    <p>
+      O Instrumento é utilizado na Engenharia e no Controle de Qualidade, para
+      informar em qual equipamento foi feito um determinado teste no produto,
+      por exemplo, Picnometro (utilizado para determinar a densidade de uma
+      substância), copoford (usado para a determinação da viscosidade de tintas,
+      vernizes e outros líquidos).
+    </p>
+    <img src={img3} alt="" />
+
+    <p>Informar a Descrição ou nome do Equipamento/Instrumento.</p>
+    <img src={img4} alt="" />
+
+    <div class="rodape">
+      <p><b>Criado por:</b> Bruno Pires da Silva.</p>
+      <p><b>Revisado por:</b> Bruno Pires da Silva.</p>
+      <p><b>Data Revisão:</b>19/12/2022</p>
+    </div>
+  </main>
+</Layout>

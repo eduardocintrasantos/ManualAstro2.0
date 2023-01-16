@@ -1,0 +1,39 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import "./style.css";
+
+import img1 from "../../imagens/grupoEtapas/img1.png";
+import img2 from "../../imagens/classificacaoProduto/img1.png";
+import img3 from "../../imagens/classificacaoProduto/img2.png";
+import img4 from "../../imagens/classificacaoProduto/img3.png";
+---
+
+<Layout title="Classificação de Produto">
+  <main>
+    <h1>Classificação de Produto</h1>
+
+    <p>Acessar o Menu/ Químicas / Classificação de Produto:</p>
+    <img src={img1} alt="" />
+    <img src={img2} alt="" />
+
+    <p>
+      Pode ser utilizado na Engenharia para classificar um quarto nível de
+      identificação de produto. Por exemplo, uma tinta pode ser formulada da
+      seguinte maneira:
+    </p>
+    <p>
+      GRUPO: TINTA / SUB-GRUPO: AUTOMOTICA / SUB SUB-GRUPO : FERRARI /
+      CLASSIFICAÇÃO: SERIGRAFIA
+    </p>
+    <img src={img3} alt="" />
+
+    <p>Informar a Descrição da Classificação do produto.</p>
+    <img src={img4} alt="" />
+
+    <div class="rodape">
+      <p><b>Criado por:</b> Bruno Pires da Silva.</p>
+      <p><b>Revisado por:</b> Bruno Pires da Silva.</p>
+      <p><b>Data Revisão:</b>19/12/2022</p>
+    </div>
+  </main>
+</Layout>

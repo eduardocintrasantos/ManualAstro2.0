@@ -1,0 +1,103 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import "./style.css";
+
+import img1 from "../../imagens/grupoEtapas/img1.png";
+import img2 from "../../imagens/ghs/img1.png";
+import img3 from "../../imagens/ghs/img2.png";
+import img4 from "../../imagens/ghs/img3.png";
+import img5 from "../../imagens/ghs/img4.png";
+import img6 from "../../imagens/ghs/img5.png";
+import img7 from "../../imagens/ghs/img6.png";
+import img8 from "../../imagens/ghs/img7.png";
+import img9 from "../../imagens/ghs/img8.png";
+import img10 from "../../imagens/ghs/img9.png";
+import img11 from "../../imagens/ghs/img10.png";
+---
+
+<Layout title="GHS">
+  <main>
+    <h1>Cadastro GHS</h1>
+
+    <p>Acessar o Menu/ Químicas / GHS:</p>
+    <img src={img1} alt="" />
+    <img src={img2} alt="" />
+
+    <p>
+      GHS (Sistema globalmente Harmonizado de Classificação e Rotulagem de
+      Produto Químico) pode ser acessado os cadastros de Pictogramas,
+      Classificação de Perigo e Frases de Precaução.
+    </p>
+    <p>
+      Ao ser utilizado na matéria prima, no Sistema quando um Rótulo GHS foi
+      impresso irá ser montado dinamicamente as informações de periculosidade do
+      Produto Acabado.
+    </p>
+    <img src={img3} alt="" />
+
+    <h2>Pictogramas</h2>
+    <img src={img4} alt="" />
+
+    <p>
+      Pictograma é uma imagem que representa um objeto, conceito ou ação por
+      semelhança, utilizando as características mais marcantes do mesmo.
+    </p>
+    <p>
+      Para criar um pictograma, deve estar salvo o arquivo contendo a imagem que
+      representará a descrição em uma pasta, a seguir informe a descrição e
+      anexe a imagem.
+    </p>
+    <img src={img5} alt="" />
+
+    <h2>Classificação de Perigo</h2>
+    <img src={img6} alt="" />
+
+    <p>
+      Classificação de Perigo é informado o tipo de risco que o produto
+      representa, como INFLAMÁVEL, CORROSIVO.
+    </p>
+    <p>
+      E a Palavra de Advertência seria o descritivo do alerta como PERIGO,
+      EXPLOSIVO.
+    </p>
+    <p>
+      Para inserir uma Classificação de Perigo, informar a sequência (ordem de
+      relevância), Descrição e a Palavra de Advertência.
+    </p>
+    <img src={img7} alt="" />
+
+    <h2>Frases de Perigo</h2>
+    <img src={img8} alt="" />
+
+    <p>
+      Para que possa ser utilizado este recurso, os itens Pictogramas e
+      Classificação de Perigo devem estar preenchidos.
+    </p>
+    <p>
+      A Frase de Perigo é composta pela sequência de importância que deve ser
+      informada, pela descrição contendo o código de periculosidade, e utilizar
+      a classificação e o pictograma já cadastrados anteriormente.
+    </p>
+    <p>
+      Informar o código de periculosidade do produto e a descrição. Escolher a
+      classificação do produto que já foi previamente cadastrada, assim como o
+      pictograma.
+    </p>
+    <img src={img9} alt="" />
+
+    <h2>Frases de Precaução</h2>
+    <img src={img10} alt="" />
+
+    <p>
+      A frase de precaução é utilizada para notificar que tipos de cuidados
+      precisam ser tomados com o produto.
+    </p>
+    <img src={img11} alt="" />
+
+    <div class="rodape">
+      <p><b>Criado por:</b> Bruno Pires da Silva.</p>
+      <p><b>Revisado por:</b> Bruno Pires da Silva.</p>
+      <p><b>Data Revisão:</b>19/12/2022</p>
+    </div>
+  </main>
+</Layout>
