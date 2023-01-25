@@ -1,0 +1,38 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import "./style.css";
+
+import img1 from "../../imagens/cultivo/img1.png";
+import img2 from "../../imagens/cultivo/img2.png";
+import img3 from "../../imagens/statusProjeto/img1.png";
+import img4 from "../../imagens/statusProjeto/img2.png";
+import img5 from "../../imagens/statusProjeto/img3.png";
+---
+
+<Layout title="Status de Projeto">
+  <main>
+    <h1>Status de Projeto</h1>
+
+    <p>Acesse o Menu Cadastros / Agro negócios / Status de Projetos.</p>
+    <img src={img1} alt="" /><br />
+    <img src={img2} alt="" />
+    <img src={img3} alt="" />
+
+    <p>
+      Este menu possui o recurso de Cadastrar os status ou etapas do projeto
+      como Captação de clientes, analise de documentos, aprovado e não aprovado.
+    </p>
+    <img src={img4} alt="" />
+
+    <p>Informar a descrição da etapa do status do projeto.</p>
+    <img src={img5} alt="" />
+
+    <p>Ao Final do processo clique em Salvar.</p>
+
+    <div class="rodape">
+      <p><b>Criado por:</b> Bruno Pires da Silva.</p>
+      <p><b>Revisado por:</b> Bruno Pires da Silva.</p>
+      <p><b>Data Revisão:</b>17/01/2023</p>
+    </div>
+  </main>
+</Layout>

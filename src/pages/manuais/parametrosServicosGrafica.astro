@@ -1,0 +1,129 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import "./style.css";
+
+import img1 from "../../imagens/parametrosServicosGrafica/img1.png";
+import img2 from "../../imagens/parametrosServicosGrafica/img2.png";
+import img3 from "../../imagens/parametrosServicosGrafica/img3.png";
+---
+
+<Layout title="Parâmetros de Serviços">
+  <main>
+    <h1>Parâmetros de Serviços (Gráfica)</h1>
+
+    <p>
+      Os "Parâmetros de Serviços" é uma configuração <b>indispensável</b> no seguimento
+      gráfica, onde é o local que é colocado os perfis de custos, as margens de lucros,
+      juros, percentual de perdas por fabricação, e também é colocado os subgrupos
+      dos produtos de acabamentos (refile, corte, laminação) e os subgrupos dos materiais
+      que são papéis.
+    </p>
+
+    <p>Acesse o Menu/ Gráfica/ Parâmetros de Serviços.</p>
+    <img src={img1} alt="" />
+
+    <p>
+      Irá abrir a tela dos parâmetros onde os mesmos devem ser preenchidos todos
+      os campos que estão separados em cinco, que são: Perfil Custo, Margem
+      Lucro, Juros, Perda Padrão, Classificação (Sub-subgrupo de produtos).
+      Esses campos devem ser preenchidos da seguinte maneira:
+    </p>
+    <img src={img2} alt="" />
+
+    <p>
+      <b>PERFIL CUSTO:</b>Local onde é colocado os custos que a gráfica possui
+      para produzir. Nesse campo é utilizado o cadastro dos custos. <b
+        >(Para acessar o manual de cadastro de custos, <a
+          href="/manuais/custoGrafica"
+          target="_blank">clique aqui</a
+        >).</b
+      >
+    </p>
+    <p>
+      <b
+        >MARGEM LUCRO: Local onde é colocado o percentual padrão de ganho por
+        produção e o percentual mínimo de lucro que você deve ter.</b
+      >
+    </p>
+    <ul>
+      <li>
+        <p>
+          <b>Percentual (%) Padrão:</b> Percentual que você irá ganhar padrão por
+          produção
+        </p>
+      </li>
+      <li>
+        <p>
+          <b>Percentual (%) Mínimo:</b> ercentual mínimo que você deve ter nas produções
+          para ter lucros e não prejuízos.
+        </p>
+      </li>
+    </ul>
+
+    <p><b>JUROS:</b>Juros cobrados por produções.</p>
+    <ul>
+      <li>
+        <p>
+          <b>Percentual (%) Juros:</b> Percentual de juros cobrado por produções.
+        </p>
+      </li>
+    </ul>
+
+    <p>
+      <b>PERDA PADRÃO:</b> Perdas obtidas durante as produções dos materiais.
+    </p>
+    <ul>
+      <li>
+        <p>
+          <b>Percentual (%) Perda:</b> Percentual de perdas obtidas por produções.
+        </p>
+      </li>
+    </ul>
+
+    <p><b>CLASSIFICAÇÃO(SUB-SUBGRUPO DE PRODUTOS):</b></p>
+    <ul>
+      <li>
+        <p>
+          <b>Acabamentos:</b> Local onde colocamos qual o sub-subgrupo que pertence
+          aos acabamentos, para aparecer nos orçamentos.
+        </p>
+      </li>
+      <li>
+        <p>
+          <b>Papéis:</b> Local onde colocamos qual o sub-subgrupo que pertence as
+          folhas, para aparecer nos orçamentos.
+          <b
+            >(Para acessar o manual de cadastro de Sub-subgrupo, <a
+              href="/manuais/subGrupos"
+            >
+              clique aqui</a
+            >).</b
+          >
+        </p>
+      </li>
+      <li>
+        <p>
+          <b>Preço Base Orçamento:</b> Preços que irão puxar nos orçamentos, deve
+          ser colocado no acabamento e nos papéis.
+          <b
+            >(Para acessar o manual de cadastro de Sub-subgrupo, <a
+              href="/manuais/subGrupos">clique aqui</a
+            >
+          </b>).
+        </p>
+      </li>
+    </ul>
+
+    <p>
+      Após o preenchimento dos campos deve ser salvo esses parâmetros no botão
+      "Salvar Configurações".
+    </p>
+    <img src={img3} alt="" />
+
+    <div class="rodape">
+      <p><b>Criado por:</b> Pedro Eduardo Garcia Silva.</p>
+      <p><b>Revisado por:</b> Pedro Eduardo Garcia Silva.</p>
+      <p><b>Data Revisão:</b>17/01/2023</p>
+    </div>
+  </main>
+</Layout>
