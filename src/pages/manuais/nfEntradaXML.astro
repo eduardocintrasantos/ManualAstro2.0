@@ -1,0 +1,187 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import "./style.css";
+
+import img1 from "../../imagens/nfEntradaManual/img1.png";
+import img2 from "../../imagens/nfEntradaXML/img1.png";
+import img3 from "../../imagens/nfEntradaXML/img2.png";
+import img4 from "../../imagens/nfEntradaXML/img3.png";
+import img5 from "../../imagens/nfEntradaXML/img4.png";
+import img6 from "../../imagens/nfEntradaXML/img5.png";
+import img7 from "../../imagens/nfEntradaXML/img6.png";
+import img8 from "../../imagens/nfEntradaXML/img7.png";
+import img9 from "../../imagens/nfEntradaXML/img8.png";
+import img10 from "../../imagens/nfEntradaXML/img9.png";
+import img11 from "../../imagens/nfEntradaXML/img10.png";
+import img12 from "../../imagens/nfEntradaXML/img11.png";
+import img13 from "../../imagens/nfEntradaXML/img12.png";
+import img14 from "../../imagens/nfEntradaXML/img13.png";
+import img15 from "../../imagens/nfEntradaXML/img14.png";
+import img16 from "../../imagens/nfEntradaXML/img15.png";
+import img17 from "../../imagens/nfEntradaXML/img16.png";
+import img18 from "../../imagens/nfEntradaXML/img17.png";
+import img19 from "../../imagens/nfEntradaXML/img18.png";
+import img20 from "../../imagens/nfEntradaXML/img19.png";
+import img21 from "../../imagens/nfEntradaXML/img20.png";
+import img22 from "../../imagens/nfEntradaXML/img21.png";
+import img23 from "../../imagens/nfEntradaXML/img22.png";
+import img24 from "../../imagens/nfEntradaXML/img23.png";
+---
+
+<Layout title="NF Entrada XML">
+  <main>
+    <h1>Nota Fiscal de Entrada XML</h1>
+
+    <p>Acesse o menu/ Compras/Nota Fiscal de Entrada:</p>
+    <img src={img1} alt="" />
+
+    <p>
+      A Nota Fiscal de Entrada é utilizada para inserir a quantidade de um
+      produto adquirido juntamente com saldo já existente.
+    </p>
+    <p>
+      Também utilizado para precificação do valor de custo pago do produto com
+      os impostos e adicionais, e caso o movimento gere financeiro, também é
+      criado o contas a pagar.
+    </p>
+    <p>
+      <i>
+        Importante: Para utilizar este recurso o Fornecedor deve estar
+        cadastrado com o CNPJ.
+      </i>
+    </p>
+    <img src={img2} alt="" />
+
+    <p>
+      <i>
+        E também o produto, e caso haja conversão de medida (comprado em caixas,
+        pacotes, e ser convertido para unidade) deve ser informada a conversão
+        na aba Classificação do Fornecedor.
+      </i>
+    </p>
+    <img src={img3} alt="" />
+
+    <p>
+      O Código do Fornecedor é obtido no corpo da Nota Fiscal ao lado da
+      descrição do produto.
+    </p>
+    <img src={img4} alt="" />
+    <br />
+    <img src={img5} alt="" />
+
+    <p>
+      E a conversão é a informação de quantas unidades vem em uma caixa, pacote
+      ou fardo.
+    </p>
+    <img src={img6} alt="" />
+
+    <p>
+      <b>
+        Para acessar o Manual de Cadastro de Fornecedor,
+        <a href="/manuais/fornecedor" target="_blank">clique aqui</a>.
+      </b>
+    </p>
+    <p>
+      <b>
+        Para acessar o Manual de Cadastro de produto,
+        <a href="/manuais/prdComercioGeral" target="_blank">clique aqui</a>.
+      </b>
+    </p>
+
+    <p>
+      Para utilizar este recurso, o arquivo XML deve já ter sido baixado através
+      de anexo do e-mail do fornecedor, ou pelo site
+      <a href="http://www.sintegra.gov.br/" target="_blank"
+        >http://www.sintegra.gov.br/</a
+      >
+    </p>
+
+    <p>Acesse o Botão Ferramentas / Receber Nota Fiscal por XML.</p>
+    <img src={img7} alt="" />
+
+    <p>Clique em Selecionar arquivo.</p>
+    <img src={img8} alt="" />
+
+    <p>
+      Localize o local do arquivo (em downloads, ou ao salvar pode ser criada
+      uma pasta com nome de XML, ou recortado e colado na área de trabalho).
+    </p><img src={img9} alt="" />
+
+    <p>
+      Caso tenha informado o produto e conversão na aba Classificação
+      Fornecedores no produto, o sistema irá carregar a quantidade convertida, e
+      o valor unitário.
+    </p>
+    <img src={img10} alt="" />
+
+    <p>
+      Caso não tenha sido informada a conversão de unidade do produto do xml ao
+      importar, carregará a quantidade exata do arquivo, o que ocasionará na
+      necessidade de acessar o lançamento e ajustar manualmente.
+    </p>
+    <img src={img11} alt="" />
+
+    <p>
+      E caso não tenha feito nenhuma parametrização no produto, será necessário
+      vincular o produto no momento da importação, clicando nos 3 pontos
+      conforme local indicado.
+    </p>
+    <img src={img12} alt="" />
+
+    <p>Filtrar e selecionar o produto.</p>
+    <img src={img13} alt="" />
+
+    <p>Também pode ser vinculada a entrada por xml a uma ordem de compra.</p>
+    <img src={img14} alt="" />
+
+    <p>
+      Também pode ser vinculada a entrada do xml a um padrão tributário de
+      entrada para registro no Livro Fiscal.
+    </p>
+    <img src={img15} alt="" />
+
+    <p>
+      Ao finalizar o processo, clique no botão "Processar e confirme a
+      operação".
+    </p>
+    <img src={img16} alt="" />
+    <br />
+    <img src={img17} alt="" />
+
+    <p>
+      Caso no cadastro do Fornecedor na aba Comercial não tenha sido informado o
+      Plano financeiro, Espécie de documento e Prazo de pagamento, antes da
+      conclusão da importação será obrigatório o preenchimento destas
+      informações.
+    </p>
+    <img src={img18} alt="" />
+    <br />
+    <img src={img19} alt="" />
+    <br />
+    <img src={img20} alt="" />
+    <br />
+    <img src={img21} alt="" />
+
+    <p>Após a importação, acessar a aba de Nota Fiscal de entrada.</p>
+    <img src={img22} alt="" />
+
+    <p>
+      Caso necessite forçar o sistema a considerar a condição e prazo de
+      pagamento informados e não da nota, desmarcar o parâmetro “Não recalcular
+      as Parcelas Importadas”.
+    </p>
+    <img src={img23} alt="" />
+
+    <p>
+      Ao final do processo, para gerar a entrada no estoque e o contas a pagar
+      no financeiro, acesse o botão ferramentas / Efetivar Nota Fiscal.
+    </p>
+    <img src={img24} alt="" />
+
+    <div class="rodape">
+      <p><b>Criado por:</b> Bruno Pires da Silva.</p>
+      <p><b>Revisado por:</b> Bruno Pires da Silva.</p>
+      <p><b>Data Revisão:</b>16/01/2023</p>
+    </div>
+  </main>
+</Layout>
