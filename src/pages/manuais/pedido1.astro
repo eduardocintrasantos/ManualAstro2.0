@@ -64,20 +64,177 @@ import img18 from "../../imagens/pedido1/img18.png";
       No bloco Dados Comerciais, deve ser informado o cliente responsavel pelo
       pedido.
     </p>
+    <p>
+      <b>
+        Para acessar o cadastro de cliente,
+        <a href="/manuais/cliente" target="_blank">clique aqui</a>.
+      </b>
+    </p>
+    <p>
+      Informar o Tipo de Documento (Ex.: Dinheiro, cartão, boleto, cheque,
+      pix...).
+    </p>
+    <p>
+      <b>
+        Para acessar o cadastro de Tipo de Documento,
+        <a href="" target="_blank">clique aqui</a>.
+      </b>
+    </p>
+    <p>
+      Transportadora, caso o transporte dos itens do pedido, já tenha uma
+      transportadora definida
+    </p>
+    <p>
+      <b>
+        Para acessar o cadastro de Transportadora,
+        <a href="/manuais/fornecedor">clique aqui</a>.
+      </b>
+    </p>
     <img src={img4} alt="" />
+
+    <p>
+      No bloco Dados Comerciais II, é importante informar o Vendedor responsavel
+      pelo pedido.
+    </p>
+    <p>
+      <b>
+        Para acessar o cadastro de Vendedor,
+        <a href="/manuais/funcionario" target="_blank">clique aqui</a>.
+      </b>
+    </p>
+    <p>
+      Informar o Prazo de Pagamento (Ex.: A vista, 10 Dias, 15 Dias, 30/60/90
+      Dias...).
+    </p>
+    <p>
+      <b>
+        Para acessar o cadastro de Prazo de Pagamento,
+        <a href="/manuais/prazoPagamento" target="_blank">clique aqui</a>.
+      </b>
+    </p>
+    <p>O plano financeiro.</p>
+    <p>
+      <b>
+        Para acessar o cadastro de Plano Financeiro,
+        <a href="/manuais/planoFinanceiro" target="_blank">clique aqui</a>.
+      </b>
+    </p>
+    <p>
+      Informar o contrato referente a esse pedido, caso utilize os Contratos.
+      Caso não utilize, não deve ser informado.
+    </p>
+    <p>
+      Informar o local de estoque que será retirado os produtos para a entrega,
+      caso utilize Local de Estoque.
+    </p>
     <img src={img5} alt="" />
+
+    <p>
+      Caso tenha alguma observação sobre o pedido, deverá ser informado nesse
+      campo.
+    </p>
     <img src={img6} alt="" />
+
+    <h2>Aba Itens Pedido</h2>
+    <p>
+      No bloco produto, é necessário informar apenas o produtos, os outros dados
+      são preenchidos automaticamente de acordo com o cadastro do produto.
+    </p>
+    <p>
+      O produto pode ser informado a partir do seu codigo ou sua referência, e
+      em seguida clicar na tecla enter.
+    </p>
+    <p>
+      Ou clicando nos três pontos na fente do campo Descrição, e escolhendo o
+      produto.
+    </p>
     <img src={img7} alt="" />
+
+    <p>
+      No bloco ao lado, o primeiro campo que deve ser informado é a Quantidade.
+    </p>
+    <p>
+      No campo Vr. Tabela, o sistema irá puxar do cadastro do produto, caso o
+      produto tenha um valor de venda já informado. Caso o produto não tenha
+      valor de venda informado, será necessário informar o valor nesse campo
+      manualmente.
+    </p>
+    <p>
+      Nos campos de Desconto e Acrescimo, eles possuem a opção de informar o
+      valor, ou o percentual no ajuste do preço.
+    </p>
     <img src={img8} alt="" />
+
+    <p>Esse campo só será mostrado quando o produto possuir grade.</p>
+    <p>
+      Nos três pontos, o sistema abrirá uma tela para escolher a opção de cor, e
+      em baixo deverá ser informado a quantidade de cada tamanho.
+    </p>
+    <p>
+      Já o botão com a lupa, é para verificar todas as grades cadastradas nesse
+      produto.
+    </p>
     <img src={img9} alt="" />
+
+    <p>
+      Em seguida na parte superior basta clicar o botão azul para salvar esse
+      produto no pedido, ou no X vermelho para descartar esse item.
+    </p>
     <img src={img10} alt="" />
+
+    <p>
+      Após salvar os itens, todos os itens informados nesse pedido, aparecerão
+      na parte inferior dessa tela.
+    </p>
     <img src={img11} alt="" />
+
+    <h2>Aba Parcelar Financeiro</h2>
+    <p>
+      Essa aba apenas mostra os titulos gerados a partir do pedido, de acordo
+      com o prazo de pagamento informado.
+    </p>
     <img src={img12} alt="" />
+
+    <h2>Aba Centro de Custo</h2>
+    <p>
+      Nessa aba será informado o centro de custo desse pedido, ele pode ter um
+      ou mais centros de custo indormados.
+    </p>
+    <p>
+      <b>
+        Para acessar o cadastro de Centro de Custo,
+        <a href="/manuais/centroCusto" target="_blank">clique aqui</a>.
+      </b>
+    </p>
     <img src={img13} alt="" />
+
+    <p>
+      Após informar o centro de custo e o valor referente ao mesmo, bastá clicar
+      no botão azul, pra salvar.
+    </p>
     <img src={img14} alt="" />
+
+    <h2>Aba Adicionais</h2>
+    <p>Nessa aba é possivel visualizar as Notas vinculadas a esse pedido.</p>
     <img src={img15} alt="" />
+
+    <p>
+      Na parte inferior do pedido, em todas as abas, temos algumas informações
+      gerais do pedido, nos campos de Vr Desconto, Vr Acréscimo e Vr Frete, é
+      possivel informar valores que serão atribuidos ao valor geral do pedido.
+    </p>
     <img src={img16} alt="" />
+
+    <p>
+      Em seguida basta salvar o pedido após informar todos os dados necessário.
+    </p>
     <img src={img17} alt="" />
+
+    <p>
+      Em seguida para finalizar o processo do pedido, e gerar seu financeiro
+      (Titulo a receber), basta ir em ferramentas na parte superior da tela, e
+      em seguida clicar em Efetivar Venda.
+    </p>
     <img src={img18} alt="" />
 
     <div class="rodape">
