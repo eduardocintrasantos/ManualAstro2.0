@@ -1,0 +1,32 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import "./style.css";
+
+import img1 from "../../imagens/statusLead/img1.png";
+import img2 from "../../imagens/statusLead/img2.png";
+import img3 from "../../imagens/statusLead/img3.png";
+---
+
+<Layout title="Status Lead">
+  <main>
+    <h1>Status Lead</h1>
+
+    <p>Acessar menu CRM / Status Lead:</p>
+    <img src={img1} alt="" />
+
+    <p>
+      Lançamento utilizado para informar o atual status do CRM como ALOCADO, EM
+      ANDAMENTO, CONCLUÍDO.
+    </p>
+    <img src={img2} alt="" />
+
+    <p>Informar a descrição da etapa do Status do Lead.</p>
+    <img src={img3} alt="" />
+
+    <div class="rodape">
+      <p><b>Criado por:</b> Bruno Pires da Silva.</p>
+      <p><b>Revisado por:</b> Bruno Pires da Silva.</p>
+      <p><b>Data Revisão:</b>29/01/2023</p>
+    </div>
+  </main>
+</Layout>

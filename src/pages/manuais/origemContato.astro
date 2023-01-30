@@ -1,0 +1,36 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import "./style.css";
+
+import img1 from "../../imagens/origemContato/img1.png";
+import img2 from "../../imagens/origemContato/img2.png";
+import img3 from "../../imagens/origemContato/img3.png";
+import img4 from "../../imagens/origemContato/img4.png";
+---
+
+<Layout title="Origem do Contato">
+  <main>
+    <h1>Cadastro Origem do Contato</h1>
+
+    <p>Acessar menu CRM / Origem do Contato:</p>
+    <img src={img1} alt="" />
+
+    <p>
+      Este lançamento é utilizado para informar a origem do contato do cliente
+      para com a empresa.
+    </p>
+    <img src={img2} alt="" />
+
+    <p>Informar a Descrição da forma de contato.</p>
+    <img src={img3} alt="" />
+
+    <p>Informar a sigla da forma de contato.</p>
+    <img src={img4} alt="" />
+
+    <div class="rodape">
+      <p><b>Criado por:</b> Bruno Pires da Silva.</p>
+      <p><b>Revisado por:</b> Bruno Pires da Silva.</p>
+      <p><b>Data Revisão:</b>29/01/2023</p>
+    </div>
+  </main>
+</Layout>

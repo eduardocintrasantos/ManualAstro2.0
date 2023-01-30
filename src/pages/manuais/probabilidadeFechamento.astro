@@ -1,0 +1,43 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import "./style.css";
+
+import img1 from "../../imagens/probabilidadeFechamento/img1.png";
+import img2 from "../../imagens/probabilidadeFechamento/img2.png";
+import img3 from "../../imagens/probabilidadeFechamento/img3.png";
+import img4 from "../../imagens/probabilidadeFechamento/img4.png";
+---
+
+<Layout title="Probabilidade de Fechamento">
+  <main>
+    <h1>Probabilidade de Fechamento</h1>
+
+    <p>Acessar menu CRM / Probabilidade de Fechamento:</p>
+    <img src={img1} alt="" />
+
+    <p>
+      Lançamento utilizado para criar o grau de probabilidade de fechamento de
+      venda através de um contato/negociação pelo LEAD.
+    </p>
+    <img src={img2} alt="" />
+
+    <p>
+      Informar as descrições, pode ser ALTA, MÉDIA e BAIXA, ou MUITO PROVÁVEL,
+      POUCO PROVÁVEL.
+    </p>
+    <img src={img3} alt="" />
+
+    <p>
+      Informar referente ao cadastro de probabilidade uma codificação de a 10
+      sendo 1 o mais alto ou de 10 a 0 sendo o 10 o nível mais alto como
+      provável.
+    </p>
+    <img src={img4} alt="" />
+
+    <div class="rodape">
+      <p><b>Criado por:</b> Bruno Pires da Silva.</p>
+      <p><b>Revisado por:</b> Bruno Pires da Silva.</p>
+      <p><b>Data Revisão:</b>29/01/2023</p>
+    </div>
+  </main>
+</Layout>

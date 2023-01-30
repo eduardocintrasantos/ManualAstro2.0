@@ -1,0 +1,35 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import "./style.css";
+
+import img1 from "../../imagens/campanha/img1.png";
+import img2 from "../../imagens/campanha/img2.png";
+import img3 from "../../imagens/campanha/img3.png";
+import img4 from "../../imagens/campanha/img4.png";
+---
+
+<Layout title="Onde Conheceu">
+  <main>
+    <h1>Cadastro Onde Conheceu</h1>
+
+    <p>Acessar menu CRM / Onde Conheceu:</p>
+    <img src={img1} alt="" />
+    <br />
+    <img src={img2} alt="" />
+
+    <p>
+      Informar a descrição de onde o cliente conheceu seu produto como Internet,
+      telefone, sites etc.
+    </p>
+    <img src={img3} alt="" />
+
+    <p>Informar a sigla do cadastro de onde conheceu.</p>
+    <img src={img4} alt="" />
+
+    <div class="rodape">
+      <p><b>Criado por:</b> Bruno Pires da Silva.</p>
+      <p><b>Revisado por:</b> Bruno Pires da Silva.</p>
+      <p><b>Data Revisão:</b>29/01/2023</p>
+    </div>
+  </main>
+</Layout>
