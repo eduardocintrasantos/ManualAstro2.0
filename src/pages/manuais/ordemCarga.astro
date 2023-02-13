@@ -1,0 +1,73 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import "./style.css";
+
+import img1 from "../../imagens/ordemCarga/img1.png";
+import img2 from "../../imagens/ordemCarga/img2.png";
+import img3 from "../../imagens/ordemCarga/img3.png";
+import img4 from "../../imagens/ordemCarga/img4.png";
+import img5 from "../../imagens/ordemCarga/img5.png";
+import img6 from "../../imagens/ordemCarga/img6.png";
+import img7 from "../../imagens/ordemCarga/img7.png";
+---
+
+<Layout title="Ordem de Carga">
+  <main>
+    <h1>Ordem de carga</h1>
+
+    <p>Acessar o Menu/ Vendas / Ordem de Carga:</p>
+    <img src={img1} alt="" />
+
+    <p>
+      A ordem de carga é utilizada para acompanhamento de entrega de pedidos.
+    </p>
+    <p>
+      No bloco de Identificação, é importante informar a Dt. Montagem, e a Dt.
+      Despacho.
+    </p>
+    <p>
+      Logo a baixo também é necessário informar a transportadora referente ao
+      envio dessa carga.
+    </p>
+    <img src={img2} alt="" />
+
+    <h2>Aba Pedidos</h2>
+    <p>
+      Na aba pedidos, é possivel filtrar pedidos já feitos, e amarralos a essa
+      Ordem de Carga.
+    </p>
+    <img src={img3} alt="" />
+
+    <h2>Aba NF-es</h2>
+    <p>
+      Na aba NF-e, também é possivel filtrar NFes referentes a esses pedidos, e
+      amarralos a essa Ordem de Carga.
+    </p>
+    <img src={img4} alt="" />
+
+    <p>
+      Após preencher a ordem com todas as informações importantes, basta ir em
+      Ferramentas e Finalizar Montagem
+    </p>
+    <img src={img5} alt="" />
+
+    <p>
+      Após finalizar, indo em Ferramentas, é possivel Reabrir a Ordem de Carga
+      para fazer alguma alteração, Cancelar a Ordem de Carga, e baixa-la quando
+      a carga é finalizada.
+    </p>
+    <img src={img6} alt="" />
+
+    <p>
+      Antes de fazer a baixa da Ordem de Carga, também é possivel gerar alguns
+      relatórios que iram auxiliar na organização da carga.
+    </p>
+    <img src={img7} alt="" />
+
+    <div class="rodape">
+      <p><b>Criado por:</b> Eduardo Cintra.</p>
+      <p><b>Revisado por:</b> Eduardo Cintra.</p>
+      <p><b>Data Revisão:</b>10/02/2023</p>
+    </div>
+  </main>
+</Layout>
