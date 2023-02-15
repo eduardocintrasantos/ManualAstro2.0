@@ -1,0 +1,78 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import "./style.css";
+
+import img1 from "../../imagens/entradaPrdCodigoBarras/img1.png";
+import img2 from "../../imagens/entradaPrdCodigoBarras/img2.png";
+import img3 from "../../imagens/entradaPrdCodigoBarras/img3.png";
+import img4 from "../../imagens/entradaPrdCodigoBarras/img4.png";
+import img5 from "../../imagens/entradaPrdCodigoBarras/img5.png";
+import img6 from "../../imagens/entradaPrdCodigoBarras/img6.png";
+import img7 from "../../imagens/entradaPrdCodigoBarras/img7.png";
+import img8 from "../../imagens/entradaPrdCodigoBarras/img8.png";
+import img9 from "../../imagens/entradaPrdCodigoBarras/img9.png";
+---
+
+<Layout title="Entrada de Produtos por código de barras">
+  <main>
+    <h1>Entrada de Produtos por código de barras</h1>
+
+    <p>Acessar Estoque/ Entrada de Produtos por código de barras:</p>
+    <img src={img1} alt="" />
+
+    <p>
+      Utilizado para realizar intervenções no estoque utilizando a soma de
+      quantidade ao saldo já existente, por exemplo: possui saldo de estoque de
+      50, e precisa ser adicionado mais 10, ficando assim com saldo de 60.
+    </p>
+    <p>
+      NOTA: caso o saldo esteja negativo, para chegar na quantidade desejada,
+      precisará ser adicionado a quantidade negativa para ser compensado a
+      diferença. Por exemplo, o saldo esta -10 e o saldo atual é de 50, então
+      precisa ser realizada uma entrada de 60 para compensar os 10 negativos e
+      acrescentar as 50 unidades.
+    </p>
+    <img src={img2} alt="" />
+
+    <p>Efetuar a leitura do código de barras, ou digitar manualmente.</p>
+    <img src={img3} alt="" />
+
+    <p>
+      Ao localizar o produto, observe em destaque o saldo atual é 78 un. E a
+      quantidade sugerida pelo sistema é um.
+    </p>
+    <img src={img4} alt="" />
+
+    <p>
+      Neste exemplo queremos que o produto fique com saldo de 100un. Então será
+      necessário informar a quantidade de 22.
+    </p>
+    <img src={img5} alt="" />
+
+    <p>
+      Se necessário remover algum item da contagem utilizar o botão “Remover
+      Item”.
+    </p>
+    <img src={img6} alt="" />
+
+    <p>
+      Repita o processo com todos os itens que deseja realizar adição de
+      quantidade e ao final clique em Processar.
+    </p>
+    <img src={img7} alt="" />
+
+    <p>
+      Em seguida escolha o motivo / Tipo de Lançamento para ser registrado nas
+      movimentações do estoque.
+    </p>
+    <img src={img8} alt="" />
+    <br />
+    <img src={img9} alt="" />
+
+    <div class="rodape">
+      <p><b>Criado por:</b> Bruno Pires da Silva.</p>
+      <p><b>Revisado por:</b> Bruno Pires da Silva.</p>
+      <p><b>Data Revisão:</b>03/02/2023</p>
+    </div>
+  </main>
+</Layout>
