@@ -1,0 +1,72 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import "./style.css";
+
+import img1 from "../../imagens/reposicaoEstoque/img1.png";
+import img2 from "../../imagens/reposicaoEstoque/img2.png";
+import img3 from "../../imagens/reposicaoEstoque/img3.png";
+import img4 from "../../imagens/reposicaoEstoque/img4.png";
+import img5 from "../../imagens/reposicaoEstoque/img5.png";
+import img6 from "../../imagens/reposicaoEstoque/img6.png";
+import img7 from "../../imagens/reposicaoEstoque/img7.png";
+import img8 from "../../imagens/reposicaoEstoque/img8.png";
+---
+
+<Layout title="Reposição de Estoque">
+  <main>
+    <h1>Reposição de Estoque</h1>
+
+    <p>Acessar Estoque/ Reposição de Estoque:</p>
+    <img src={img1} alt="" />
+
+    <p>
+      Utilizado para analisar os saldos de estoque dos produtos que já tem
+      histórico de compras do Fornecedor, utilizando o saldo atual a quantidade
+      mínima e máxima o sistema irá calcular a quantidade necessária a ser
+      adquirida gerando a Ordem de Compra.
+    </p>
+    <p>
+      <b
+        >Para acessar o manual de Ordem de Compra <a
+          target="_blank"
+          href="/manuais/ordemCompra">clique aqui</a
+        >.
+      </b>
+    </p>
+    <img src={img2} alt="" />
+
+    <p>Escolha um fornecedor</p>
+    <img src={img3} alt="" />
+
+    <p>Clique em Buscar</p>
+    <img src={img4} alt="" />
+
+    <p>
+      O sistema irá mostrar o saldo de estoque atual, o estoque mínimo, o
+      estoque Maximo, a quantidade vendida a quantidade sugerida, a quantidade
+      adquirida e o total de compras.
+    </p>
+    <p>Pode ser utilizada a quantidade sugerida ou alterado manualmente.</p>
+    <img src={img5} alt="" />
+
+    <p>Ao selecionar os produtos, clique em Gerar OC.</p>
+    <img src={img6} alt="" />
+
+    <p>
+      Preencha a espécie de documento, o prazo de pagamento e o tipo de
+      movimento da Ordem de Compra.
+    </p>
+    <img src={img7} alt="" />
+
+    <p>A ordem será gerada.</p>
+    <img src={img8} alt="" />
+
+    <p>Acesse a ordem para efetivar e imprimir.</p>
+
+    <div class="rodape">
+      <p><b>Criado por:</b> Bruno Pires da Silva.</p>
+      <p><b>Revisado por:</b> Bruno Pires da Silva.</p>
+      <p><b>Data Revisão:</b>10/02/2023</p>
+    </div>
+  </main>
+</Layout>

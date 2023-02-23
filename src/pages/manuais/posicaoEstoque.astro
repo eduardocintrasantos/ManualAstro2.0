@@ -1,0 +1,45 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import "./style.css";
+
+import img1 from "../../imagens/posicaoEstoque/img1.png";
+import img2 from "../../imagens/posicaoEstoque/img2.png";
+import img3 from "../../imagens/posicaoEstoque/img3.png";
+import img4 from "../../imagens/posicaoEstoque/img4.png";
+import img5 from "../../imagens/posicaoEstoque/img5.png";
+---
+
+<Layout title="Posição de Estoque">
+  <main>
+    <h1>Posição de Estoque</h1>
+
+    <p>Acessar Estoque/ Posição de Estoque:</p>
+    <img src={img1} alt="" />
+
+    <p>
+      Utilizado para visualizar o saldo de estoque dos produtos por Empresa,
+      Lote e local de Estoque.
+    </p>
+    <img src={img2} alt="" />
+
+    <p>
+      Utilize o Filtro para buscar os produtos pra visualização das informações
+      do estoque.
+    </p>
+    <img src={img3} alt="" />
+    <br />
+    <img src={img4} alt="" />
+
+    <p>
+      Neste exemplo o produto tem saldo em duas empresas, 320 em uma e 33 na
+      outra, totalizando 353 unidades.
+    </p>
+    <img src={img5} alt="" />
+
+    <div class="rodape">
+      <p><b>Criado por:</b> Bruno Pires da Silva.</p>
+      <p><b>Revisado por:</b> Bruno Pires da Silva.</p>
+      <p><b>Data Revisão:</b>10/02/2023</p>
+    </div>
+  </main>
+</Layout>
