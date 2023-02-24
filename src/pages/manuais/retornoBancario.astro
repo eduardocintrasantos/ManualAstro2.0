@@ -1,0 +1,99 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import "./style.css";
+
+import img1 from "../../imagens/retornoBancario/img1.png";
+import img2 from "../../imagens/retornoBancario/img2.png";
+import img3 from "../../imagens/retornoBancario/img3.png";
+import img4 from "../../imagens/retornoBancario/img4.png";
+import img5 from "../../imagens/retornoBancario/img5.png";
+import img6 from "../../imagens/retornoBancario/img6.png";
+import img7 from "../../imagens/retornoBancario/img7.png";
+import img8 from "../../imagens/retornoBancario/img8.png";
+import img9 from "../../imagens/retornoBancario/img9.png";
+import img10 from "../../imagens/retornoBancario/img10.png";
+import img11 from "../../imagens/retornoBancario/img11.png";
+import img12 from "../../imagens/retornoBancario/img12.png";
+---
+
+<Layout title="Retorno de Cobrança">
+  <main>
+    <h1>Retorno de Cobrança</h1>
+
+    <p>Acessar Sistema / Contas a Receber / Retorno de Cobrança:</p>
+    <img src={img1} alt="" />
+
+    <p>
+      O Recurso do Retorno de cobrança carrega as informações que contém no
+      Arquivo de Retorno disponibilizado pelas redes Bancárias.
+    </p>
+    <p>
+      Neste arquivo contém a confirmação dos boletos enviados, e informações
+      sobre Liquidações (recebimentos), Baixas (retirada de cobranças), envio ao
+      Cartório, despesas e outras ocorrências.
+    </p>
+    <p>
+      Ao processar o arquivo, o sistema registra o status dos títulos e os que
+      estão com status de liquidado o sistema realiza a baixa no contas a
+      receber destes títulos.
+    </p>
+    <p>
+      Nota: o sistema irá interagir apenas com títulos e boletos que foram
+      originados do sistema, demais títulos que não tem estas duas condições que
+      constam no retorno, não haverá interações.
+    </p>
+    <img src={img2} alt="" />
+
+    <p>
+      Primeiramente deve ser acessado o Banco da empresa, e no local destinado a
+      trocas de arquivo com a rede bancária, deve ser realizado download do
+      arquivo de retorno.
+    </p>
+    <p>
+      Após acessar o sistema, Contas a Receber / Retorno de Cobrança / clicar em
+      +
+    </p>
+    <img src={img3} alt="" />
+
+    <p>Informar a conta bancária.</p>
+    <img src={img4} alt="" />
+
+    <p>Informar o caminho onde foi salvo o arquivo de retorno.</p>
+    <img src={img5} alt="" />
+
+    <p>Clicar em carregar títulos.</p>
+    <img src={img6} alt="" />
+
+    <p>O sistema irá mostrar o conteúdo do arquivo.</p>
+    <img src={img7} alt="" />
+
+    <p>As principais ocorrências que contém no arquivo de retorno:</p>
+    <p>Entrada confirmada é o recebimento sem restrições do título emitido.</p>
+    <img src={img8} alt="" />
+
+    <p>Status para o título que foi pago através do boleto.</p>
+    <img src={img9} alt="" />
+
+    <p>Custas são as despesas geradas na emissão de boleto ou na baixa.</p>
+    <img src={img10} alt="" />
+
+    <p>
+      O botão Ferramentas / Processar baixas registra a confirmação dos títulos,
+      registra o lançamento das despesas e baixa os títulos com status de
+      Liquidado.
+    </p>
+    <img src={img11} alt="" />
+
+    <p>
+      O botão Relatórios contém recursos de impressão do conteúdo do Arquivo de
+      Retorno.
+    </p>
+    <img src={img12} alt="" />
+
+    <div class="rodape">
+      <p><b>Criado por:</b> Bruno Pires da Silva.</p>
+      <p><b>Revisado por:</b> Bruno Pires da Silva.</p>
+      <p><b>Data Revisão:</b>21/02/2023</p>
+    </div>
+  </main>
+</Layout>
