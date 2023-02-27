@@ -1,0 +1,105 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import "./style.css";
+
+import img1 from "../../imagens/bordero/img1.png";
+import img2 from "../../imagens/bordero/img2.png";
+import img3 from "../../imagens/bordero/img3.png";
+import img4 from "../../imagens/bordero/img4.png";
+import img5 from "../../imagens/bordero/img5.png";
+import img6 from "../../imagens/bordero/img6.png";
+import img7 from "../../imagens/bordero/img7.png";
+---
+
+<Layout title="Borderô de Desconto">
+  <main>
+    <h1>Borderô de Desconto</h1>
+
+    <p>
+      O Borderô de Desconto é utilizado por clientes que fazem a antecipação de
+      alguns titulos junto ao banco.
+    </p>
+    <p>Acessar o Menu/ Contas a Receber / Borderô Desconto:</p>
+    <img src={img1} alt="" />
+
+    <p>
+      Primeiramente clicando em "Novo Registro" abrirá a tela para o cadastro do
+      Borderô.
+    </p>
+    <img src={img2} alt="" />
+
+    <h2>Aba Dados</h2>
+    <p>
+      Nessa aba, no bloco de informação "Dados Borderô", é importante informar a
+      data de criação do Borderô e a conta referente ao titulo que será
+      vinculado a esse borderô.
+    </p>
+    <p>
+      No bloco de informação "Operação" deve ser infomado a data que o valor
+      será descontado, e a Taxa que foi negociada com o banco, para que seja
+      calculado o valor que será descontado.
+    </p>
+    <p>
+      Logo a baixo no bloco de informação Valores, ele mostrará o valor total
+      dos titulo informados, o valor total dos descontos referentes a taxa de
+      negociação, o valor total dos titulos já subtraindo os descontos, o valor
+      IOF e de Tarifa é informado manualmente, e no ultimo campo "Vr. Liberação"
+      é o valor dos titulos menos todos os descontos informados.
+    </p>
+    <p>
+      Os dados adicionais é um campo reservado para colocar alguma informação
+      extra que ache importante.
+    </p>
+    <img src={img3} alt="" />
+
+    <h2>Aba Títulos</h2>
+    <p>
+      Clicando no botão indicado, o sistema abrirá a tela para informar os
+      titulos vinculados a esse Borderô.
+    </p>
+    <img src={img4} alt="" />
+
+    <p>
+      É possivel filtrar o titulo pelo cliente, fornecedor, Nr. Parcela, pela
+      data de Vencimento ou Emissãp do titulo.
+    </p>
+    <p>
+      Para que o titulo fique disponivel no borderô, ele precisa estar com a
+      Situação "Em Cobrança".
+    </p>
+    <p>
+      Após filtrar o titulo, basta seleciona-lo, clicar em Incluir Titulo
+      Selecionado, e após incluir todos, clicar em Confirmar.
+    </p>
+    <img src={img5} alt="" />
+
+    <p>
+      Após esse processo todos os titulos selecionados ficaram aparentes na aba
+      Títulos.
+    </p>
+    <p>Finalizando todos esses processos, basta clicar em salvar.</p>
+    <img src={img6} alt="" />
+
+    <p>
+      E para concluir o processo de criação do Borderô, basta clicar em
+      Ferramentas - Finalizar Montagem
+    </p>
+    <img src={img7} alt="" />
+
+    <p>
+      Após esse processo, no extrato de movimentação dessa conta, constará o
+      valor total dos titulos como crédito, e o valor das taxas e descontos como
+      débito.
+    </p>
+    <p>
+      Quando for feita a entrada do Retorno Bancário que conta esse titulo como
+      Liquidado, o titulo será baixado normalmente após processar as baixas.
+    </p>
+
+    <div class="rodape">
+      <p><b>Criado por:</b> Eduardo Cintra.</p>
+      <p><b>Revisado por:</b> Eduardo Cintra.</p>
+      <p><b>Data Revisão:</b>13/02/2023</p>
+    </div>
+  </main>
+</Layout>
