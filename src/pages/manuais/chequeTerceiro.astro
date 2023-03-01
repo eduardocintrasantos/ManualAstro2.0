@@ -1,0 +1,112 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import "./style.css";
+
+import img1 from "../../imagens/chequeTerceiro/img1.png";
+import img2 from "../../imagens/chequeTerceiro/img2.png";
+import img3 from "../../imagens/chequeTerceiro/img3.png";
+import img4 from "../../imagens/chequeTerceiro/img4.png";
+import img5 from "../../imagens/chequeTerceiro/img5.png";
+import img6 from "../../imagens/chequeTerceiro/img6.png";
+import img7 from "../../imagens/chequeTerceiro/img7.png";
+import img8 from "../../imagens/chequeTerceiro/img8.png";
+import img9 from "../../imagens/chequeTerceiro/img9.png";
+import img10 from "../../imagens/chequeTerceiro/img10.png";
+import img11 from "../../imagens/chequeTerceiro/img11.png";
+---
+
+<Layout title="Cheques Terceiros">
+  <main>
+    <h1>Cheques Terceiros</h1>
+
+    <p>Acessar o Menu/ Contas a Receber / Cheques Terceiros:</p>
+    <img src={img1} alt="" />
+
+    <p>
+      Primeiramente clicando em "Novo Registro" abrirá a tela para o cadastro de
+      Cheques.
+    </p>
+    <img src={img2} alt="" />
+
+    <h2>Aba Dados</h2>
+    <p>Nessa aba é importante colocar as informações de todos os campos.</p>
+    <p>
+      A Dt. Baixa é preenchido automaticamente quando é feita a baixa do cheque.
+    </p>
+    <p>
+      Para acessar o manual de baixa de cheque
+      <b>
+        <a href="/manuais/baixaCheque">clique aqui</a>
+      </b>.
+    </p>
+    <p>
+      E o campo Adicionais é opcional, ele é reservado para caso precise
+      informar alguma observação referente a esse cheque.
+    </p>
+    <img src={img3} alt="" />
+
+    <h2>Aba Logs</h2>
+    <p>
+      Essa aba registra sempre que algumas informações sempre que o cheque sofre
+      uma alteração de status.
+    </p>
+    <img src={img4} alt="" />
+
+    <h2>Aba Dados Integração</h2>
+    <p>
+      Essa aba tras algumas informações sobre o pedido e o extrato de baixa
+      vinculado a esse cheque.
+    </p>
+    <img src={img5} alt="" />
+
+    <h2>Aba Contas a Receber Vinculados</h2>
+    <p>
+      Quando um titulo é devolvido, ele irá gerar um outro titulo de mesmo valor
+      para ser baixado novamente.
+    </p>
+    <p>
+      Nessa aba é possivel verificar o titulo que foi gerado a partir desse
+      processo.
+    </p>
+    <img src={img6} alt="" />
+
+    <p>
+      Após a baixa do chque, é possivel alterar a situação dele, ou fazer uma
+      devolução.
+    </p>
+    <img src={img7} alt="" />
+
+    <p>
+      Clicando em Gerar Troca de Cheque, nessa tela é necessário informar a
+      opção que será usada na devolução do cheque, e as informações sobre a
+      conta que dará a saida do valor do cheque.
+    </p>
+    <p>
+      Processando esse lançamento, o sistema da saida no desse valor na conta, e
+      gera um titulo para ser baixado.
+    </p>
+    <img src={img8} alt="" />
+
+    <p>
+      Na aba Contas a Receber Vinculados irá mostrar o titulo gerado a partir da
+      devolução do cheque.
+    </p>
+    <img src={img9} alt="" />
+
+    <p>Na opção Devolução com Representação</p>
+    <img src={img10} alt="" />
+
+    <p>
+      É importante informar a operação que será utilizada no Débito, a operação
+      que será utilizada no Crédito, e as informações referente a conta que vai
+      dar a saida e a entrada do valor.
+    </p>
+    <img src={img11} alt="" />
+
+    <div class="rodape">
+      <p><b>Criado por:</b> Eduardo Cintra.</p>
+      <p><b>Revisado por:</b> Eduardo Cintra.</p>
+      <p><b>Data Revisão:</b>27/02/2023</p>
+    </div>
+  </main>
+</Layout>
