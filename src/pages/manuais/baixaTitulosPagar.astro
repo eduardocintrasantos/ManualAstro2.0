@@ -1,0 +1,124 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import "./style.css";
+
+import img1 from "../../imagens/baixaTitulosPagar/img1.png";
+import img2 from "../../imagens/baixaTitulosPagar/img2.png";
+import img3 from "../../imagens/baixaTitulosPagar/img3.png";
+import img4 from "../../imagens/baixaTitulosPagar/img4.png";
+import img5 from "../../imagens/baixaTitulosPagar/img5.png";
+import img6 from "../../imagens/baixaTitulosPagar/img6.png";
+import img7 from "../../imagens/baixaTitulosPagar/img7.png";
+import img8 from "../../imagens/baixaTitulosPagar/img8.png";
+import img9 from "../../imagens/baixaTitulosPagar/img9.png";
+import img10 from "../../imagens/baixaTitulosPagar/img10.png";
+import img11 from "../../imagens/baixaTitulosPagar/img11.png";
+import img12 from "../../imagens/baixaTitulosPagar/img12.png";
+---
+
+<Layout title="Baixa de Titulos a Pagar">
+  <main>
+    <h1>Baixa Titulos a Pagar</h1>
+
+    <p>Acessar o Menu/ Contas a Pagar / Baixa Titulos Pagar:</p>
+    <img src={img1} alt="" />
+
+    <p>
+      Na tela de baixa de Contas a Pagar, primeiramente é necessário fazer um
+      filtro para buscar os titulos.
+    </p>
+    <p>
+      O filtro pode ser feito a partir do cadastro do cliente, fornecedor, o
+      numero do documento ou a data de vencimento do titulo.
+    </p>
+    <img src={img2} alt="" />
+
+    <p>
+      Após fazer o filtro, os títulos iram aparecer no bloco abaixo do filtro.
+    </p>
+    <p>
+      Esses títulos podem ser selecionados e em seguida adicionados para serem
+      baixados, clicando em Incluir Titulo(s) Selecionado(s).
+    </p>
+    <img src={img3} alt="" />
+
+    <p>
+      Após selecionar os títulos e adicionar os mesmos para serem baixados, é
+      possível alterar o valor que vai ser baixado do titulo, alterando a coluna
+      Vr. Baixa.. Para casos onde o titulo vai ser baixado parcialmente.
+    </p>
+    <p>
+      É possível também alterar o valor de desconto e de jutos dos títulos,
+      alterando as informações nas colunas Vr. Desconto e Vr. Juros.
+    </p>
+    <img src={img4} alt="" />
+
+    <p>
+      Outra opção é informar o valor que será baixado.. No exemplo da imagem a
+      soma dos títulos da um valor de 370.958,53.. Mas caso o cliente tenha
+      pagado somente 130.00,00 e queira baixar esse valor abatendo dos títulos
+      mais antigos para o mais novo, basta clicar em Ratear Vr.Baixa.
+    </p>
+    <p>
+      Após selecionar essa opção, basta informar o valor que vai ser rateado.
+    </p>
+    <img src={img5} alt="" />
+
+    <p>E em seguida clicar em Baixar Títulos.</p>
+    <br />
+
+    <p>
+      Na tela de baixa, é possivel fazer a baixa em apenas um tipo de pagamento,
+      ou em mais de um.
+    </p>
+    <p>
+      Para fazer a baixa, basta informar o valor que vai ser baixado na forma de
+      pagamento e em seguida clicar na tecla enter.
+    </p>
+    <img src={img6} alt="" />
+
+    <p>
+      Para baixas em Dinheiro, basta selecionar de onde sairá o dinehiro, e o
+      valor, e em seguida clicar em Adicionar e Ok.
+    </p>
+    <img src={img7} alt="" />
+
+    <p>Para todos os tipos de baixa é possivel selecionar mais de uma conta.</p>
+    <p>
+      Para esses casos, basta colocar uma conta, colocar o valor, em seguida
+      colocar outra conta e o valor, e assim que finalizar o valor dessa forma
+      de pagamento, o sistema voltara para a tela anterior, para finalizar a
+      baixa.
+    </p>
+    <img src={img8} alt="" />
+
+    <p>
+      A baixa por PIX basta selecionar a chave, e o valor, em seguida clicar em
+      Adicionar.
+    </p>
+    <img src={img9} alt="" />
+
+    <p>
+      Para o caso de cheque proprio, é necessário informar a conta do cheque, o
+      numero a Dt. de Vencimento e o valor, em seguida clicar em Adicionar e Ok.
+    </p>
+    <img src={img10} alt="" />
+
+    <p>
+      Para baixa utilizando Cheque de Terceiro, e Abatimento / Crédito, é
+      preciso que esse lançamento já esteja no sistema. Após isso basta clicar
+      nos três pontos e selecionar o cheque ou o crédito que será utilizado para
+      baixar esses titulos.
+    </p>
+    <img src={img11} alt="" />
+
+    <p>Em seguida basta processar a baixa.</p>
+    <img src={img12} alt="" />
+
+    <div class="rodape">
+      <p><b>Criado por:</b> Eduardo Cintra.</p>
+      <p><b>Revisado por:</b> Eduardo Cintra.</p>
+      <p><b>Data Revisão:</b>21/03/2023</p>
+    </div>
+  </main>
+</Layout>
