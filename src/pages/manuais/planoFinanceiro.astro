@@ -2,9 +2,17 @@
 import Layout from "../../layouts/Layout.astro";
 import "./style.css";
 
-import img1 from "../../imagens/prazoPagamento/img1.png";
-import img2 from "../../imagens/planoFinanceiro/img1.png";
-import img3 from "../../imagens/planoFinanceiro/img2.png";
+import img1 from "../../imagens/planoFinanceiro/img1.png";
+import img2 from "../../imagens/planoFinanceiro/img2.png";
+import img3 from "../../imagens/planoFinanceiro/img3.png";
+import img4 from "../../imagens/planoFinanceiro/img4.png";
+import img5 from "../../imagens/planoFinanceiro/img5.png";
+import img6 from "../../imagens/planoFinanceiro/img6.png";
+import img7 from "../../imagens/planoFinanceiro/img7.png";
+import img8 from "../../imagens/planoFinanceiro/img8.png";
+import img9 from "../../imagens/planoFinanceiro/img9.png";
+import img10 from "../../imagens/planoFinanceiro/img10.png";
+import img11 from "../../imagens/planoFinanceiro/img11.png";
 ---
 
 <Layout title="Cadastro Plano Financeiro">
@@ -13,10 +21,71 @@ import img3 from "../../imagens/planoFinanceiro/img2.png";
 
     <p>Acessar Cadastros /Financeiro /Plano Financeiro:</p>
     <img src={img1} alt="" />
-    <img src={img2} alt="" />
 
     <p>Clique em novo para iniciar o cadastro de um novo Plano Financeiro.</p>
+    <img src={img2} alt="" />
+
+    <p>
+      O Plano Financeiro é utilizado para identificação de Tipos de Despesas ou
+      receitas nos Relatórios de Despesas, DRE (Demonstração do Resultado do
+      Exercício)
+    </p>
     <img src={img3} alt="" />
+
+    <p>
+      Informar o código a ser utilizado, e caso deseje que o sistema crie
+      automaticamente o sequencial, deve ser informado o Grupo do Plano.
+    </p>
+    <img src={img4} alt="" />
+
+    <p>
+      Assinalar se o Plano Financeiro irá sair nos relatórios de Apuração de
+      Resultado.
+    </p>
+    <img src={img5} alt="" />
+
+    <p>Informar o Nome ou Descrição do Plano Financeiro.</p>
+    <img src={img6} alt="" />
+
+    <p>
+      Ao criar o Plano Financeiro, pode ser vinculado (ser subordinado) a uma
+      cabeça de plano.
+    </p>
+    <p>
+      Por exemplo, dentro das Despesas Trabalhistas estão despesas como
+      Salários, Décimo terceiro e rescisão.
+    </p>
+    <img src={img7} alt="" />
+
+    <p>
+      A cabeça de Plano Financeiro deve ser criada primeiro antes de ser
+      utilizada, sugerimos não marcar para sair na apuração e também não amarrar
+      uma cabeça de grupo a uma cabeça de grupo.
+    </p>
+    <img src={img8} alt="" />
+
+    <p>
+      Informar o Tipo de Conta, se é uma Despesa, Receita, Investimento ou
+      Outros.
+    </p>
+    <img src={img9} alt="" />
+
+    <p>O Plano Financeiro também pode ser vinculado a um centro de custo.</p>
+    <img src={img10} alt="" />
+
+    <p>
+      Para acessar o manual de Centro de Custo <b
+        ><a href="centroCusto.astro">Clique aqui</a></b
+      >:
+    </p>
+    <br />
+
+    <p>
+      E na Aba Permissões pode ser restringido a quais usuários do sistema
+      poderão ter acesso aos lançamentos no contas a pagar e a receber. O
+      Parâmetro Geral na aba Financeiro precisa estar ativado.
+    </p>
+    <img src={img11} alt="" />
 
     <div class="rodape">
       <p><b>Criado por:</b> Bruno Pires da Silva.</p>
